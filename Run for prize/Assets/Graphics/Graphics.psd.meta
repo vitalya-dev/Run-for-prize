@@ -4,26 +4,26 @@ timeCreated: 1551330233
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Graphics_0
-    21300002: Graphics_1
-    21300004: Graphics_2
-    21300006: Graphics_3
+    21300000: H0
+    21300002: H1
+    21300004: H2
+    21300006: H3
     21300008: Graphics_4
     21300010: Graphics_5
     21300012: Graphics_6
     21300014: Graphics_7
     21300016: Graphics_8
-    21300018: Graphics_9
-    21300020: Graphics_10
-    21300022: Graphics_11
-    21300024: Graphics_12
-    21300026: Graphics_13
-    21300028: Graphics_14
-    21300030: Graphics_15
-    21300032: Graphics_16
-    21300034: Graphics_17
-    21300036: Graphics_18
-    21300038: Graphics_19
+    21300018: Prize
+    21300020: Ground
+    21300022: Box
+    21300024: Jump Pack SE
+    21300026: Jump Pack SW
+    21300028: Jump Pack NW
+    21300030: Jump Pack NE
+    21300032: Jump Pack E
+    21300034: Jump Pack W
+    21300036: Jump Pack N
+    21300038: Jump Pack S
     21300040: Game Border
     21300042: Graphics_21
     21300044: Graphics_22
@@ -341,7 +341,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Graphics_0
+      name: H0
       rect:
         serializedVersion: 2
         x: 0
@@ -355,7 +355,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_1
+      name: H1
       rect:
         serializedVersion: 2
         x: 16
@@ -369,7 +369,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_2
+      name: H2
       rect:
         serializedVersion: 2
         x: 32
@@ -383,7 +383,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_3
+      name: H3
       rect:
         serializedVersion: 2
         x: 48
@@ -453,7 +453,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_9
+      name: Prize
       rect:
         serializedVersion: 2
         x: 96
@@ -467,7 +467,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_10
+      name: Ground
       rect:
         serializedVersion: 2
         x: 0
@@ -481,7 +481,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_11
+      name: Box
       rect:
         serializedVersion: 2
         x: 16
@@ -495,7 +495,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_12
+      name: Jump Pack SE
       rect:
         serializedVersion: 2
         x: 0
@@ -509,7 +509,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_13
+      name: Jump Pack SW
       rect:
         serializedVersion: 2
         x: 16
@@ -523,7 +523,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_14
+      name: Jump Pack NW
       rect:
         serializedVersion: 2
         x: 32
@@ -537,7 +537,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_15
+      name: Jump Pack NE
       rect:
         serializedVersion: 2
         x: 48
@@ -551,7 +551,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_16
+      name: Jump Pack E
       rect:
         serializedVersion: 2
         x: 0
@@ -565,7 +565,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_17
+      name: Jump Pack W
       rect:
         serializedVersion: 2
         x: 16
@@ -579,7 +579,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_18
+      name: Jump Pack N
       rect:
         serializedVersion: 2
         x: 32
@@ -593,7 +593,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Graphics_19
+      name: Jump Pack S
       rect:
         serializedVersion: 2
         x: 48
