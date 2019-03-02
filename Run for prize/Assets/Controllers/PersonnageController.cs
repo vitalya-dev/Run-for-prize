@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MotionController : MonoBehaviour {
+public class PersonnageController : MonoBehaviour {
 
 	public LayerMask collisionMask;
 
@@ -10,6 +10,11 @@ public class MotionController : MonoBehaviour {
 	public bool collisionRight;
 	public bool collisionAbove;
 	public bool collisionBelow;
+
+	public Vector2 velocity;
+
+	public Sprite[] sprites;
+	public int sprite_index = 0;
 
 	// Update is called once per frame
 	void Update() {
@@ -41,5 +46,15 @@ public class MotionController : MonoBehaviour {
 			collisionAbove = true;
 		else
 			collisionAbove = false;
+
+		sprite_index = sprite_index % sprites.Length;
+		if (sprite_index < 0)
+			sprite_index = sprites.Length - 1;
+		if (transform.GetChild(0).GetComponent<SpriteRenderer>().sprite != sprites[sprite_index])
+			transform.GetChild(0).GetComponent<SpriteRenderer>().sprite =  sprites[sprite_index];
+	}
+
+	public void Move(Vector3 distance) {
+		transform.position += distance;
 	}
 }
