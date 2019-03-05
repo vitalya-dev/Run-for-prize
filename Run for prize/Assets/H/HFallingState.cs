@@ -2,32 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HIdleState : HBaseFSM {
+public class HFallingState : HBaseFSM {
+	private Vector3 finalDestination;
 
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
 
-		animator.SetFloat("Axis", 0.0f);
-		animator.SetBool("Rolling", false);
-		animator.SetBool("Grounded", p_controller.collisionBelow);
+		finalDestination = p_controller.transform.position + new Vector3(0, -1, 0);
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		// if (Input.GetMouseButtonDown(1)) {
-		// 	animator.SetBool("Rocket", true);
-		// }
-
-		// float input = Input.GetAxisRaw("Horizontal");
-		// if (Mathf.Abs(input) > 0) {
-		// 	float axis = Mathf.Sign(input);
-		// 	animator.SetFloat("Axis", axis);
-		// 	if ((axis > 0 && !p_controller.collisionRight) ||
-		// 		(axis < 0 && !p_controller.collisionLeft)) {
-		// 		animator.SetBool("Rolling", true);
-		// 	}
-		// }
+		Vector2 velocity = p_controller.velocity;
+		velocity.x = 0;
+		if (Vector3.Distance(p_controller.transform.position, finalDestination) > 0.1) {
+			p_controller.Move(velocity * -1 * Time.deltaTime);
+		} else {
+			p_controller.transform.position = finalDestination;
+			animator.SetTrigger("Grounded");
+		}
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

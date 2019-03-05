@@ -2,32 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HIdleState : HBaseFSM {
+public class HRocketState : HBaseFSM {
 
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
-
-		animator.SetFloat("Axis", 0.0f);
-		animator.SetBool("Rolling", false);
-		animator.SetBool("Grounded", p_controller.collisionBelow);
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		// if (Input.GetMouseButtonDown(1)) {
-		// 	animator.SetBool("Rocket", true);
-		// }
+		Vector2 velocity = p_controller.velocity;
+		velocity.x *= p_controller.face.x;
+		velocity.y *= p_controller.face.y;
 
-		// float input = Input.GetAxisRaw("Horizontal");
-		// if (Mathf.Abs(input) > 0) {
-		// 	float axis = Mathf.Sign(input);
-		// 	animator.SetFloat("Axis", axis);
-		// 	if ((axis > 0 && !p_controller.collisionRight) ||
-		// 		(axis < 0 && !p_controller.collisionLeft)) {
-		// 		animator.SetBool("Rolling", true);
-		// 	}
-		// }
+		p_controller.Move(velocity * 10 * Time.deltaTime);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

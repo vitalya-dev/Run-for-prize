@@ -16,6 +16,23 @@ public class PersonnageController : MonoBehaviour {
 	public Sprite[] sprites;
 	public int sprite_index = 0;
 
+	public Vector2 face {
+		get {
+			switch (sprite_index) {
+				case 0:
+					return new Vector2(0, 1);
+				case 1:
+					return new Vector2(1, 0);
+				case 2:
+					return new Vector2(0, -1);
+				case 3:
+					return new Vector2(-1, 0);
+				default:
+					return new Vector2(0, 0);
+			}
+		}
+	}
+
 	// Update is called once per frame
 	void Update() {
 		Debug.DrawRay(transform.position, Vector2.down / 2, Color.red);
@@ -50,8 +67,8 @@ public class PersonnageController : MonoBehaviour {
 		sprite_index = sprite_index % sprites.Length;
 		if (sprite_index < 0)
 			sprite_index = sprites.Length - 1;
-		if (transform.GetChild(0).GetComponent<SpriteRenderer>().sprite != sprites[sprite_index])
-			transform.GetChild(0).GetComponent<SpriteRenderer>().sprite =  sprites[sprite_index];
+		transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = sprites[sprite_index];
+
 	}
 
 	public void Move(Vector3 distance) {
