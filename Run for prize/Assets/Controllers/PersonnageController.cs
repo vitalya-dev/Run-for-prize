@@ -63,7 +63,9 @@ public class PersonnageController : MonoBehaviour {
 			collisionAbove = true;
 		else
 			collisionAbove = false;
+	}
 
+	public void LateUpdate() {
 		sprite_index = sprite_index % sprites.Length;
 		if (sprite_index < 0)
 			sprite_index = sprites.Length - 1;
