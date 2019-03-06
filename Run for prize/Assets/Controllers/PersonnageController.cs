@@ -13,19 +13,16 @@ public class PersonnageController : MonoBehaviour {
 
 	public Vector2 velocity;
 
-	public Sprite[] sprites;
-	public int sprite_index = 0;
-
 	public Vector2 face {
 		get {
-			switch (sprite_index) {
+			switch (Mathf.RoundToInt(transform.rotation.eulerAngles.z)) {
 				case 0:
 					return new Vector2(0, 1);
-				case 1:
+				case 270:
 					return new Vector2(1, 0);
-				case 2:
+				case 180:
 					return new Vector2(0, -1);
-				case 3:
+				case 90:
 					return new Vector2(-1, 0);
 				default:
 					return new Vector2(0, 0);
@@ -63,14 +60,6 @@ public class PersonnageController : MonoBehaviour {
 			collisionAbove = true;
 		else
 			collisionAbove = false;
-	}
-
-	public void LateUpdate() {
-		sprite_index = sprite_index % sprites.Length;
-		if (sprite_index < 0)
-			sprite_index = sprites.Length - 1;
-		if (transform.GetChild(0).GetComponent<SpriteRenderer>().sprite != sprites[sprite_index])
-			transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = sprites[sprite_index];
 	}
 
 	public void Move(Vector3 distance) {

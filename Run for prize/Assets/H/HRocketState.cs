@@ -15,7 +15,7 @@ public class HRocketState : HBaseFSM {
 		velocity.x *= p_controller.face.x;
 		velocity.y *= p_controller.face.y;
 
-		p_controller.Move(velocity * 10 * Time.deltaTime);
+		p_controller.Move(velocity * Time.deltaTime);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

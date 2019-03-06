@@ -30,7 +30,7 @@ public class HRollingState : HBaseFSM {
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		p_controller.sprite_index += (int)animator.GetFloat("Axis");
+		p_controller.transform.rotation = animator.transform.rotation;
 	}
 
 	// OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here
