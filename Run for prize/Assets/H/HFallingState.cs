@@ -16,11 +16,12 @@ public class HFallingState : HBaseFSM {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		Vector2 velocity = p_controller.velocity;
 		velocity.x = 0;
-		if (Vector3.Distance(p_controller.transform.position, finalDestination) > 0.1) {
+		float distance = Vector3.Distance(p_controller.transform.position, finalDestination);
+		if (distance > 0.1 && distance < 1) {
 			p_controller.Move(velocity * -1 * Time.deltaTime);
 		} else {
 			p_controller.transform.position = finalDestination;
-			animator.SetTrigger("Grounded");
+			animator.SetBool("Grounded", true);
 		}
 	}
 
