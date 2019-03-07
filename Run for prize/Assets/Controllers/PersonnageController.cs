@@ -4,27 +4,29 @@ using UnityEngine;
 
 public class PersonnageController : MonoBehaviour {
 
+	public GameObject particle;
+	
 	public LayerMask collisionMask;
 
-	public bool collisionLeft {
+	public Collider2D collisionLeft {
 		get {
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, collisionMask);
 			return hit.collider;
 		}
 	}
-	public bool collisionRight {
+	public Collider2D collisionRight {
 		get {
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, collisionMask);
 			return hit.collider;
 		}
 	}
-	public bool collisionAbove {
+	public Collider2D collisionAbove {
 		get {
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 0.6f, collisionMask);
 			return hit.collider;
 		}
 	}
-	public bool collisionBelow {
+	public Collider2D collisionBelow {
 		get {
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, collisionMask);
 			return hit.collider;
@@ -47,6 +49,12 @@ public class PersonnageController : MonoBehaviour {
 				default:
 					return new Vector2(0, 0);
 			}
+		}
+	}
+
+	public int euler_face {
+		get {
+			return Mathf.RoundToInt(transform.rotation.eulerAngles.z);
 		}
 	}
 

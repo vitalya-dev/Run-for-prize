@@ -279,6 +279,7 @@ TextureImporter:
     21300544: HRocket2_1
     21300546: HRocket2_2
     21300548: HRocket2_3
+    21300550: Particle
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -4033,6 +4034,20 @@ TextureImporter:
         height: 32
       alignment: 9
       pivot: {x: 0.5, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Particle
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 327
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
