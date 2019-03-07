@@ -23,7 +23,6 @@ public class HRollingState : HBaseFSM {
 			p_controller.Move(velocity * axis * Time.deltaTime);
 		} else {
 			p_controller.transform.position = finalDestination;
-			Debug.Log(p_controller.transform.position);
 			animator.SetBool("Rolling", false);
 		}
 	}

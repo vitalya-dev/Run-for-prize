@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class HExplodeState : HBaseFSM {
 
-	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-			base.OnStateEnter(animator, stateInfo, layerIndex);
+		base.OnStateEnter(animator, stateInfo, layerIndex);
+		GameObject.Find("GameController").GetComponent<GameController>().Restart();
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -17,6 +18,7 @@ public class HExplodeState : HBaseFSM {
 			particle.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1f, 1f), Random.Range(0f, 1f)) * Random.Range(200, 1000));
 		}
 		GameObject.Destroy(p_controller.gameObject);
+
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
