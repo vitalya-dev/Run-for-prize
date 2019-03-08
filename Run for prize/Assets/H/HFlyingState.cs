@@ -13,20 +13,28 @@ public class HFlyingState : HBaseFSM {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		switch (p_controller.euler_face) {
 			case 0:
-				if (p_controller.collisionAbove)
+				if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Solid")
 					animator.SetTrigger("Explode");
+				else if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Jump Pack")
+					animator.SetTrigger("Rotate");
 				break;
 			case 90:
-				if (p_controller.collisionLeft)
+				if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Solid")
 					animator.SetTrigger("Explode");
+				else if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Jump Pack")
+					animator.SetTrigger("Rotate");
 				break;
 			case 180:
-				if (p_controller.collisionBelow)
+				if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Solid")
 					animator.SetTrigger("Explode");
+				else if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Jump Pack")
+					animator.SetTrigger("Rotate");
 				break;
 			case 270:
-				if (p_controller.collisionRight)
+				if (p_controller.collisionRight && p_controller.collisionRight.tag == "Solid")
 					animator.SetTrigger("Explode");
+				else if (p_controller.collisionRight && p_controller.collisionRight.tag == "Jump Pack")
+					animator.SetTrigger("Rotate");
 				break;
 		}
 
@@ -34,7 +42,7 @@ public class HFlyingState : HBaseFSM {
 		velocity.x *= p_controller.face.x;
 		velocity.y *= p_controller.face.y;
 
-		p_controller.Move(velocity * Time.deltaTime);
+		p_controller.Move(velocity * 3 * Time.deltaTime);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

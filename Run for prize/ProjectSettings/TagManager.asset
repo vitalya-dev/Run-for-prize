@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Jump Pack
+  - Solid
   layers:
   - Default
   - TransparentFX

@@ -5,8 +5,23 @@ using UnityEngine;
 public class PersonnageController : MonoBehaviour {
 
 	public GameObject particle;
-	
+
 	public LayerMask collisionMask;
+
+	public Collider2D collision {
+		get {
+			if (collisionLeft)
+				return collisionLeft;
+			else if (collisionRight)
+				return collisionRight;
+			else if (collisionAbove)
+				return collisionAbove;
+			else if (collisionBelow)
+				return collisionBelow;
+			else
+				return null;
+		}
+	}
 
 	public Collider2D collisionLeft {
 		get {
@@ -49,6 +64,9 @@ public class PersonnageController : MonoBehaviour {
 				default:
 					return new Vector2(0, 0);
 			}
+		}
+		set {
+			transform.rotation = Quaternion.LookRotation(transform.forward, value);
 		}
 	}
 
