@@ -5,7 +5,7 @@ using UnityEngine;
 public class PrizeController : MonoBehaviour {
 	public GameObject particle_prefab;
 
-	public void prized() {
+	public void Prized() {
 		for (int i = 0; i < 200; i++) {
 			GameObject particle = Instantiate(particle_prefab, transform.position, Quaternion.identity);
 			particle.transform.Translate(new Vector3(0, 0, 1));

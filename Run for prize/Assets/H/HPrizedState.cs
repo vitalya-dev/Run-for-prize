@@ -15,7 +15,8 @@ public class HPrizedState : HBaseFSM {
 		);
 		p_controller.transform.position = rounded_position;
 
-		p_controller.collision.GetComponent<PrizeController>().prized();
+		p_controller.collision.GetComponent<PrizeController>().Prized();
+		p_controller.Explode();
 
 	}
 

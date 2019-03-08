@@ -12,13 +12,7 @@ public class HExplodeState : HBaseFSM {
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		for (int i = 0; i < 200; i++) {
-			GameObject particle = Instantiate(p_controller.particle, p_controller.transform.position, Quaternion.identity);
-			particle.transform.Translate(new Vector3(0, 0, 1));
-			particle.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1f, 1f), Random.Range(0f, 1f)) * Random.Range(200, 1000));
-		}
-		GameObject.Destroy(p_controller.gameObject);
-
+		p_controller.Explode();
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

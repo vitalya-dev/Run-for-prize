@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PersonnageController : MonoBehaviour {
 
-	public GameObject particle;
+	public GameObject particlePrefab;
 
 	public LayerMask collisionMask;
 
@@ -86,5 +86,14 @@ public class PersonnageController : MonoBehaviour {
 
 	public void Move(Vector3 distance) {
 		transform.position += distance;
+	}
+
+	public void Explode() {
+		for (int i = 0; i < 200; i++) {
+			GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
+			particle.transform.Translate(new Vector3(0, 0, 1));
+			particle.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1f, 1f), Random.Range(0f, 1f)) * Random.Range(200, 1000));
+		}
+		GameObject.Destroy(gameObject);
 	}
 }
