@@ -17,24 +17,32 @@ public class HFlyingState : HBaseFSM {
 					animator.SetTrigger("Explode");
 				else if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Jump Pack")
 					animator.SetTrigger("Rotate");
+				else if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Prize")
+					animator.SetTrigger("Prized");
 				break;
 			case 90:
 				if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Solid")
 					animator.SetTrigger("Explode");
 				else if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Jump Pack")
 					animator.SetTrigger("Rotate");
+				else if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Prize")
+					animator.SetTrigger("Prized");
 				break;
 			case 180:
 				if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Solid")
 					animator.SetTrigger("Explode");
 				else if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Jump Pack")
 					animator.SetTrigger("Rotate");
+				else if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Prize")
+					animator.SetTrigger("Prized");
 				break;
 			case 270:
 				if (p_controller.collisionRight && p_controller.collisionRight.tag == "Solid")
 					animator.SetTrigger("Explode");
 				else if (p_controller.collisionRight && p_controller.collisionRight.tag == "Jump Pack")
 					animator.SetTrigger("Rotate");
+				else if (p_controller.collisionRight && p_controller.collisionRight.tag == "Prize")
+					animator.SetTrigger("Prized");
 				break;
 		}
 
