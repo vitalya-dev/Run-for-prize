@@ -8,19 +8,20 @@ public class HFallingState : HBaseFSM {
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
-
-		finalDestination = p_controller.transform.position + new Vector3(0, -1, 0);
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		Vector2 velocity = p_controller.velocity;
 		velocity.x = 0;
-		float distance = Vector3.Distance(p_controller.transform.position, finalDestination);
-		if (distance > 0.1 && distance < 1) {
-			p_controller.Move(velocity * -1 * Time.deltaTime);
-		} else {
-			p_controller.transform.position = finalDestination;
+		p_controller.Move(velocity * -2 * Time.deltaTime);
+		if (p_controller.collisionBelow) {
+			Vector3 rounded_position = new Vector3(
+				Mathf.RoundToInt(p_controller.transform.position.x),
+				Mathf.RoundToInt(p_controller.transform.position.y),
+				Mathf.RoundToInt(p_controller.transform.position.z)
+			);
+			p_controller.transform.position = rounded_position;
 			animator.SetBool("Grounded", true);
 		}
 	}
