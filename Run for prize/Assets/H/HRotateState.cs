@@ -8,13 +8,7 @@ public class HRotateState : HBaseFSM {
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
 
-		Vector3 rounded_position = new Vector3(
-			Mathf.RoundToInt(p_controller.transform.position.x),
-			Mathf.RoundToInt(p_controller.transform.position.y),
-			Mathf.RoundToInt(p_controller.transform.position.z)
-		);
-		p_controller.transform.position = rounded_position;
-
+		p_controller.Snap();
 		p_controller.face = p_controller.collision.GetComponent<JumpPackController>().direction;
 
 		animator.SetTrigger("Rotate");

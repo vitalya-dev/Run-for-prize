@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -35,6 +36,16 @@ public class PersonnageController : MonoBehaviour {
 			return hit.collider;
 		}
 	}
+
+	public void Snap() {
+		Vector3 rounded_position = new Vector3(
+			Mathf.RoundToInt(transform.position.x),
+			Mathf.RoundToInt(transform.position.y),
+			Mathf.RoundToInt(transform.position.z)
+		);
+		transform.position = rounded_position;
+	}
+
 	public Collider2D collisionAbove {
 		get {
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 0.6f, collisionMask);
@@ -92,7 +103,9 @@ public class PersonnageController : MonoBehaviour {
 		for (int i = 0; i < 200; i++) {
 			GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
 			particle.transform.Translate(new Vector3(0, 0, 1));
-			particle.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1f, 1f), Random.Range(0f, 1f)) * Random.Range(200, 1000));
+			particle.GetComponent<Rigidbody2D>().AddForce(
+				new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(0f, 1f)) * UnityEngine.Random.Range(200, 1000)
+			);
 		}
 		GameObject.Destroy(gameObject);
 	}

@@ -16,6 +16,7 @@ public class HFallingState : HBaseFSM {
 		velocity.x = 0;
 		p_controller.Move(velocity * -2 * Time.deltaTime);
 		if (p_controller.collisionBelow) {
+			p_controller.Snap();
 			Vector3 rounded_position = new Vector3(
 				Mathf.RoundToInt(p_controller.transform.position.x),
 				Mathf.RoundToInt(p_controller.transform.position.y),

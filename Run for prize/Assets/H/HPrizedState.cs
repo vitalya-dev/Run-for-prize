@@ -7,15 +7,8 @@ public class HPrizedState : HBaseFSM {
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
-
-		Vector3 rounded_position = new Vector3(
-			Mathf.RoundToInt(p_controller.transform.position.x),
-			Mathf.RoundToInt(p_controller.transform.position.y),
-			Mathf.RoundToInt(p_controller.transform.position.z)
-		);
-		p_controller.transform.position = rounded_position;
-
 		p_controller.collision.GetComponent<PrizeController>().Prized();
+		p_controller.Snap();
 		p_controller.Explode();
 
 		GameObject.Find("GameController").GetComponent<GameController>().Next();
