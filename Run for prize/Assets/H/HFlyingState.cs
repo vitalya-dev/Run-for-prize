@@ -11,46 +11,49 @@ public class HFlyingState : HBaseFSM {
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		switch (p_controller.euler_face) {
-			case 0:
-				if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Solid")
-					animator.SetTrigger("Explode");
-				else if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Jump Pack")
-					animator.SetTrigger("Rotate");
-				else if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Prize")
-					animator.SetTrigger("Prized");
-				break;
-			case 90:
-				if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Solid")
-					animator.SetTrigger("Explode");
-				else if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Jump Pack")
-					animator.SetTrigger("Rotate");
-				else if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Prize")
-					animator.SetTrigger("Prized");
-				break;
-			case 180:
-				if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Solid")
-					animator.SetTrigger("Explode");
-				else if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Jump Pack")
-					animator.SetTrigger("Rotate");
-				else if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Prize")
-					animator.SetTrigger("Prized");
-				break;
-			case 270:
-				if (p_controller.collisionRight && p_controller.collisionRight.tag == "Solid")
-					animator.SetTrigger("Explode");
-				else if (p_controller.collisionRight && p_controller.collisionRight.tag == "Jump Pack")
-					animator.SetTrigger("Rotate");
-				else if (p_controller.collisionRight && p_controller.collisionRight.tag == "Prize")
-					animator.SetTrigger("Prized");
-				break;
-		}
-
-		// Vector2 velocity = p_controller.velocity;
-		// velocity.x *= p_controller.face.x;
-		// velocity.y *= p_controller.face.y;
-
-		// p_controller.Move(velocity * 3 * Time.deltaTime);
+		if (!p_controller.rolling)
+			switch (p_controller.euler_face) {
+				case 0:
+					if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Solid")
+						animator.SetTrigger("Explode");
+					else if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Jump Pack")
+						animator.SetTrigger("Rotate");
+					else if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Prize")
+						animator.SetTrigger("Prized");
+					else
+						p_controller.Roll(p_controller.transform.position + (Vector3) p_controller.face, p_controller.transform.rotation);
+					break;
+				case 90:
+					if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Solid")
+						animator.SetTrigger("Explode");
+					else if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Jump Pack")
+						animator.SetTrigger("Rotate");
+					else if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Prize")
+						animator.SetTrigger("Prized");
+					else
+						p_controller.Roll(p_controller.transform.position + (Vector3) p_controller.face, p_controller.transform.rotation);
+					break;
+				case 180:
+					if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Solid")
+						animator.SetTrigger("Explode");
+					else if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Jump Pack")
+						animator.SetTrigger("Rotate");
+					else if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Prize")
+						animator.SetTrigger("Prized");
+					else
+						p_controller.Roll(p_controller.transform.position + (Vector3) p_controller.face, p_controller.transform.rotation);
+					break;
+				case 270:
+					if (p_controller.collisionRight && p_controller.collisionRight.tag == "Solid")
+						animator.SetTrigger("Explode");
+					else if (p_controller.collisionRight && p_controller.collisionRight.tag == "Jump Pack")
+						animator.SetTrigger("Rotate");
+					else if (p_controller.collisionRight && p_controller.collisionRight.tag == "Prize")
+						animator.SetTrigger("Prized");
+					else
+						p_controller.Roll(p_controller.transform.position + (Vector3) p_controller.face, p_controller.transform.rotation);
+					break;
+			}
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
