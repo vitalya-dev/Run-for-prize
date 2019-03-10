@@ -12,18 +12,10 @@ public class HFallingState : HBaseFSM {
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		// Vector2 velocity = p_controller.velocity;
-		// velocity.x = 0;
-		// p_controller.Move(velocity * -2 * Time.deltaTime);
-		if (p_controller.collisionBelow) {
-			p_controller.Snap();
-			Vector3 rounded_position = new Vector3(
-				Mathf.RoundToInt(p_controller.transform.position.x),
-				Mathf.RoundToInt(p_controller.transform.position.y),
-				Mathf.RoundToInt(p_controller.transform.position.z)
-			);
-			p_controller.transform.position = rounded_position;
+		if (p_controller.collisionBelow && p_controller.rolling == false) {
 			animator.SetBool("Grounded", true);
+		} else {
+			p_controller.Roll(p_controller.transform.position + new Vector3(0, -1, 0), p_controller.transform.rotation);
 		}
 	}
 

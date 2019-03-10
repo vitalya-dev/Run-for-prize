@@ -99,7 +99,8 @@ public class PersonnageController : MonoBehaviour {
 	}
 
 	public void Roll(Vector3 position, Quaternion rotation) {
-		StartCoroutine(RollRoutine(position, rotation));
+		if (!rolling)
+			StartCoroutine(RollRoutine(position, rotation));
 	}
 
 	private IEnumerator RollRoutine(Vector3 finalPosition, Quaternion finalRotation) {
