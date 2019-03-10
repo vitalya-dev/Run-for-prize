@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class PersonnageController : MonoBehaviour {
 
+	[HideInInspector]
+	public bool rolling = false;
+
 	public GameObject particlePrefab;
 
 	public LayerMask collisionMask;
@@ -59,7 +62,7 @@ public class PersonnageController : MonoBehaviour {
 		}
 	}
 
-	public Vector2 velocity;
+	public float velocity;
 
 	public Vector2 face {
 		get {
@@ -95,8 +98,29 @@ public class PersonnageController : MonoBehaviour {
 		Debug.DrawRay(transform.position, Vector2.up / 2, Color.red);
 	}
 
-	public void Move(Vector3 distance) {
-		transform.position += distance;
+	public void Roll(Vector3 position, Quaternion rotation) {
+		StartCoroutine(RollRoutine(position, rotation));
+	}
+
+	private IEnumerator RollRoutine(Vector3 finalPosition, Quaternion finalRotation) {
+		rolling = true;
+
+		Vector3 positionDeparture = transform.position;
+		Quaternion rotationDeparture = transform.rotation;
+
+		float time_needed = Vector3.Distance(positionDeparture, finalPosition) / velocity;
+		float elapsed_time = 0;
+
+		while (Vector3.Distance(transform.position, finalPosition) > 0.01f) {
+			transform.position = Vector3.Lerp(positionDeparture, finalPosition, elapsed_time / time_needed);
+			transform.rotation = Quaternion.Slerp(rotationDeparture, finalRotation, elapsed_time / time_needed);
+			elapsed_time += Time.deltaTime;
+			yield return null;
+		}
+
+		transform.position = finalPosition;
+		transform.rotation = finalRotation;
+		rolling = false;
 	}
 
 	public void Explode() {

@@ -46,11 +46,11 @@ public class HFlyingState : HBaseFSM {
 				break;
 		}
 
-		Vector2 velocity = p_controller.velocity;
-		velocity.x *= p_controller.face.x;
-		velocity.y *= p_controller.face.y;
+		// Vector2 velocity = p_controller.velocity;
+		// velocity.x *= p_controller.face.x;
+		// velocity.y *= p_controller.face.y;
 
-		p_controller.Move(velocity * 3 * Time.deltaTime);
+		// p_controller.Move(velocity * 3 * Time.deltaTime);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
