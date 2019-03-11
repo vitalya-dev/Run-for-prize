@@ -49,27 +49,10 @@ public class PersonnageController : MonoBehaviour {
 
 	public Vector2 face {
 		get {
-			switch (Mathf.RoundToInt(transform.rotation.eulerAngles.z)) {
-				case 0:
-					return new Vector2(0, 1);
-				case 270:
-					return new Vector2(1, 0);
-				case 180:
-					return new Vector2(0, -1);
-				case 90:
-					return new Vector2(-1, 0);
-				default:
-					return new Vector2(0, 0);
-			}
+			return transform.up;
 		}
 		set {
 			transform.rotation = Quaternion.LookRotation(transform.forward, value);
-		}
-	}
-
-	public int euler_face {
-		get {
-			return Mathf.RoundToInt(transform.rotation.eulerAngles.z);
 		}
 	}
 
