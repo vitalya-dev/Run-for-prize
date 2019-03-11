@@ -12,21 +12,6 @@ public class PersonnageController : MonoBehaviour {
 
 	public LayerMask collisionMask;
 
-	public Collider2D collision {
-		get {
-			if (collisionLeft)
-				return collisionLeft;
-			else if (collisionRight)
-				return collisionRight;
-			else if (collisionAbove)
-				return collisionAbove;
-			else if (collisionBelow)
-				return collisionBelow;
-			else
-				return null;
-		}
-	}
-
 	public Collider2D collisionLeft {
 		get {
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, collisionMask);
@@ -40,15 +25,6 @@ public class PersonnageController : MonoBehaviour {
 		}
 	}
 
-	public void Snap() {
-		Vector3 rounded_position = new Vector3(
-			Mathf.RoundToInt(transform.position.x),
-			Mathf.RoundToInt(transform.position.y),
-			Mathf.RoundToInt(transform.position.z)
-		);
-		transform.position = rounded_position;
-	}
-
 	public Collider2D collisionAbove {
 		get {
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 0.6f, collisionMask);
@@ -58,6 +34,13 @@ public class PersonnageController : MonoBehaviour {
 	public Collider2D collisionBelow {
 		get {
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, collisionMask);
+			return hit.collider;
+		}
+	}
+
+	public Collider2D collisionAhead {
+		get {
+			RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3) face, Vector2.zero, 0.1f, collisionMask);
 			return hit.collider;
 		}
 	}
@@ -96,6 +79,15 @@ public class PersonnageController : MonoBehaviour {
 		Debug.DrawRay(transform.position, Vector2.left / 2, Color.red);
 		Debug.DrawRay(transform.position, Vector2.right / 2, Color.red);
 		Debug.DrawRay(transform.position, Vector2.up / 2, Color.red);
+	}
+
+	public void Snap() {
+		Vector3 rounded_position = new Vector3(
+			Mathf.RoundToInt(transform.position.x),
+			Mathf.RoundToInt(transform.position.y),
+			Mathf.RoundToInt(transform.position.z)
+		);
+		transform.position = rounded_position;
 	}
 
 	public void Roll(Vector3 position, Quaternion rotation) {

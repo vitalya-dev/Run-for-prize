@@ -7,7 +7,7 @@ public class HPrizedState : HBaseFSM {
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
-		p_controller.collision.GetComponent<PrizeController>().Prized();
+		p_controller.collisionAhead.GetComponent<PrizeController>().Prized();
 		p_controller.Explode();
 
 		GameObject.Find("GameController").GetComponent<GameController>().Next();
