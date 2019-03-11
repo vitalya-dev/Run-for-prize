@@ -8,7 +8,6 @@ public class HPrizedState : HBaseFSM {
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
 		p_controller.collision.GetComponent<PrizeController>().Prized();
-		p_controller.Snap();
 		p_controller.Explode();
 
 		GameObject.Find("GameController").GetComponent<GameController>().Next();

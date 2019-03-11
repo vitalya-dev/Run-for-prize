@@ -17,7 +17,7 @@ public class HFlyingState : HBaseFSM {
 					if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Solid")
 						animator.SetTrigger("Explode");
 					else if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Jump Pack")
-						animator.SetTrigger("Rotate");
+						p_controller.face = p_controller.collision.GetComponent<JumpPackController>().direction;
 					else if (p_controller.collisionAbove && p_controller.collisionAbove.tag == "Prize")
 						animator.SetTrigger("Prized");
 					else
@@ -27,7 +27,7 @@ public class HFlyingState : HBaseFSM {
 					if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Solid")
 						animator.SetTrigger("Explode");
 					else if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Jump Pack")
-						animator.SetTrigger("Rotate");
+						p_controller.face = p_controller.collision.GetComponent<JumpPackController>().direction;
 					else if (p_controller.collisionLeft && p_controller.collisionLeft.tag == "Prize")
 						animator.SetTrigger("Prized");
 					else
@@ -37,7 +37,7 @@ public class HFlyingState : HBaseFSM {
 					if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Solid")
 						animator.SetTrigger("Explode");
 					else if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Jump Pack")
-						animator.SetTrigger("Rotate");
+						p_controller.face = p_controller.collision.GetComponent<JumpPackController>().direction;
 					else if (p_controller.collisionBelow && p_controller.collisionBelow.tag == "Prize")
 						animator.SetTrigger("Prized");
 					else
@@ -47,7 +47,7 @@ public class HFlyingState : HBaseFSM {
 					if (p_controller.collisionRight && p_controller.collisionRight.tag == "Solid")
 						animator.SetTrigger("Explode");
 					else if (p_controller.collisionRight && p_controller.collisionRight.tag == "Jump Pack")
-						animator.SetTrigger("Rotate");
+						p_controller.face = p_controller.collision.GetComponent<JumpPackController>().direction;
 					else if (p_controller.collisionRight && p_controller.collisionRight.tag == "Prize")
 						animator.SetTrigger("Prized");
 					else
