@@ -7,11 +7,7 @@ public class HRollingState : HBaseFSM {
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
-		float axis = animator.GetFloat("Axis");
-		p_controller.Roll(
-			p_controller.transform.position + new Vector3(axis, 0, 0),
-			Quaternion.LookRotation(p_controller.transform.forward, axis * p_controller.transform.right)
-		);
+		p_controller.Roll(animator.GetFloat("Axis"));
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

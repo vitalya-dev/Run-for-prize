@@ -73,9 +73,9 @@ public class PersonnageController : MonoBehaviour {
 		transform.position = rounded_position;
 	}
 
-	public void Roll(Vector3 position, Quaternion rotation) {
+	public void Roll(float axis) {
 		if (!rolling)
-			StartCoroutine(RollRoutine(position, rotation));
+			StartCoroutine(RollRoutine(transform.position + new Vector3(axis, 0, 0), Quaternion.LookRotation(transform.forward, axis * transform.right)));
 	}
 
 	private IEnumerator RollRoutine(Vector3 finalPosition, Quaternion finalRotation) {
@@ -97,6 +97,11 @@ public class PersonnageController : MonoBehaviour {
 		transform.position = finalPosition;
 		transform.rotation = finalRotation;
 		rolling = false;
+	}
+
+	public void Move(Vector2 direction) {
+		if (!rolling)
+			StartCoroutine(RollRoutine(transform.position + (Vector3)direction, Quaternion.LookRotation(transform.forward, face)));
 	}
 
 	public void Explode() {

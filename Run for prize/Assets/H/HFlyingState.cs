@@ -24,7 +24,7 @@ public class HFlyingState : HBaseFSM {
 					break;
 			}
 		} else {
-			p_controller.Roll(p_controller.transform.position + (Vector3) p_controller.face, p_controller.transform.rotation);
+			p_controller.Move(p_controller.face);
 		}
 	}
 

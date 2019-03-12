@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HFallingState : HBaseFSM {
 	private Vector3 finalDestination;
+	private bool right_mouse_button_clicked = false;
 
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
@@ -12,15 +13,13 @@ public class HFallingState : HBaseFSM {
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		if (Input.GetMouseButtonDown(1)) {
-			animator.SetBool("Flying", true);
-		}
-		animator.SetBool("Rolling",  p_controller.rolling);
 		
-		if (p_controller.collisionBelow && p_controller.rolling == false) {
+		if (p_controller.collisionBelow && !p_controller.rolling) {
 			animator.SetBool("Grounded", true);
+		} else if (Input.GetMouseButtonDown(1)) {
+			animator.SetBool("Flying", true);
 		} else {
-			p_controller.Roll(p_controller.transform.position + new Vector3(0, -1, 0), p_controller.transform.rotation);
+			p_controller.Move(new Vector2(0, -1));
 		}
 	}
 
