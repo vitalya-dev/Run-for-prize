@@ -12,6 +12,11 @@ public class HFallingState : HBaseFSM {
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+		if (Input.GetMouseButtonDown(1)) {
+			animator.SetBool("Flying", true);
+		}
+		animator.SetBool("Rolling",  p_controller.rolling);
+		
 		if (p_controller.collisionBelow && p_controller.rolling == false) {
 			animator.SetBool("Grounded", true);
 		} else {
