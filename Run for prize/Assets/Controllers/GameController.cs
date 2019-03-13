@@ -5,9 +5,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
-	public GameObject personage;
-
-	public string nextLevel;
 
 	public void Restart() {
 		StartCoroutine(RestartRoutine());
@@ -15,7 +12,7 @@ public class GameController : MonoBehaviour {
 
 	private IEnumerator RestartRoutine() {
 		yield return new WaitForSeconds(1f);
-		Instantiate(personage);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
 	public void Next() {
@@ -24,7 +21,7 @@ public class GameController : MonoBehaviour {
 
 	private IEnumerator NextRoutine() {
 		yield return new WaitForSeconds(4f);
-		SceneManager.LoadScene(nextLevel);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 
 }
