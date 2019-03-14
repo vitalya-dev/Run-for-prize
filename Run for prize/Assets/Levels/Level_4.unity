@@ -2434,7 +2434,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 230893935}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e5e6cba0f6db5449bdcb11f6128176e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6807a15a8566a514cb3374a28eea11ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   particle_prefab: {fileID: 1200716189627326, guid: c244698380ac52649a8b02bc6eb1968f,
@@ -16687,10 +16687,6 @@ Prefab:
     - target: {fileID: 4780878425574264, guid: ba9dd027364a75a448e0e9abad70c5f0, type: 2}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4780878425574264, guid: ba9dd027364a75a448e0e9abad70c5f0, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba9dd027364a75a448e0e9abad70c5f0, type: 2}

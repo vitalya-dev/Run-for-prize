@@ -8,8 +8,6 @@ public class PersonnageController : MonoBehaviour {
 	[HideInInspector]
 	public bool rolling = false;
 
-	public GameObject particlePrefab;
-
 	public LayerMask collisionMask;
 
 	public Collider2D collisionLeft {
@@ -102,16 +100,5 @@ public class PersonnageController : MonoBehaviour {
 	public void Move(Vector2 direction) {
 		if (!rolling)
 			StartCoroutine(RollRoutine(transform.position + (Vector3)direction, Quaternion.LookRotation(transform.forward, face)));
-	}
-
-	public void Explode() {
-		for (int i = 0; i < 200; i++) {
-			GameObject particle = Instantiate(particlePrefab, transform.position, Quaternion.identity);
-			particle.transform.Translate(new Vector3(0, 0, 1));
-			particle.GetComponent<Rigidbody2D>().AddForce(
-				new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(0f, 1f)) * UnityEngine.Random.Range(200, 1000)
-			);
-		}
-		GameObject.Destroy(gameObject);
 	}
 }
