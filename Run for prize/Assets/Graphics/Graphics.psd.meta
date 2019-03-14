@@ -281,6 +281,13 @@ TextureImporter:
     21300548: HRocket2_3
     21300550: Particle0
     21300552: Particle1
+    21300554: Bomb0
+    21300556: Bomb1
+    21300558: Bomb2
+    21300560: Bomb3
+    21300562: Bomb4
+    21300564: Bomb
+    21300566: Particle2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -4059,6 +4066,48 @@ TextureImporter:
         serializedVersion: 2
         x: 215
         y: 309
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bomb1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 306
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bomb
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Particle2
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 327
         width: 3
         height: 3
       alignment: 0
