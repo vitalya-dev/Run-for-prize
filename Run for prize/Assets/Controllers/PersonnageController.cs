@@ -71,18 +71,18 @@ public class PersonnageController : MonoBehaviour {
 		transform.position = rounded_position;
 	}
 
-	public void Roll(float axis) {
+	public void Roll(float axis, float forsage=1) {
 		if (!rolling)
-			StartCoroutine(RollRoutine(transform.position + new Vector3(axis, 0, 0), Quaternion.LookRotation(transform.forward, axis * transform.right)));
+			StartCoroutine(RollRoutine(transform.position + new Vector3(axis, 0, 0), Quaternion.LookRotation(transform.forward, axis * transform.right), forsage));
 	}
 
-	private IEnumerator RollRoutine(Vector3 finalPosition, Quaternion finalRotation) {
+	private IEnumerator RollRoutine(Vector3 finalPosition, Quaternion finalRotation, float forsage) {
 		rolling = true;
 
 		Vector3 positionDeparture = transform.position;
 		Quaternion rotationDeparture = transform.rotation;
 
-		float time_needed = Vector3.Distance(positionDeparture, finalPosition) / velocity;
+		float time_needed = Vector3.Distance(positionDeparture, finalPosition) / (velocity * forsage);
 		float elapsed_time = 0;
 
 		while (Vector3.Distance(transform.position, finalPosition) > 0.01f) {
@@ -97,8 +97,8 @@ public class PersonnageController : MonoBehaviour {
 		rolling = false;
 	}
 
-	public void Move(Vector2 direction) {
+	public void Move(Vector2 direction, float forsage=1) {
 		if (!rolling)
-			StartCoroutine(RollRoutine(transform.position + (Vector3)direction, Quaternion.LookRotation(transform.forward, face)));
+			StartCoroutine(RollRoutine(transform.position + (Vector3)direction, Quaternion.LookRotation(transform.forward, face), forsage));
 	}
 }
