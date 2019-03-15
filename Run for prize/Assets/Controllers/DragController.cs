@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DragController : MonoBehaviour {
-	private RaycastHit2D hit;
+	public LayerMask dragMask;
+	public LayerMask dirtyMask;
 
 	void Update() {
 		// Make sure the user pressed the mouse down
@@ -14,24 +15,38 @@ public class DragController : MonoBehaviour {
 
 		// We need to actually hit an object
 		hit = Physics2D.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition).origin,
-			Camera.main.ScreenPointToRay(Input.mousePosition).direction);
+		RaycastHit2D hit = Physics2D.Raycast(
+			Camera.main.ScreenPointToRay(Input.mousePosition).origin,
+			Vector2.zero,
+			Mathf.Infinity,
+			dragMask
+		);
 		if (!hit.collider)
 			return;
 
-		StartCoroutine("Drag");
+		StartCoroutine(Drag(hit));
 	}
 
-	private IEnumerator Drag() {
+	private IEnumerator Drag(RaycastHit2D hit) {
+		Vector3 old_pos = hit.transform.position;
 		while (Input.GetMouseButton(0)) {
 			Vector2 offset = (Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition) - hit.point;
 			hit.transform.Translate(offset);
 			hit.point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			yield return null;
 		}
+
+		hit.collider.enabled = false;
+		/*************************************/
 		Vector3 rounded_position = new Vector3(Mathf.RoundToInt(hit.transform.position.x),
 			Mathf.RoundToInt(hit.transform.position.y),
 			Mathf.RoundToInt(hit.transform.position.z)
 		);
-		hit.transform.position = rounded_position;
+		if (Physics2D.Raycast(rounded_position, Vector2.zero, Mathf.Infinity, dirtyMask))
+			hit.transform.position = old_pos;
+		else
+			hit.transform.position = rounded_position;
+		/*************************************/
+		hit.collider.enabled = true;
 	}
 }
