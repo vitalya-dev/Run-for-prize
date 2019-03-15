@@ -14,7 +14,6 @@ public class DragController : MonoBehaviour {
 		}
 
 		// We need to actually hit an object
-		hit = Physics2D.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition).origin,
 		RaycastHit2D hit = Physics2D.Raycast(
 			Camera.main.ScreenPointToRay(Input.mousePosition).origin,
 			Vector2.zero,
