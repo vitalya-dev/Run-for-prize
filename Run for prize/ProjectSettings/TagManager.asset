@@ -16,8 +16,8 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - Enemy
+  - Personage
+  - Artefact
   - Solid
   - Drag
   - Background
