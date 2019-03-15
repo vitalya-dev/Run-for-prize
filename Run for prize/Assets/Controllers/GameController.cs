@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	private IEnumerator RestartRoutine() {
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(4f);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
