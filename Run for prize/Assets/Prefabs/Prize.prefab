@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212679023943123562}
   - component: {fileID: 61514677413618630}
   - component: {fileID: 114621394625777052}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Prize
   m_TagString: Prize
   m_Icon: {fileID: 0}
