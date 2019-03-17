@@ -42,6 +42,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1754955577468852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4758528483021738}
+  - component: {fileID: 114124063613876826}
+  m_Layer: 0
+  m_Name: FontController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1783753325052058
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,6 +100,19 @@ Transform:
   m_Father: {fileID: 4790048057685536}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4758528483021738
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1754955577468852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4790048057685536}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4790048057685536
 Transform:
   m_ObjectHideFlags: 1
@@ -96,9 +125,23 @@ Transform:
   m_Children:
   - {fileID: 4475578850002780}
   - {fileID: 4054681434711488}
+  - {fileID: 4758528483021738}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114124063613876826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1754955577468852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eafad76c660b54469bdd02b0c049134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fonts:
+  - {fileID: 12800000, guid: 36b1db05f46193a46bf4e0aa2793fc2c, type: 3}
 --- !u!114 &114528827861295464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,6 +153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f590ce8ea66b04249b10e248368bbbf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  dirtyMask:
+    serializedVersion: 2
+    m_Bits: 4294963144
 --- !u!114 &114644265924734560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,4 +170,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3427c3a14bcaac47a20510b7ae0c97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  personage: {fileID: 1092758632527502, guid: ba9dd027364a75a448e0e9abad70c5f0, type: 2}
