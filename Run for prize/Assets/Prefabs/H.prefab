@@ -52,14 +52,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092758632527502}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -3, z: -2}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4891407649041140}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4891407649041140
 Transform:
   m_ObjectHideFlags: 1
@@ -140,11 +140,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rolling: 0
-  particlePrefab: {fileID: 1755414548416116, guid: 1e581042fcb41c649943dcf1ba739904,
-    type: 2}
   collisionMask:
     serializedVersion: 2
-    m_Bits: 4294967035
+    m_Bits: 4294962888
   velocity: 5
 --- !u!212 &212620193508932882
 SpriteRenderer:
