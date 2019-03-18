@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof (ExplodeController))]
 public class BombController : MonoBehaviour {
 	public LayerMask collisionMask;
 
@@ -10,7 +11,7 @@ public class BombController : MonoBehaviour {
 		RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.zero, 0.0f, collisionMask);
 		if (hit && hit.collider.transform.position == this.transform.position) {
 			hit.collider.GetComponent<ExplodeController>().Explode();
-			GameObject.Destroy(gameObject);
+			GetComponent<ExplodeController>().Explode();
 		}
 	}
 }
