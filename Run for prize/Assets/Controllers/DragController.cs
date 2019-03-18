@@ -28,6 +28,9 @@ public class DragController : MonoBehaviour {
 
 	private IEnumerator Drag(RaycastHit2D hit) {
 		Vector3 old_pos = hit.transform.position;
+		
+		hit.transform.position = new Vector3(old_pos.x, old_pos.y, Camera.main.transform.position.z + 1);
+
 		while (Input.GetMouseButton(0)) {
 			Vector2 offset = (Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition) - hit.point;
 			hit.transform.Translate(offset);
@@ -39,7 +42,7 @@ public class DragController : MonoBehaviour {
 		/*************************************/
 		Vector3 rounded_position = new Vector3(Mathf.RoundToInt(hit.transform.position.x),
 			Mathf.RoundToInt(hit.transform.position.y),
-			Mathf.RoundToInt(hit.transform.position.z)
+			Mathf.RoundToInt(old_pos.z)
 		);
 		if (Physics2D.Raycast(rounded_position, Vector2.zero, Mathf.Infinity, dirtyMask))
 			hit.transform.position = old_pos;
