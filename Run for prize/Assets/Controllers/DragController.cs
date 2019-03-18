@@ -20,7 +20,7 @@ public class DragController : MonoBehaviour {
 			Mathf.Infinity,
 			dragMask
 		);
-		if (!hit.collider)
+		if (!hit)
 			return;
 
 		StartCoroutine(Drag(hit));
