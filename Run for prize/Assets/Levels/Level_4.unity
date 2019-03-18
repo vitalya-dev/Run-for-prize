@@ -8947,55 +8947,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4634847995909334, guid: b2f5655d803f25b40bcc871d0f529f98,
     type: 2}
   m_PrefabInternal: {fileID: 878126312}
---- !u!1 &1312516389
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 1783753325052058, guid: c4d452d97f9156b4aaf53e76634625e7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1312516390}
-  - component: {fileID: 1312516391}
-  m_Layer: 0
-  m_Name: DragController2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1312516390
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4475578850002780, guid: c4d452d97f9156b4aaf53e76634625e7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1312516389}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1905380148}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1312516391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114528827861295464, guid: c4d452d97f9156b4aaf53e76634625e7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1312516389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f590ce8ea66b04249b10e248368bbbf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dragMask:
-    serializedVersion: 2
-    m_Bits: 18432
-  dirtyMask:
-    serializedVersion: 2
-    m_Bits: 4294962120
 --- !u!1001 &1325963153
 Prefab:
   m_ObjectHideFlags: 0
@@ -11673,7 +11624,7 @@ Prefab:
     - target: {fileID: 114528827861295464, guid: c4d452d97f9156b4aaf53e76634625e7,
         type: 2}
       propertyPath: dragMask.m_Bits
-      value: 10240
+      value: 8192
       objectReference: {fileID: 0}
     - target: {fileID: 1783753325052058, guid: c4d452d97f9156b4aaf53e76634625e7, type: 2}
       propertyPath: m_Name
@@ -11686,6 +11637,11 @@ Prefab:
     - target: {fileID: 4054681434711488, guid: c4d452d97f9156b4aaf53e76634625e7, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114528827861295464, guid: c4d452d97f9156b4aaf53e76634625e7,
+        type: 2}
+      propertyPath: dirtyMask.m_Bits
+      value: 26368
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4d452d97f9156b4aaf53e76634625e7, type: 2}
@@ -11781,6 +11737,55 @@ Transform:
   m_PrefabParentObject: {fileID: 4557836515899558, guid: c5c00252de11f924e90908021074f05c,
     type: 2}
   m_PrefabInternal: {fileID: 1894077890}
+--- !u!1 &1679739371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1783753325052058, guid: c4d452d97f9156b4aaf53e76634625e7,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1679739372}
+  - component: {fileID: 1679739373}
+  m_Layer: 0
+  m_Name: DragController2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1679739372
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4475578850002780, guid: c4d452d97f9156b4aaf53e76634625e7,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679739371}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1905380148}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1679739373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114528827861295464, guid: c4d452d97f9156b4aaf53e76634625e7,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679739371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f590ce8ea66b04249b10e248368bbbf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragMask:
+    serializedVersion: 2
+    m_Bits: 16384
+  dirtyMask:
+    serializedVersion: 2
+    m_Bits: 4294960072
 --- !u!4 &1682626874 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4634847995909334, guid: b2f5655d803f25b40bcc871d0f529f98,
