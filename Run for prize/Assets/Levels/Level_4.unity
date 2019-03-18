@@ -9384,11 +9384,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114378371407489484, guid: ba9dd027364a75a448e0e9abad70c5f0,
-        type: 2}
-      propertyPath: collisionMask.m_Bits
-      value: 4294938312
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba9dd027364a75a448e0e9abad70c5f0, type: 2}
   m_IsPrefabParent: 0
@@ -11628,7 +11623,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1783753325052058, guid: c4d452d97f9156b4aaf53e76634625e7, type: 2}
       propertyPath: m_Name
-      value: DragController1
+      value: DragController(Jump Pack)
       objectReference: {fileID: 0}
     - target: {fileID: 4758528483021738, guid: c4d452d97f9156b4aaf53e76634625e7, type: 2}
       propertyPath: m_RootOrder
@@ -11748,7 +11743,7 @@ GameObject:
   - component: {fileID: 1679739372}
   - component: {fileID: 1679739373}
   m_Layer: 0
-  m_Name: DragController2
+  m_Name: DragController(Bomb)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
