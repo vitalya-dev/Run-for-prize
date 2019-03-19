@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212601693446058316}
   - component: {fileID: 61905332958959944}
   - component: {fileID: 114839117048844236}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: Jump Pack E
   m_TagString: Jump Pack
   m_Icon: {fileID: 0}

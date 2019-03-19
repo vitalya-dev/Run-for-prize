@@ -11632,7 +11632,7 @@ Prefab:
     - target: {fileID: 114528827861295464, guid: c4d452d97f9156b4aaf53e76634625e7,
         type: 2}
       propertyPath: dirtyMask.m_Bits
-      value: 26368
+      value: 30464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4d452d97f9156b4aaf53e76634625e7, type: 2}
@@ -11776,7 +11776,7 @@ MonoBehaviour:
     m_Bits: 16384
   dirtyMask:
     serializedVersion: 2
-    m_Bits: 4294960072
+    m_Bits: 4294964168
 --- !u!4 &1682626874 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4634847995909334, guid: b2f5655d803f25b40bcc871d0f529f98,

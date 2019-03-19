@@ -155,10 +155,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 8192
   dirtyMask:
     serializedVersion: 2
-    m_Bits: 4294963144
+    m_Bits: 4294965192
 --- !u!114 &114644265924734560
 MonoBehaviour:
   m_ObjectHideFlags: 1
