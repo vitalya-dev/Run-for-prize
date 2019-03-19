@@ -288,6 +288,7 @@ TextureImporter:
     21300562: Bomb4
     21300564: Bomb
     21300566: Particle2
+    21300568: Spin
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -4075,20 +4076,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Bomb1
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 306
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
       name: Bomb
       rect:
         serializedVersion: 2
@@ -4110,6 +4097,20 @@ TextureImporter:
         y: 327
         width: 3
         height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spin
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 304
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
