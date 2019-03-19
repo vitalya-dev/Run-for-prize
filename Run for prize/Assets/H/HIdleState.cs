@@ -9,7 +9,6 @@ public class HIdleState : HBaseFSM {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
 
 		animator.SetFloat("Axis", 0.0f);
-
 		animator.SetBool("Rolling", false);
 		animator.SetBool("Grounded", p_controller.collisionBelow);
 	}
