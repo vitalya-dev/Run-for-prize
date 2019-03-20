@@ -289,6 +289,7 @@ TextureImporter:
     21300564: Bomb
     21300566: Particle2
     21300568: Spin
+    21300570: Ground Highlight
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -4108,6 +4109,20 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Ground Highlight
+      rect:
+        serializedVersion: 2
+        x: 32
         y: 304
         width: 16
         height: 16
