@@ -20,15 +20,16 @@ public class DragController : MonoBehaviour {
 			Mathf.Infinity,
 			dragMask
 		);
-		if (!hit)
+		if (!hit || hit.collider.GetComponent<Action>() == null)
 			return;
 
 		StartCoroutine(Drag(hit));
 	}
 
 	private IEnumerator Drag(RaycastHit2D hit) {
+		hit.collider.GetComponent<Action>().StartDrag();
+
 		Vector3 old_pos = hit.transform.position;
-		
 		hit.transform.position = new Vector3(old_pos.x, old_pos.y, Camera.main.transform.position.z + 1);
 
 		while (Input.GetMouseButton(0)) {
@@ -38,6 +39,7 @@ public class DragController : MonoBehaviour {
 			yield return null;
 		}
 
+		/*-----------------------------------*/
 		hit.collider.enabled = false;
 		/*************************************/
 		Vector3 rounded_position = new Vector3(Mathf.RoundToInt(hit.transform.position.x),
@@ -50,5 +52,8 @@ public class DragController : MonoBehaviour {
 			hit.transform.position = rounded_position;
 		/*************************************/
 		hit.collider.enabled = true;
+		/*-----------------------------------*/
+		
+		hit.collider.GetComponent<Action>().StopDrag();
 	}
 }
