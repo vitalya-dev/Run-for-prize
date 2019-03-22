@@ -15,6 +15,10 @@ public class HIdleState : HBaseFSM {
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+
+		if (p_controller.collisionBelow.tag == "Border")
+			animator.SetTrigger("Explode");
+		
 		if (Input.GetMouseButtonDown(1)) {
 			animator.SetBool("Flying", true);
 		}
