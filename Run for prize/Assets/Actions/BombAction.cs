@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(ExplodeController))]
-public class BombController : Action {
+public class BombAction : Action {
 	public LayerMask collisionMask;
 
 	// Update is called once per frame
