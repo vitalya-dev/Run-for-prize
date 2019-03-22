@@ -8,6 +8,7 @@ TagManager:
   - Solid
   - Prize
   - Background
+  - Border
   layers:
   - Default
   - TransparentFX
