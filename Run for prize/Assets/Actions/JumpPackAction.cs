@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpPackController : Action {
+public class JumpPackAction : Action {
 	public Vector2 direction;
 
 	public override void StartDrag() {

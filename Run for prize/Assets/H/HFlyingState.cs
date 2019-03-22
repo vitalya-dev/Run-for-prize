@@ -17,7 +17,7 @@ public class HFlyingState : HBaseFSM {
 					animator.SetTrigger("Explode");
 					break;
 				case "Jump Pack":
-					p_controller.face = p_controller.collisionAhead.GetComponent<JumpPackController>().direction;
+					p_controller.face = p_controller.collisionAhead.GetComponent<JumpPackAction>().direction;
 					break;
 				case "Prize":
 					animator.SetTrigger("Prized");
