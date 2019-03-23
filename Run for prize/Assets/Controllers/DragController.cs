@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DragController : MonoBehaviour {
-	public LayerMask dragMask;
-	public LayerMask dirtyMask;
 
 	void Update() {
 		// Make sure the user pressed the mouse down
@@ -17,8 +15,7 @@ public class DragController : MonoBehaviour {
 		RaycastHit2D hit = Physics2D.Raycast(
 			Camera.main.ScreenPointToRay(Input.mousePosition).origin,
 			Vector2.zero,
-			Mathf.Infinity,
-			dragMask
+			Mathf.Infinity
 		);
 		if (!hit || hit.collider.GetComponent<Action>() == null)
 			return;
@@ -27,7 +24,8 @@ public class DragController : MonoBehaviour {
 	}
 
 	private IEnumerator Drag(RaycastHit2D hit) {
-		hit.collider.GetComponent<Action>().StartDrag();
+		Action action = hit.collider.GetComponent<Action>();
+		action.StartDrag();
 
 		Vector3 old_pos = hit.transform.position;
 		hit.transform.position = new Vector3(old_pos.x, old_pos.y, Camera.main.transform.position.z + 1);
@@ -39,21 +37,17 @@ public class DragController : MonoBehaviour {
 			yield return null;
 		}
 
-		/*-----------------------------------*/
-		hit.collider.enabled = false;
-		/*************************************/
+		////////////////////////////////////////////////////////////////////////////////////
 		Vector3 rounded_position = new Vector3(Mathf.RoundToInt(hit.transform.position.x),
 			Mathf.RoundToInt(hit.transform.position.y),
 			Mathf.RoundToInt(old_pos.z)
 		);
-		if (Physics2D.Raycast(rounded_position, Vector2.zero, Mathf.Infinity, dirtyMask))
-			hit.transform.position = old_pos;
-		else
+		if (action.canBePlaced(rounded_position))
 			hit.transform.position = rounded_position;
-		/*************************************/
-		hit.collider.enabled = true;
-		/*-----------------------------------*/
-		
+		else
+			hit.transform.position = old_pos;
+		////////////////////////////////////////////////////////////////////////////////////
+
 		hit.collider.GetComponent<Action>().StopDrag();
 	}
 }
