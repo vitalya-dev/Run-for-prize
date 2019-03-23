@@ -14,6 +14,7 @@ public class HFlyingState : HBaseFSM {
 		if (!p_controller.rolling && p_controller.collisionAhead) {
 			switch (p_controller.collisionAhead.tag) {
 				case "Solid":
+				case "Border":
 					animator.SetTrigger("Explode");
 					break;
 				case "Jump Pack":
