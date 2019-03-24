@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61291354348310150}
   - component: {fileID: 114644361177185614}
   - component: {fileID: 114317111463749716}
-  m_Layer: 15
+  m_Layer: 10
   m_Name: Spin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,9 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd99e014d432434599d2aefd5a7e550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionMask:
-    serializedVersion: 2
-    m_Bits: 256
+  places: Player
 --- !u!212 &212310360310875890
 SpriteRenderer:
   m_ObjectHideFlags: 1

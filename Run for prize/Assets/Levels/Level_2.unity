@@ -10781,11 +10781,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114644361177185614, guid: 01486ea3c71e9b24298b7b6c2f44a78f,
-        type: 2}
-      propertyPath: places
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01486ea3c71e9b24298b7b6c2f44a78f, type: 2}
   m_IsPrefabParent: 0
@@ -11842,7 +11837,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1762562708}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Actions
   m_TagString: Untagged
   m_Icon: {fileID: 0}

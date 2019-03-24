@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114378371407489484}
   - component: {fileID: 61540929770705624}
   - component: {fileID: 114259963563392534}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: H
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 212620193508932882}
   - component: {fileID: 95623574445689298}
   - component: {fileID: 114427320450393354}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: H
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1092758632527502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: -2, z: -2}
+  m_LocalPosition: {x: 5, y: -5, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4891407649041140}
@@ -143,7 +143,7 @@ MonoBehaviour:
   rolling: 0
   collisionMask:
     serializedVersion: 2
-    m_Bits: 4294964936
+    m_Bits: 4294964424
   velocity: 5
 --- !u!114 &114427320450393354
 MonoBehaviour:

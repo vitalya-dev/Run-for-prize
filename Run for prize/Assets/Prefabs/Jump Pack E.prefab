@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212601693446058316}
   - component: {fileID: 61905332958959944}
   - component: {fileID: 114839117048844236}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: Jump Pack E
   m_TagString: Jump Pack
   m_Icon: {fileID: 0}
@@ -126,6 +126,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: 5}
+  m_AnchoredPosition: {x: -1, y: 5}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}

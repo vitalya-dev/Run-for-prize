@@ -970,10 +970,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1724598552040424, guid: 9661611625e32aa49a6fd68ac7a7452e, type: 2}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9661611625e32aa49a6fd68ac7a7452e, type: 2}
   m_IsPrefabParent: 0
@@ -6619,10 +6615,6 @@ Prefab:
       propertyPath: m_Name
       value: Jump Pack E (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1365381211087644, guid: a445c7a4ecbe6434a97824ba233dd91f, type: 2}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a445c7a4ecbe6434a97824ba233dd91f, type: 2}
   m_IsPrefabParent: 0
@@ -8770,10 +8762,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1365381211087644, guid: a445c7a4ecbe6434a97824ba233dd91f, type: 2}
-      propertyPath: m_Layer
-      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a445c7a4ecbe6434a97824ba233dd91f, type: 2}

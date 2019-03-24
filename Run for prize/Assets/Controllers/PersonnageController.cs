@@ -12,33 +12,43 @@ public class PersonnageController : MonoBehaviour {
 
 	public Collider2D collisionLeft {
 		get {
+			GetComponent<Collider2D>().enabled = false;
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, collisionMask);
+			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
 	}
 	public Collider2D collisionRight {
 		get {
+			GetComponent<Collider2D>().enabled = false;
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, collisionMask);
+			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
 	}
 
 	public Collider2D collisionAbove {
 		get {
+			GetComponent<Collider2D>().enabled = false;
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 0.6f, collisionMask);
+			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
 	}
 	public Collider2D collisionBelow {
 		get {
+			GetComponent<Collider2D>().enabled = false;
 			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, collisionMask);
+			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
 	}
 
 	public Collider2D collisionAhead {
 		get {
+			GetComponent<Collider2D>().enabled = false;
 			RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3) face, Vector2.zero, 0.1f, collisionMask);
+			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
 	}
