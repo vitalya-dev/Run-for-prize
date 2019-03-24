@@ -17,7 +17,7 @@ public class DragController : MonoBehaviour {
 			Vector2.zero,
 			Mathf.Infinity
 		);
-		if (!hit || hit.collider.GetComponent<Action>() == null)
+		if (!hit.collider || hit.collider.GetComponent<Action>() == null)
 			return;
 
 		StartCoroutine(Drag(hit));

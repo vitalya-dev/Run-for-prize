@@ -65,6 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebb0e18e30a8194eb82991cc529da74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  places: Background
   direction: {x: -1, y: 0}
 --- !u!212 &212755552653404632
 SpriteRenderer:
