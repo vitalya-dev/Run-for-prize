@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class HFallingState : HBaseFSM {
 	private Vector3 finalDestination;
-	private bool right_mouse_button_clicked = false;
 
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {

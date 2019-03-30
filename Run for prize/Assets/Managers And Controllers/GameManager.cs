@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
+	public GameObject[] levels;
+	public int current_level;
 
 	public void Restart() {
 		StartCoroutine(RestartRoutine());
@@ -19,9 +21,30 @@ public class GameManager : MonoBehaviour {
 		StartCoroutine(NextRoutine());
 	}
 
-	private IEnumerator NextRoutine() {
-		yield return new WaitForSeconds(4f);
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	public void Start() {
+		if (current_level < levels.Length) {
+			Camera.main.transform.position = new Vector3(
+				levels[current_level].transform.position.x,
+				levels[current_level].transform.position.y,
+				Camera.main.transform.position.z
+			);
+			levels[current_level].GetComponent<LevelController>().active = true;
+		}
 	}
 
+	private IEnumerator NextRoutine() {
+		yield return new WaitForSeconds(4f);
+
+		levels[current_level].GetComponent<LevelController>().active = false;
+		current_level += 1;
+
+		if (current_level < levels.Length) {
+			Camera.main.transform.position = new Vector3(
+				levels[current_level].transform.position.x,
+				levels[current_level].transform.position.y,
+				Camera.main.transform.position.z
+			);
+			levels[current_level].GetComponent<LevelController>().active = true;
+		}
+	}
 }
