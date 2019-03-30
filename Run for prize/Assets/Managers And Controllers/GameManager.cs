@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameController : MonoBehaviour {
+public class GameManager : MonoBehaviour {
 
 	public void Restart() {
 		StartCoroutine(RestartRoutine());
@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour {
 
 	private IEnumerator NextRoutine() {
 		yield return new WaitForSeconds(4f);
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
 }

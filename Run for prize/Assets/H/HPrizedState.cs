@@ -10,7 +10,7 @@ public class HPrizedState : HBaseFSM {
 		p_controller.collisionAhead.GetComponent<ExplodeController>().Explode();
 		p_controller.GetComponent<ExplodeController>().Explode();
 
-		GameObject.Find("GameController").GetComponent<GameController>().Next();
+		GameObject.Find("GameManager").GetComponent<GameManager>().Next();
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
