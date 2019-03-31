@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEditor;
 
-public class DragController : MonoBehaviour {
+public class DragManager : MonoBehaviour {
 
 	void Update() {
 		// Make sure the user pressed the mouse down
