@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 
 	private IEnumerator RestartRoutine() {
 		yield return new WaitForSeconds(4f);
-		levels[current_level].GetComponent<LevelController>().restart();
+		levels[current_level].GetComponent<LevelController>().Restart();
 	}
 
 	public void Next() {

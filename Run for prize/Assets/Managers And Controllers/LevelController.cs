@@ -14,11 +14,13 @@ public class LevelController : MonoBehaviour {
 	}
 
 	public void Awake() {
+		active = false;
+		
 		GameObject level = transform.Find("Level").gameObject;
 		levelClone = GameObject.Instantiate(level, level.transform.position, Quaternion.identity, transform);
 	}
 
-	public void restart() {
+	public void Restart() {
 		GameObject oldLevel = transform.Find("Level").gameObject;
 		//////////////////////////////////////////////////////////
 		GameObject newLevel = GameObject.Instantiate(levelClone, levelClone.transform.position, Quaternion.identity, transform);
