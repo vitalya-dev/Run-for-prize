@@ -1,12 +1,22 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class Level : MonoBehaviour {
 	public int cols;
 	public int rows;
 
+	void Update() {
+		if (Application.isEditor)
+			transform.position = new Vector3(
+				Mathf.RoundToInt(transform.position.x),
+				Mathf.RoundToInt(transform.position.y),
+				Mathf.RoundToInt(transform.position.z)
+			);
+	}
+
 	private void OnDrawGizmos() {
-		DrawGizmos(new Vector3(-1.0f/2.0f * rows, -1.0f/2.0f * cols, 0));
+		DrawGizmos(new Vector3(-1.0f / 2.0f * rows, -1.0f / 2.0f * cols, 0));
 	}
 
 	private void DrawGizmos(Vector3 origin) {
