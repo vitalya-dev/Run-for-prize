@@ -16,7 +16,7 @@ public class Level : MonoBehaviour {
 	}
 
 	private void OnDrawGizmos() {
-		DrawGizmos(new Vector3(-1.0f / 2.0f * rows, -1.0f / 2.0f * cols, 0));
+		DrawGizmos(new Vector3(-0.5f * cols, -0.5f * rows, 0));
 	}
 
 	private void DrawGizmos(Vector3 origin) {

@@ -35,7 +35,7 @@ public class PaletteWindow : EditorWindow {
 	}
 
 	private void OnGUI() {
-		if (Selection.activeTransform == null) {
+		if (!Selection.activeGameObject || Selection.activeGameObject.name != "Level") {
 			EditorGUILayout.HelpBox("Select level", MessageType.Info);
 			return;
 		}
@@ -58,6 +58,7 @@ public class PaletteWindow : EditorWindow {
 		if (index != -1) {
 			GameObject piece = PrefabUtility.InstantiatePrefab(level_pieces[index]) as GameObject;
 			piece.transform.parent = Selection.activeTransform;
+
 		}
 	}
 
