@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: 490a59491f2420049be047194c51bfe2
-timeCreated: 1554788109
+timeCreated: 1554873421
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Ground
     21300002: Background
+    21300004: Prize
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -72,6 +73,19 @@ TextureImporter:
         serializedVersion: 2
         x: 48
         y: 304
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Prize
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
         width: 16
         height: 16
       alignment: 1

@@ -12,6 +12,8 @@ public class PaletteWindow : EditorWindow {
 
 	GUISkin skin;
 
+	private string error = "";
+
 	public static void ShowPalette() {
 		instance = (PaletteWindow) EditorWindow.GetWindow(typeof(PaletteWindow));
 	}
@@ -35,11 +37,9 @@ public class PaletteWindow : EditorWindow {
 	}
 
 	private void OnGUI() {
-		if (!Selection.activeGameObject || Selection.activeGameObject.name != "Level") {
-			EditorGUILayout.HelpBox("Select level", MessageType.Info);
-			return;
-		}
-		/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+		// if (!Selection.activeGameObject || Selection.activeGameObject.name != "Level") {
+
+		// }
 		List<GUIContent> contents = new List<GUIContent>();
 		foreach (var piece in level_pieces) {
 			GUIContent content = new GUIContent();
@@ -47,6 +47,9 @@ public class PaletteWindow : EditorWindow {
 			content.text = piece.name;
 			contents.Add(content);
 		}
+
+		EditorGUILayout.BeginVertical("box");
+
 		/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 		scroll_position = GUILayout.BeginScrollView(scroll_position);
 		int index = GUILayout.SelectionGrid(-1, contents.ToArray(),
@@ -55,11 +58,29 @@ public class PaletteWindow : EditorWindow {
 		);
 		GUILayout.EndScrollView();
 		/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-		if (index != -1) {
-			GameObject piece = PrefabUtility.InstantiatePrefab(level_pieces[index]) as GameObject;
-			piece.transform.parent = Selection.activeTransform;
 
+		/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+		if (index != -1) {
+			if (!Selection.activeGameObject ||
+				Selection.activeGameObject.name != level_pieces[index].GetComponent<LevelPiece>().parent
+			) {
+				error = "Wrong parent";
+			} else {
+				GameObject piece = PrefabUtility.InstantiatePrefab(level_pieces[index]) as GameObject;
+				piece.transform.parent = Selection.activeTransform;
+
+				Selection.activeGameObject = piece;
+
+				error = "";
+			}
 		}
+		/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+		if (error != "")
+			EditorGUILayout.HelpBox(error, MessageType.Info);
+
+		EditorGUILayout.EndVertical();
 	}
 
 	public static List<GameObject> LoadGameObjects(string path, string filter) {
