@@ -1,19 +1,11 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[ExecuteInEditMode]
+
 public class Level : MonoBehaviour {
 	public int cols;
 	public int rows;
 
-	void Update() {
-		if (Application.isEditor)
-			transform.position = new Vector3(
-				Mathf.RoundToInt(transform.position.x),
-				Mathf.RoundToInt(transform.position.y),
-				Mathf.RoundToInt(transform.position.z)
-			);
-	}
 
 	private void OnDrawGizmos() {
 		DrawGizmos(new Vector3(-0.5f * cols, -0.5f * rows, 0));
