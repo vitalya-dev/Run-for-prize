@@ -18,17 +18,17 @@ public class PersonageController : MonoBehaviour {
 	}
 
 	public void Roll(float axis, float forsage = 1) {
-		if (!rolling)
+		if (!rolling) {
+			rolling = true;
 			StartCoroutine(RollRoutine(
 				transform.position + new Vector3(axis, 0, 0),
 				Quaternion.LookRotation(transform.forward, axis * transform.right),
 				forsage
 			));
+		}
 	}
 
 	private IEnumerator RollRoutine(Vector3 finalPosition, Quaternion finalRotation, float forsage) {
-		rolling = true;
-
 		Vector3 positionDeparture = transform.position;
 		Quaternion rotationDeparture = transform.rotation;
 
@@ -40,7 +40,7 @@ public class PersonageController : MonoBehaviour {
 
 			transform.position = Vector3.Lerp(positionDeparture, finalPosition, elapsed_time / time_needed);
 			transform.rotation = Quaternion.Slerp(rotationDeparture, finalRotation, elapsed_time / time_needed);
-			
+
 			yield return null;
 		} while (elapsed_time / time_needed < 1);
 
