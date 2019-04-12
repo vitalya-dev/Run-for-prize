@@ -35,16 +35,17 @@ public class PersonageController : MonoBehaviour {
 		float time_needed = Vector3.Distance(positionDeparture, finalPosition) / (velocity * forsage);
 		float elapsed_time = 0;
 
-		
-		while (Vector3.Distance(transform.position, finalPosition) > 0.001f) {
+		do {
+			elapsed_time += Time.deltaTime;
+
 			transform.position = Vector3.Lerp(positionDeparture, finalPosition, elapsed_time / time_needed);
 			transform.rotation = Quaternion.Slerp(rotationDeparture, finalRotation, elapsed_time / time_needed);
-			elapsed_time += Time.deltaTime;
+			
 			yield return null;
-		}
+		} while (elapsed_time / time_needed < 1);
 
-		transform.position = finalPosition;
-		transform.rotation = finalRotation;
+		// transform.position = finalPosition;
+		// transform.rotation = finalRotation;
 
 		rolling = false;
 	}
