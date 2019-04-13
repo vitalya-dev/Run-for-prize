@@ -15,6 +15,8 @@ public class HeroIdleState : HBaseFSM {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
 
+		animator.SetBool("Grounded", personage.collisionBelow);
+		
 		float input = Input.GetAxisRaw("Horizontal");
 		if (Mathf.Abs(input) > 0) {
 			float axis = Mathf.Sign(input);

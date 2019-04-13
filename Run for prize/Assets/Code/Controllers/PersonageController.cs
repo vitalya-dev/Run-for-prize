@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+[RequireComponent (typeof(Collider2D))]
 public class PersonageController : MonoBehaviour {
 
 	[HideInInspector]

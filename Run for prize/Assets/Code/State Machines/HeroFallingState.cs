@@ -11,6 +11,11 @@ public class HeroFallingState : HBaseFSM {
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
+
+		if (!personage.collisionBelow && !personage.moving)
+			personage.Move(new Vector2(0, -1));
+
+		animator.SetBool("Grounded", personage.collisionBelow && !personage.moving);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
