@@ -1,32 +1,22 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class HeroIdleState : HBaseFSM {
+public class HeroFallingState : HBaseFSM {
 
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
-		
-		animator.SetFloat("Axis", 0.0f);
-		animator.SetBool("Grounded", personage.collisionBelow);
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
-
-		float input = Input.GetAxisRaw("Horizontal");
-		if (Mathf.Abs(input) > 0) {
-			float axis = Mathf.Sign(input);
-			animator.SetFloat("Axis", axis);
-		} else
-			animator.SetFloat("Axis", 0.0f);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-	override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		base.OnStateExit(animator, stateInfo, layerIndex);
-	}
+	//override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+	//
+	//}
 
 	// OnStateMove is called right after Animator.OnAnimatorMove(). Code that processes and affects root motion should be implemented here
 	//override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
