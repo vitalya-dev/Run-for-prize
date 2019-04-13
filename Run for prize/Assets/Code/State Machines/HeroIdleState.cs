@@ -6,17 +6,17 @@ public class HeroIdleState : HBaseFSM {
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
-		
+
 		animator.SetFloat("Axis", 0.0f);
 		animator.SetBool("Grounded", personage.collisionBelow);
+		animator.SetBool("Lefted", personage.collisionLeft);
+		animator.SetBool("Righted", personage.collisionRight);
+
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
-
-		animator.SetBool("Grounded", personage.collisionBelow);
-		
 		float input = Input.GetAxisRaw("Horizontal");
 		if (Mathf.Abs(input) > 0) {
 			float axis = Mathf.Sign(input);
