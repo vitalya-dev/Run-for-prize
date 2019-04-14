@@ -29,7 +29,7 @@ public class PersonageController : MonoBehaviour {
 	public Collider2D collisionLeft {
 		get {
 			GetComponent<Collider2D>().enabled = false;
-			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, 0.6f, collisionMask);
+			RaycastHit2D hit = Physics2D.Raycast(transform.position + Vector3.left, Vector2.zero, 0.1f, collisionMask);
 			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
@@ -38,7 +38,7 @@ public class PersonageController : MonoBehaviour {
 	public Collider2D collisionRight {
 		get {
 			GetComponent<Collider2D>().enabled = false;
-			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 0.6f, collisionMask);
+			RaycastHit2D hit = Physics2D.Raycast(transform.position + Vector3.right, Vector2.zero, 0.1f, collisionMask);
 			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
@@ -47,7 +47,7 @@ public class PersonageController : MonoBehaviour {
 	public Collider2D collisionAbove {
 		get {
 			GetComponent<Collider2D>().enabled = false;
-			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, 0.6f, collisionMask);
+			RaycastHit2D hit = Physics2D.Raycast(transform.position + Vector3.up, Vector2.zero, 0.1f, collisionMask);
 			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
@@ -56,7 +56,7 @@ public class PersonageController : MonoBehaviour {
 	public Collider2D collisionBelow {
 		get {
 			GetComponent<Collider2D>().enabled = false;
-			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.6f, collisionMask);
+			RaycastHit2D hit = Physics2D.Raycast(transform.position + Vector3.down, Vector2.zero, 0.1f, collisionMask);
 			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
