@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 490a59491f2420049be047194c51bfe2
-timeCreated: 1554960224
+timeCreated: 1555227158
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,9 @@ TextureImporter:
     21300002: Background
     21300004: Prize
     21300006: Hero
+    21300008: Hero Fly 1
+    21300010: Hero Fly 2
+    21300012: Hero Fly 3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -98,13 +101,52 @@ TextureImporter:
       name: Hero
       rect:
         serializedVersion: 2
-        x: 144
+        x: 147
         y: 256
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hero Fly 1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 257
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 3, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hero Fly 2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 257
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 3, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Hero Fly 3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 257
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.75, y: 0.5}
+      border: {x: 3, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []
