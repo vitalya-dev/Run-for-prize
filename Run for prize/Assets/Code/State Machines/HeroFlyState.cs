@@ -11,7 +11,7 @@ public class HeroFlyState : HBaseFSM {
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
-		personage.Move(personage.face);
+		personage.Move(personage.face, 2);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

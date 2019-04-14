@@ -17,10 +17,10 @@ public class PersonageController : MonoBehaviour {
 
 	public Vector2 face {
 		get {
-			return transform.up;
+			return transform.right;
 		}
 		set {
-			transform.rotation = Quaternion.LookRotation(transform.forward, value);
+			transform.rotation = Quaternion.FromToRotation(Vector2.right, value);
 		}
 	}
 
@@ -76,7 +76,7 @@ public class PersonageController : MonoBehaviour {
 			StartCoroutine(
 				RollRoutine(
 					transform.position + new Vector3(axis, 0, 0),
-					Quaternion.LookRotation(transform.forward, axis * transform.right),
+					transform.rotation * Quaternion.FromToRotation(Vector2.up, axis * Vector2.right),
 					forsage
 				));
 
@@ -111,7 +111,7 @@ public class PersonageController : MonoBehaviour {
 			StartCoroutine(
 				RollRoutine(
 					transform.position + (Vector3) direction,
-					Quaternion.LookRotation(transform.forward, face),
+					transform.rotation,
 					forsage
 				));
 	}
