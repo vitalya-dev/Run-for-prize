@@ -13,7 +13,7 @@ public class MenuItems {
 		Selection.activeGameObject = level;
 	}
 
-	[MenuItem("Run For Prize/Show Palette _p")]
+	[MenuItem("Run For Prize/Show Palette")]
 	public static void PalleteShow() {
 		PaletteWindow.ShowPalette();
 	}

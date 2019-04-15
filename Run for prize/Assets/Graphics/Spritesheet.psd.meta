@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 490a59491f2420049be047194c51bfe2
-timeCreated: 1555227158
+timeCreated: 1555303524
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -11,6 +11,9 @@ TextureImporter:
     21300008: Hero Fly 1
     21300010: Hero Fly 2
     21300012: Hero Fly 3
+    21300014: Particle 1
+    21300016: Particle 2
+    21300018: Particle 3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -147,6 +150,45 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.75, y: 0.5}
       border: {x: 3, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Particle 1
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 327
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Particle 2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 309
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Particle 3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 327
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []
