@@ -8,6 +8,8 @@ public class HeroCrashState : HBaseFSM {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
 
 		personage.GetComponent<ExplodeController>().Explode();
+
+		GameObject.Find("GameManager").GetComponent<GameManager>().LevelRestart();
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

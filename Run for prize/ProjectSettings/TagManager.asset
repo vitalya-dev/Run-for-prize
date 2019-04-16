@@ -9,6 +9,7 @@ TagManager:
   - Prize
   - Background
   - Border
+  - Level
   layers:
   - Default
   - TransparentFX
