@@ -2,14 +2,12 @@
 using UnityEngine;
 
 public class ExplodeController : MonoBehaviour {
-
-	public ParticleSystem explosion_prefab;
+	public GameObject bomb_prefab;
 
 	public void Explode() {
-		ParticleSystem explosion = Instantiate(explosion_prefab);
-		explosion.Play();
+		GameObject bomb = Instantiate(bomb_prefab);
 
-		GameObject.Destroy(explosion.gameObject, explosion.startLifetime);
+		GameObject.Destroy(bomb.gameObject, bomb.GetComponent<ParticleSystem>().startLifetime);
 		GameObject.Destroy(gameObject);
 	}
 }

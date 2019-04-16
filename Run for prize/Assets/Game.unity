@@ -4371,7 +4371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05dae053de607b940ba22bbd57cb566e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion_prefab: {fileID: 198000011028174384, guid: 95d032e4f483a2240b95a4c210ae6461,
+  bomb_prefab: {fileID: 1000012719314770, guid: 95d032e4f483a2240b95a4c210ae6461,
     type: 2}
 --- !u!1001 &1246025235
 Prefab:
