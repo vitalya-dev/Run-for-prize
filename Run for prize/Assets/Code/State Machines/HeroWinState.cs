@@ -12,7 +12,7 @@ public class HeroWinState : HBaseFSM {
 		personage.collisionAhead.GetComponent<ExplodeController>().Explode();
 		/* ================================================================= */
 
-		GameObject.Find("GameManager").GetComponent<GameManager>().LevelRestart();
+		GameObject.Find("GameManager").GetComponent<GameManager>().LevelNext();
 		
 	}
 

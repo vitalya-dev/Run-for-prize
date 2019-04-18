@@ -4,9 +4,21 @@ using UnityEngine;
 public class LevelController : MonoBehaviour {
 	private GameObject level_backup;
 
+	public bool active {
+		get {
+			return gameObject.transform.Find("Level").gameObject.activeSelf;
+		}
+		set {
+			gameObject.transform.Find("Level").gameObject.SetActive(value);
+		}
+	}
+
 	// Use this for initialization
 	void Awake() {
-		level_backup = GameObject.Instantiate(transform.Find("Level").gameObject, Vector3.zero, Quaternion.identity, transform) as GameObject;
+		GameObject level = transform.Find("Level").gameObject;
+		level.SetActive(false);
+
+		level_backup = GameObject.Instantiate(level, Vector3.zero, Quaternion.identity, transform) as GameObject;
 		level_backup.SetActive(false);
 	}
 
