@@ -1,30 +1,17 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class HeroFlyState : HBaseFSM {
+public class HeroWinState : StateMachineBehaviour {
 
-	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		base.OnStateEnter(animator, stateInfo, layerIndex);
-	}
+	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+	//override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+	//
+	//}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
-	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		base.OnStateUpdate(animator, stateInfo, layerIndex);
-
-		if (!personage.moving && personage.collisionAhead) {
-			switch (personage.collisionAhead.tag) {
-				case "Solid":
-					animator.SetTrigger("Crash");
-					break;
-				case "Prize":
-					animator.SetTrigger("Win");
-					break;
-			}
-		} else {
-			personage.Move(personage.face, 2);
-		}
-	}
+	//override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
+	//
+	//}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
 	//override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
