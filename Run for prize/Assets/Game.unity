@@ -1212,6 +1212,8 @@ GameObject:
   - 4: {fileID: 496322622}
   - 212: {fileID: 496322624}
   - 114: {fileID: 496322623}
+  - 61: {fileID: 496322626}
+  - 114: {fileID: 496322625}
   m_Layer: 0
   m_Name: Fly Left
   m_TagString: Untagged
@@ -1278,6 +1280,31 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &496322625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496322621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac657835c5de37449a3747e10ded569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &496322626
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496322621}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.5, y: -0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &551029268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,6 +1685,8 @@ GameObject:
   - 4: {fileID: 789360959}
   - 212: {fileID: 789360961}
   - 114: {fileID: 789360960}
+  - 61: {fileID: 789360963}
+  - 114: {fileID: 789360962}
   m_Layer: 0
   m_Name: Fly Up
   m_TagString: Untagged
@@ -1724,6 +1753,31 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &789360962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 789360958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac657835c5de37449a3747e10ded569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &789360963
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 789360958}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.5, y: -0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &832267433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1875,8 @@ GameObject:
   - 4: {fileID: 874258826}
   - 212: {fileID: 874258828}
   - 114: {fileID: 874258827}
+  - 61: {fileID: 874258830}
+  - 114: {fileID: 874258829}
   m_Layer: 0
   m_Name: Fly
   m_TagString: Untagged
@@ -1887,6 +1943,31 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &874258829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 874258825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac657835c5de37449a3747e10ded569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &874258830
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 874258825}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.5, y: -0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &908128276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,6 +2518,46 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1142347595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1142347597}
+  - 114: {fileID: 1142347596}
+  m_Layer: 10
+  m_Name: DragManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1142347596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142347595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03b0864ef14a89a4b8d4bbd8a4f7b756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1142347597
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142347595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.17, y: 8.62, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1 &1196376186
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,6 +2568,8 @@ GameObject:
   - 4: {fileID: 1196376187}
   - 212: {fileID: 1196376189}
   - 114: {fileID: 1196376188}
+  - 61: {fileID: 1196376191}
+  - 114: {fileID: 1196376190}
   m_Layer: 0
   m_Name: Left To Right
   m_TagString: Untagged
@@ -2513,6 +2636,31 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1196376190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196376186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac657835c5de37449a3747e10ded569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1196376191
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196376186}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.5, y: -0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1251999074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2905,6 +3053,8 @@ GameObject:
   - 4: {fileID: 1338937035}
   - 212: {fileID: 1338937037}
   - 114: {fileID: 1338937036}
+  - 61: {fileID: 1338937039}
+  - 114: {fileID: 1338937038}
   m_Layer: 0
   m_Name: Roll
   m_TagString: Untagged
@@ -2971,6 +3121,31 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1338937038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1338937034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac657835c5de37449a3747e10ded569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1338937039
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1338937034}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.5, y: -0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1342204178
 GameObject:
   m_ObjectHideFlags: 0
@@ -3120,7 +3295,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1351534436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13, y: 6, z: 0}
+  m_LocalPosition: {x: -18.32, y: 7.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -3136,6 +3311,8 @@ GameObject:
   - 4: {fileID: 1387611639}
   - 212: {fileID: 1387611641}
   - 114: {fileID: 1387611640}
+  - 61: {fileID: 1387611643}
+  - 114: {fileID: 1387611642}
   m_Layer: 0
   m_Name: Right To Left
   m_TagString: Untagged
@@ -3202,6 +3379,31 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1387611642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1387611638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac657835c5de37449a3747e10ded569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1387611643
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1387611638}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.5, y: -0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!1 &1399937012
 GameObject:
   m_ObjectHideFlags: 0
