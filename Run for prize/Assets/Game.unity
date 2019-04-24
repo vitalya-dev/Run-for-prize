@@ -1217,7 +1217,7 @@ GameObject:
   - 114: {fileID: 496322625}
   m_Layer: 10
   m_Name: Arrow Left
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1289,10 +1289,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 496322621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8d809b4b6e7fd64ca4f884a528ad777, type: 3}
+  m_Script: {fileID: 11500000, guid: 05dae053de607b940ba22bbd57cb566e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0}
+  bomb_prefab: {fileID: 1000012719314770, guid: 95d032e4f483a2240b95a4c210ae6461,
+    type: 2}
 --- !u!61 &496322626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1318,7 +1319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d809b4b6e7fd64ca4f884a528ad777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0}
+  from_direction: {x: 0, y: 0}
+  to_direction: {x: -1, y: 0}
 --- !u!1 &551029268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,7 +1781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d809b4b6e7fd64ca4f884a528ad777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 1}
+  from_direction: {x: 0, y: 0}
+  to_direction: {x: 0, y: 1}
 --- !u!61 &789360963
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2599,9 +2602,10 @@ GameObject:
   - 114: {fileID: 1196376188}
   - 61: {fileID: 1196376191}
   - 114: {fileID: 1196376190}
+  - 114: {fileID: 1196376192}
   m_Layer: 10
   m_Name: Arrow Left To Right
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2676,7 +2680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d809b4b6e7fd64ca4f884a528ad777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0}
+  from_direction: {x: -1, y: 0}
+  to_direction: {x: 1, y: 0}
 --- !u!61 &1196376191
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2691,6 +2696,19 @@ BoxCollider2D:
   m_Offset: {x: 0.5, y: -0.5}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &1196376192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1196376186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05dae053de607b940ba22bbd57cb566e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bomb_prefab: {fileID: 1000012719314770, guid: 95d032e4f483a2240b95a4c210ae6461,
+    type: 2}
 --- !u!1 &1251999074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,7 +2740,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1251999074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.5, y: -1.5, z: 0}
+  m_LocalPosition: {x: 10.5, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -3343,9 +3361,10 @@ GameObject:
   - 114: {fileID: 1387611640}
   - 61: {fileID: 1387611643}
   - 114: {fileID: 1387611642}
+  - 114: {fileID: 1387611644}
   m_Layer: 10
   m_Name: Arrow Right To Left
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3420,7 +3439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d809b4b6e7fd64ca4f884a528ad777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0}
+  from_direction: {x: 1, y: 0}
+  to_direction: {x: -1, y: 0}
 --- !u!61 &1387611643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3435,6 +3455,19 @@ BoxCollider2D:
   m_Offset: {x: 0.5, y: -0.5}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &1387611644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1387611638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05dae053de607b940ba22bbd57cb566e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bomb_prefab: {fileID: 1000012719314770, guid: 95d032e4f483a2240b95a4c210ae6461,
+    type: 2}
 --- !u!1 &1399937012
 GameObject:
   m_ObjectHideFlags: 0

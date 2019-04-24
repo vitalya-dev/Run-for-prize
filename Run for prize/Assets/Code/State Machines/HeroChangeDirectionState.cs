@@ -7,12 +7,23 @@ public class HeroChangeDirectionState : HBaseFSM {
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
-		
-		new_direction = personage.collisionAhead.GetComponent<ArrowAction>().direction;
 
-		personage.collisionAhead.GetComponent<ExplodeController>().Explode();
-
-		personage.Move(personage.face, 2);
+		Collider2D collisionAhead = personage.collisionAhead;
+		if (
+			collisionAhead.GetComponent<ArrowAction>().from_direction == Vector2.zero ||
+			collisionAhead.GetComponent<ArrowAction>().from_direction == personage.face
+		) {
+			/* ####################################################################### */
+			new_direction = collisionAhead.GetComponent<ArrowAction>().to_direction;
+			/* ####################################################################### */
+			collisionAhead.GetComponent<ExplodeController>().Explode();
+			/* ####################################################################### */
+			personage.Move(personage.face, 2);
+			/* ####################################################################### */
+		} else {
+			collisionAhead.GetComponent<ExplodeController>().Explode();
+			animator.SetTrigger("Crash");
+		}
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
