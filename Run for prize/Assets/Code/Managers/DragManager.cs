@@ -15,14 +15,14 @@ public class DragManager : MonoBehaviour {
 			Vector2.zero,
 			Mathf.Infinity
 		);
-		if (!hit.collider || hit.collider.GetComponent<ActionController>() == null)
+		if (!hit.collider || hit.collider.GetComponent<Action>() == null)
 			return;
 
 		StartCoroutine(Drag(hit));
 	}
 
 	private IEnumerator Drag(RaycastHit2D hit) {
-		ActionController action = hit.collider.GetComponent<ActionController>();
+		Action action = hit.collider.GetComponent<Action>();
 
 		Vector3 old_pos = hit.transform.position;
 		hit.transform.position = new Vector3(old_pos.x, old_pos.y, Camera.main.transform.position.z + 1);

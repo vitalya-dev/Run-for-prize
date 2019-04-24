@@ -1,18 +1,18 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1555961349
+timeCreated: 1556080849
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Solid
     21300002: Prize
     21300004: Background
-    21300006: Fly UP
+    21300006: Arrow Up
     21300008: Fly
     21300010: Roll
-    21300012: Left To Right
-    21300014: Fly Left
-    21300016: Right To Left
+    21300012: Arrow Left To Right
+    21300014: Arrow Left
+    21300016: Arrow Right To Left
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -100,7 +100,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Fly UP
+      name: Arrow Up
       rect:
         serializedVersion: 2
         x: 128
@@ -139,7 +139,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Left To Right
+      name: Arrow Left To Right
       rect:
         serializedVersion: 2
         x: 176
@@ -152,10 +152,10 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Fly Left
+      name: Arrow Left
       rect:
         serializedVersion: 2
-        x: 192
+        x: 193
         y: 512
         width: 16
         height: 16
@@ -165,10 +165,10 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Right To Left
+      name: Arrow Right To Left
       rect:
         serializedVersion: 2
-        x: 208
+        x: 207
         y: 512
         width: 16
         height: 16

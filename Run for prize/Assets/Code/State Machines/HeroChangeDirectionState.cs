@@ -1,32 +1,27 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class HeroFlyState : HBaseFSM {
+public class HeroChangeDirectionState : HBaseFSM {
+	Vector2 new_direction;
 
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
+		
+		new_direction = personage.collisionAhead.GetComponent<ArrowAction>().direction;
+
+		personage.collisionAhead.GetComponent<ExplodeController>().Explode();
+
+		personage.Move(personage.face, 2);
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		base.OnStateUpdate(animator, stateInfo, layerIndex);
+		base.OnStateEnter(animator, stateInfo, layerIndex);
 
-		if (!personage.moving && personage.collisionAhead) {
-			Collider2D collisionAhead = personage.collisionAhead;
-			switch (collisionAhead.tag) {
-				case "Solid":
-					animator.SetTrigger("Crash");
-					break;
-				case "Arrow":
-					animator.SetTrigger("Change Direction");
-					break;
-				case "Prize":
-					animator.SetTrigger("Win");
-					break;
-			}
-		} else {
-			personage.Move(personage.face, 2);
+		if (!personage.moving) {
+			personage.face = new_direction;
+			animator.SetTrigger("Fly");
 		}
 	}
 
