@@ -10,6 +10,7 @@ TagManager:
   - Background
   - Border
   - Level
+  - Fly
   layers:
   - Default
   - TransparentFX

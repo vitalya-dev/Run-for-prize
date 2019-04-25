@@ -7,27 +7,28 @@ public class HeroIdleState : HBaseFSM {
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
 
-		animator.SetFloat("Axis", 0.0f);
 		animator.SetBool("Grounded", personage.collisionBelow);
-		animator.SetBool("Lefted", personage.collisionLeft);
-		animator.SetBool("Righted", personage.collisionRight);
-
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
 
-		if (Input.GetMouseButtonDown(1)) {
-			animator.SetBool("Fly", true);
+		Collider2D collisionAhead = personage.collisionLeft;
+		if (collisionAhead) {
+			switch (collisionAhead.tag) {
+				case "Fly":
+					personage.face = new Vector2(-1, 0);
+					collisionAhead.GetComponent<ExplodeController>().Explode();
+					animator.SetTrigger("Fly");
+					break;
+				default:
+					break;
+			}
+		} else {
+			animator.SetFloat("Axis", -1.0f);
+			animator.SetBool("Rolling", true);
 		}
-
-		float input = Input.GetAxisRaw("Horizontal");
-		if (Mathf.Abs(input) > 0) {
-			float axis = Mathf.Sign(input);
-			animator.SetFloat("Axis", axis);
-		} else
-			animator.SetFloat("Axis", 0.0f);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
