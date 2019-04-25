@@ -11,6 +11,7 @@ TagManager:
   - Border
   - Level
   - Fly
+  - Roll
   layers:
   - Default
   - TransparentFX

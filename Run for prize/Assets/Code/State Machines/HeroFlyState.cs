@@ -24,6 +24,11 @@ public class HeroFlyState : HBaseFSM {
 				case "Prize":
 					animator.SetTrigger("Win");
 					break;
+				case "Roll":
+					collisionAhead.GetComponent<ExplodeController>().Explode();
+					animator.SetBool("Rolling", true);
+					animator.SetFloat("Axis", personage.face.x);
+					break;
 			}
 		} else {
 			personage.Move(personage.face, 2);
