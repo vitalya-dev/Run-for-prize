@@ -20,7 +20,7 @@ public class PersonageController : MonoBehaviour {
 			return transform.right;
 		}
 		set {
-			transform.rotation = Quaternion.FromToRotation(Vector2.right, value);
+			transform.rotation = Quaternion.Euler(0, 0, Vector2.Angle(Vector2.right, value));
 		}
 	}
 
