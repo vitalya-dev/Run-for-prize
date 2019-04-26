@@ -13,7 +13,7 @@ public class HeroIdleState : HBaseFSM {
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
-		
+
 		Collider2D collisionUnder = personage.collisionUnder;
 		if (collisionUnder) {
 			switch (collisionUnder.tag) {
@@ -25,6 +25,9 @@ public class HeroIdleState : HBaseFSM {
 				case "Arrow":
 					animator.SetFloat("Axis", animator.GetFloat("Axis") * -1);
 					collisionUnder.GetComponent<ExplodeController>().Explode();
+					break;
+				case "Prize":
+					animator.SetTrigger("Win");
 					break;
 				default:
 					break;
