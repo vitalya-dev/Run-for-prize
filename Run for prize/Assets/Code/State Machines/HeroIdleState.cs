@@ -14,7 +14,16 @@ public class HeroIdleState : HBaseFSM {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
 
-		Collider2D collisionAhead = personage.collisionLeft;
+		int axis = Mathf.RoundToInt(animator.GetFloat("Axis"));
+		
+		/* ==================================================== */
+		Collider2D collisionAhead;
+		if (axis <= 0)
+			collisionAhead = personage.collisionLeft;
+		else
+			collisionAhead = personage.collisionRight;
+		/* ==================================================== */
+
 		if (collisionAhead) {
 			switch (collisionAhead.tag) {
 				case "Fly":
@@ -22,11 +31,14 @@ public class HeroIdleState : HBaseFSM {
 					collisionAhead.GetComponent<ExplodeController>().Explode();
 					animator.SetTrigger("Fly");
 					break;
+				case "Arrow":
+					animator.SetFloat("Axis", axis * -1);
+					collisionAhead.GetComponent<ExplodeController>().Explode();
+					break;
 				default:
 					break;
 			}
 		} else {
-			animator.SetFloat("Axis", -1.0f);
 			animator.SetBool("Rolling", true);
 		}
 	}
