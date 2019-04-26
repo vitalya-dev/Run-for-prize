@@ -12,14 +12,22 @@ public class HeroFlyState : HBaseFSM {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
 
-		if (!personage.moving && personage.collisionAhead) {
+		if (!personage.moving && personage.collisionUnder) {
+			Collider2D collisionUnder = personage.collisionUnder;
+			switch (collisionUnder.tag) {
+				case "Arrow":
+					personage.face = collisionUnder.GetComponent<ArrowAction>().to_direction;
+					collisionUnder.GetComponent<ExplodeController>().Explode();
+					break;
+				default:
+					personage.Move(personage.face, 2);
+					break;
+			}
+		} else if (!personage.moving && personage.collisionAhead) {
 			Collider2D collisionAhead = personage.collisionAhead;
 			switch (collisionAhead.tag) {
 				case "Solid":
 					animator.SetTrigger("Crash");
-					break;
-				case "Arrow":
-					animator.SetTrigger("Change Direction");
 					break;
 				case "Prize":
 					animator.SetTrigger("Win");
@@ -29,10 +37,12 @@ public class HeroFlyState : HBaseFSM {
 					animator.SetBool("Rolling", true);
 					animator.SetFloat("Axis", personage.face.x);
 					break;
+				default:
+					personage.Move(personage.face, 2);
+					break;
 			}
-		} else {
+		} else
 			personage.Move(personage.face, 2);
-		}
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

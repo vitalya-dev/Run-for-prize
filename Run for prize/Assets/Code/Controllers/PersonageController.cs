@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[RequireComponent (typeof(Collider2D))]
+[RequireComponent(typeof(Collider2D))]
 public class PersonageController : MonoBehaviour {
 
 	[HideInInspector]
@@ -52,7 +52,7 @@ public class PersonageController : MonoBehaviour {
 			return hit.collider;
 		}
 	}
-	
+
 	public Collider2D collisionBelow {
 		get {
 			GetComponent<Collider2D>().enabled = false;
@@ -65,7 +65,16 @@ public class PersonageController : MonoBehaviour {
 	public Collider2D collisionAhead {
 		get {
 			GetComponent<Collider2D>().enabled = false;
-			RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3) face, Vector2.zero, 0.1f, collisionMask);
+			RaycastHit2D hit = Physics2D.Raycast(transform.position + (Vector3)face, Vector2.zero, 0.1f, collisionMask);
+			GetComponent<Collider2D>().enabled = true;
+			return hit.collider;
+		}
+	}
+
+	public Collider2D collisionUnder {
+		get {
+			GetComponent<Collider2D>().enabled = false;
+			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.zero, 0.1f, collisionMask);
 			GetComponent<Collider2D>().enabled = true;
 			return hit.collider;
 		}
@@ -110,7 +119,7 @@ public class PersonageController : MonoBehaviour {
 		if (!moving)
 			StartCoroutine(
 				RollRoutine(
-					transform.position + (Vector3) direction,
+					transform.position + (Vector3)direction,
 					transform.rotation,
 					forsage
 				));
