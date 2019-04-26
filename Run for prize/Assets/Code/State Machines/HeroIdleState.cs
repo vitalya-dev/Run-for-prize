@@ -7,13 +7,32 @@ public class HeroIdleState : HBaseFSM {
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
 
-		animator.SetBool("Grounded", personage.collisionBelow);
+		animator.SetBool("Rolling", false);
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateUpdate(animator, stateInfo, layerIndex);
+		/* ======================================================= */
+		Collider2D collisionBelow = personage.collisionBelow;
+		if (collisionBelow) {
+			switch (collisionBelow.tag) {
+				case "Solid":
+					animator.SetBool("Grounded", true);
+					break;
+				case "Wall":
+					animator.SetTrigger("Crash");
+					break;
+				default:
+					animator.SetBool("Grounded", false);
+					break;
+			}
+		} else {
+			animator.SetBool("Grounded", false);
+		}
+		/* ======================================================= */
 
+		/* ======================================================= */
 		Collider2D collisionUnder = personage.collisionUnder;
 		if (collisionUnder) {
 			switch (collisionUnder.tag) {
@@ -35,6 +54,7 @@ public class HeroIdleState : HBaseFSM {
 		} else {
 			animator.SetBool("Rolling", true);
 		}
+		/* ======================================================= */
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
