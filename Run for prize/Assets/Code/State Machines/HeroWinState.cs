@@ -8,10 +8,10 @@ public class HeroWinState : HBaseFSM {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
 
 		/* ================================================================= */
-		personage.collisionAhead.GetComponent<ExplodeController>().Explode();
+		personage.collisionUnder.GetComponent<ExplodeController>().Explode();
 		/* ================================================================= */
 
-		GameObject.Find("GameManager").GetComponent<GameManager>().LevelNext();
+		// GameObject.Find("GameManager").GetComponent<GameManager>().LevelNext();
 		
 	}
 
