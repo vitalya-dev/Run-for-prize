@@ -37,9 +37,9 @@ public class LevelController : MonoBehaviour {
 		/* ================================================================= */
 		GameObject.Destroy(oldLevel);
 		/* ================================================================= */
-		for (int i = 0; i < transform.childCount; i++) {
-			if (transform.GetChild(i).GetComponent<Action>())
-				transform.GetChild(i).gameObject.SetActive(true);
+		Transform actions = transform.Find("Actions");
+		for (int i = 0; i < actions.childCount; i++) {
+			actions.GetChild(i).gameObject.SetActive(true);
 		}
 		/* ================================================================= */
 	}
