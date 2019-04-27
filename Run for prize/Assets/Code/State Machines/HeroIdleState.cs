@@ -48,6 +48,9 @@ public class HeroIdleState : HBaseFSM {
 				case "Prize":
 					animator.SetTrigger("Win");
 					break;
+				case "Solid":
+					animator.SetTrigger("Crash");
+					break;
 				default:
 					break;
 			}

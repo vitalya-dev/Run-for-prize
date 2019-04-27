@@ -27,6 +27,7 @@ public class HeroFlyState : HBaseFSM {
 			Collider2D collisionAhead = personage.collisionAhead;
 			switch (collisionAhead.tag) {
 				case "Solid":
+				case "Wall":
 					animator.SetTrigger("Crash");
 					break;
 				case "Prize":
