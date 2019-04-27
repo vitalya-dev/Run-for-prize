@@ -8,6 +8,7 @@ public class ExplodeController : MonoBehaviour {
 		GameObject bomb = Instantiate(bomb_prefab, transform.position, Quaternion.identity) as GameObject;
 
 		GameObject.Destroy(bomb.gameObject, bomb.GetComponent<ParticleSystem>().startLifetime);
-		GameObject.Destroy(gameObject);
+		gameObject.SetActive(false);
+		
 	}
 }

@@ -18,7 +18,7 @@ public class LevelController : MonoBehaviour {
 		GameObject level = transform.Find("Level").gameObject;
 		level.SetActive(false);
 
-		level_backup = GameObject.Instantiate(level, Vector3.zero, Quaternion.identity, transform) as GameObject;
+		level_backup = GameObject.Instantiate(level, Vector3.zero, Quaternion.identity, transform)as GameObject;
 		level_backup.SetActive(false);
 	}
 
@@ -31,11 +31,16 @@ public class LevelController : MonoBehaviour {
 			level_backup.transform.position,
 			Quaternion.identity,
 			transform
-		) as GameObject;
+		)as GameObject;
 		newLevel.SetActive(oldLevel.activeSelf);
 		newLevel.name = "Level";
 		/* ================================================================= */
-
 		GameObject.Destroy(oldLevel);
+		/* ================================================================= */
+		for (int i = 0; i < transform.childCount; i++) {
+			if (transform.GetChild(i).GetComponent<Action>())
+				transform.GetChild(i).gameObject.SetActive(true);
+		}
+		/* ================================================================= */
 	}
 }
