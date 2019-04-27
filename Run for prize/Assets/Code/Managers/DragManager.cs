@@ -25,10 +25,6 @@ public class DragManager : MonoBehaviour {
 		hit.collider.enabled = false;
 
 		/* =========================================================== */
-		Action action = hit.collider.GetComponent<Action>();
-		/* =========================================================== */
-
-		/* =========================================================== */
 		Vector3 old_pos = hit.transform.position;
 		hit.transform.position = new Vector3(old_pos.x, old_pos.y, Camera.main.transform.position.z + 1);
 		/* =========================================================== */
@@ -47,14 +43,14 @@ public class DragManager : MonoBehaviour {
 			Mathf.RoundToInt(hit.transform.position.y),
 			Mathf.RoundToInt(old_pos.z)
 		);
-		if (!Physics2D.Raycast(
-				Camera.main.ScreenPointToRay(Input.mousePosition).origin,
+		if (Physics2D.Raycast(
+				rounded_position + new Vector3(0.5f, -0.5f),
 				Vector2.zero,
 				Mathf.Infinity
-			))
-			hit.transform.position = rounded_position;
-		else
+			)) {
 			hit.transform.position = old_pos;
+		} else
+			hit.transform.position = rounded_position;
 		/* =========================================================== */
 
 		hit.collider.enabled = true;

@@ -20,11 +20,8 @@ public class HeroIdleState : HBaseFSM {
 				case "Solid":
 					animator.SetBool("Grounded", true);
 					break;
-				case "Wall":
-					animator.SetTrigger("Crash");
-					break;
 				default:
-					animator.SetBool("Grounded", false);
+					animator.SetTrigger("Crash");
 					break;
 			}
 		} else {
