@@ -42,11 +42,11 @@ public class HeroIdleState : HBaseFSM {
 					ArrowAction arrow = collisionUnder.GetComponent<ArrowAction>();
 					if (
 						arrow.from_direction != Vector2.zero &&
-						arrow.from_direction == new Vector2(Mathf.RoundToInt(animator.GetFloat("Axis")), 0) &&
+						arrow.from_direction == personage.axis &&
 						arrow.to_direction.y == 0
 					) {
 						/* ==================================================== */
-						animator.SetFloat("Axis", arrow.to_direction.x);
+						personage.axis = arrow.to_direction;
 						collisionUnder.GetComponent<ExplodeController>().Explode();
 						/* ==================================================== */
 					} else if (
@@ -54,7 +54,7 @@ public class HeroIdleState : HBaseFSM {
 						arrow.to_direction.y == 0
 					) {
 						/* ==================================================== */
-						animator.SetFloat("Axis", arrow.to_direction.x);
+						personage.axis = arrow.to_direction;
 						collisionUnder.GetComponent<ExplodeController>().Explode();
 						/* ==================================================== */
 					} else {
@@ -67,10 +67,8 @@ public class HeroIdleState : HBaseFSM {
 				case "Prize":
 					animator.SetTrigger("Win");
 					break;
-				case "Solid":
-					animator.SetTrigger("Crash");
-					break;
 				default:
+					animator.SetTrigger("Crash");
 					break;
 			}
 		} else {

@@ -36,7 +36,7 @@ public class HeroFlyState : HBaseFSM {
 				case "Roll":
 					collisionAhead.GetComponent<ExplodeController>().Explode();
 					animator.SetBool("Rolling", true);
-					animator.SetFloat("Axis", personage.face.x);
+					personage.axis = new Vector2(personage.face.x, 0);
 					break;
 				default:
 					personage.Move(personage.face, 2);

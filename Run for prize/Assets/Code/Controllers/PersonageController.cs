@@ -7,6 +7,9 @@ public class PersonageController : MonoBehaviour {
 	[HideInInspector]
 	public bool rolling = false;
 
+	[HideInInspector]
+	public Vector2 axis = new Vector2(-1, 0);
+
 	public bool moving {
 		get {
 			return rolling;
@@ -80,12 +83,12 @@ public class PersonageController : MonoBehaviour {
 		}
 	}
 
-	public void Roll(float axis, float forsage = 1) {
+	public void Roll(float forsage = 1) {
 		if (!rolling)
 			StartCoroutine(
 				RollRoutine(
-					transform.position + new Vector3(axis, 0, 0),
-					transform.rotation * Quaternion.FromToRotation(Vector2.up, axis * Vector2.right),
+					transform.position + new Vector3(axis.x, axis.y, 0),
+					transform.rotation * Quaternion.FromToRotation(Vector2.up, axis.x * Vector2.right),
 					forsage
 				));
 
