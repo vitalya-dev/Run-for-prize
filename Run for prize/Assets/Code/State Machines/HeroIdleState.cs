@@ -39,8 +39,30 @@ public class HeroIdleState : HBaseFSM {
 					animator.SetTrigger("Fly");
 					break;
 				case "Arrow":
-					animator.SetFloat("Axis", animator.GetFloat("Axis") * -1);
-					collisionUnder.GetComponent<ExplodeController>().Explode();
+					ArrowAction arrow = collisionUnder.GetComponent<ArrowAction>();
+					if (
+						arrow.from_direction != Vector2.zero &&
+						arrow.from_direction == new Vector2(Mathf.RoundToInt(animator.GetFloat("Axis")), 0) &&
+						arrow.to_direction.y == 0
+					) {
+						/* ==================================================== */
+						animator.SetFloat("Axis", arrow.to_direction.x);
+						collisionUnder.GetComponent<ExplodeController>().Explode();
+						/* ==================================================== */
+					} else if (
+						arrow.from_direction == Vector2.zero &&
+						arrow.to_direction.y == 0
+					) {
+						/* ==================================================== */
+						animator.SetFloat("Axis", arrow.to_direction.x);
+						collisionUnder.GetComponent<ExplodeController>().Explode();
+						/* ==================================================== */
+					} else {
+						/* ==================================================== */
+						collisionUnder.GetComponent<ExplodeController>().Explode();
+						animator.SetTrigger("Crash");
+						/* ==================================================== */
+					}
 					break;
 				case "Prize":
 					animator.SetTrigger("Win");
