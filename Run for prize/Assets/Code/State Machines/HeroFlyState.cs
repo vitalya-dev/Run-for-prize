@@ -16,8 +16,30 @@ public class HeroFlyState : HBaseFSM {
 			Collider2D collisionUnder = personage.collisionUnder;
 			switch (collisionUnder.tag) {
 				case "Arrow":
-					personage.face = collisionUnder.GetComponent<ArrowAction>().to_direction;
+					ArrowAction arrow = collisionUnder.GetComponent<ArrowAction>();
+					if (
+						arrow.from_direction != Vector2.zero &&
+						arrow.from_direction == personage.axis
+					) {
+						personage.face = arrow.to_direction;
+						personage.axis = arrow.to_direction;
+					} else if (
+						arrow.from_direction != Vector2.zero &&
+						arrow.from_direction != personage.axis
+					) {
+						animator.SetTrigger("Crash");
+					} else {
+						personage.face = arrow.to_direction;
+					}
+					arrow.GetComponent<ExplodeController>().Explode();
+					break;
+				case "Prize":
+					animator.SetTrigger("Win");
+					break;
+				case "Roll":
 					collisionUnder.GetComponent<ExplodeController>().Explode();
+					personage.axis = new Vector2(personage.face.x, 0);
+					animator.SetBool("Rolling", true);
 					break;
 				default:
 					personage.Move(personage.face, 2);
@@ -29,14 +51,6 @@ public class HeroFlyState : HBaseFSM {
 				case "Solid":
 				case "Wall":
 					animator.SetTrigger("Crash");
-					break;
-				case "Prize":
-					animator.SetTrigger("Win");
-					break;
-				case "Roll":
-					collisionAhead.GetComponent<ExplodeController>().Explode();
-					animator.SetBool("Rolling", true);
-					personage.axis = new Vector2(personage.face.x, 0);
 					break;
 				default:
 					personage.Move(personage.face, 2);

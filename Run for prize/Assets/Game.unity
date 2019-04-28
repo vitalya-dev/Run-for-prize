@@ -2915,6 +2915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rolling: 0
+  axis: {x: -1, y: 0}
   velocity: 4
   collisionMask:
     serializedVersion: 2
