@@ -393,8 +393,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101000014188611302}
-  - {fileID: 1101000011249441984}
   - {fileID: 1101000012086560188}
+  - {fileID: 1101000011249441984}
   - {fileID: 1101000013612304420}
   - {fileID: 1101000012122727194}
   m_StateMachineBehaviours:
