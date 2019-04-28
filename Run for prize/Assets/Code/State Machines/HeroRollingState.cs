@@ -11,9 +11,9 @@ public class HeroRollingState : HBaseFSM {
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		Collider2D collisionAhead = personage.collisionLeft;
-		
 		animator.SetBool("Rolling", personage.rolling);
+		if ((int)personage.axis.x == 0)
+			animator.SetTrigger("Crash");
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
