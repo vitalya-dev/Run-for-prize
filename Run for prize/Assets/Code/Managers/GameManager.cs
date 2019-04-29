@@ -3,31 +3,42 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 	public LevelController[] levels;
-	public int current_level;
 
-	public void Start() {
-		levels[current_level].active = true;
+	public LevelController current_level {
+		get {
+			return levels[current_level_index];
+		}
 	}
 
-	public void LevelRestart() {
-		levels[current_level].Restart();
+	private int current_level_index;
+
+	public void Start() {
+		levels[current_level_index].active = true;
+	}
+
+	public void LevelRestart() {	
+		levels[current_level_index].Restart();
 	}
 
 	public void LevelNext() {
 		StartCoroutine(LevelNextRoutine(1));
 	}
 
+	public void LevelComplete() {
+		current_level.complete = true;
+	}
+
 	private IEnumerator LevelNextRoutine(float delay) {
 		yield return new WaitForSeconds(delay);
 		/* ====================================================== */
-		levels[current_level].active = false;
+		levels[current_level_index].active = false;
 		/* ====================================================== */
-		current_level += 1;
-		levels[current_level].active = true;
+		current_level_index += 1;
+		levels[current_level_index].active = true;
 		/* ====================================================== */
 		Camera.main.transform.position = new Vector3(
-			levels[current_level].transform.position.x,
-			levels[current_level].transform.position.y,
+			levels[current_level_index].transform.position.x,
+			levels[current_level_index].transform.position.y,
 			Camera.main.transform.position.z
 		);
 	}

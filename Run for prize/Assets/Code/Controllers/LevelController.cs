@@ -13,6 +13,8 @@ public class LevelController : MonoBehaviour {
 		}
 	}
 
+	public bool complete = false;
+
 	// Use this for initialization
 	void Awake() {
 		GameObject level = transform.Find("Level").gameObject;
@@ -42,5 +44,6 @@ public class LevelController : MonoBehaviour {
 			actions.GetChild(i).gameObject.SetActive(true);
 		}
 		/* ================================================================= */
+		complete = false;
 	}
 }
