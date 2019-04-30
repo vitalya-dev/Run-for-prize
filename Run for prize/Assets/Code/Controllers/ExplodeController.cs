@@ -9,6 +9,8 @@ public class ExplodeController : MonoBehaviour {
 
 		GameObject.Destroy(bomb.gameObject, bomb.GetComponent<ParticleSystem>().startLifetime);
 		gameObject.SetActive(false);
+
+		FindObjectOfType<ScoreManager>().Scored();
 		
 	}
 }

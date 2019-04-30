@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour {
 
 	public void LevelRestart() {	
 		levels[current_level_index].Restart();
+		FindObjectOfType<ScoreManager>().Restart();
 	}
 
 	public void LevelNext() {
