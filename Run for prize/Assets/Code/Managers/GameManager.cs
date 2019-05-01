@@ -1,7 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour {
+	public GameObject pause_menu;
+
 	public LevelController[] levels;
 
 	public LevelController current_level {
@@ -14,13 +16,22 @@ public class GameManager : MonoBehaviour {
 
 	public void Start() {
 		levels[current_level_index].active = true;
+		/* ============================================== */
+		if (!pause_menu)
+			pause_menu = GameObject.Find("Pause Menu");
+		pause_menu.SetActive(false);
+		/* ============================================== */
 	}
 
-	public void LevelRestart() {	
+	public void LevelRestart() {
 		levels[current_level_index].Restart();
 		FindObjectOfType<ScoreManager>().Restart();
 	}
 
+	public void Pause() {
+		Time.timeScale = 1 - Time.timeScale;
+		pause_menu.SetActive(Time.timeScale < 1);
+	}
 	public void LevelNext() {
 		StartCoroutine(LevelNextRoutine(1));
 	}
