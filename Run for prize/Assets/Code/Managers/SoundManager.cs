@@ -2,8 +2,7 @@
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour {
-	public AudioClip[] clips;
-
+	
 	public void PauseMusic(bool trigger) {
 		if (trigger)
 			GetComponent<AudioSource>().Pause();
