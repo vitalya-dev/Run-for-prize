@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour {
 
 	private int current_level_index;
 
+	private float pause_time;
+
 	public void Start() {
 		levels[current_level_index].active = true;
 		/* ============================================== */
@@ -29,10 +31,21 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void Pause() {
-		Time.timeScale = 1 - Time.timeScale;
-		pause_menu.SetActive(Time.timeScale < 1);
-		FindObjectOfType<SoundManager>().PauseMusic(Time.timeScale < 1);
+		if (Time.timeScale > 0) {
+			Time.timeScale = 0;
+			pause_menu.SetActive(true);
+			FindObjectOfType<SoundManager>().PauseMusic(true);
+			pause_time = Time.realtimeSinceStartup;
+		} else {
+			if (Time.realtimeSinceStartup - pause_time < 0.2)
+				Debug.Log("EXIT");
+			Time.timeScale = 1;
+			pause_menu.SetActive(false);
+			FindObjectOfType<SoundManager>().PauseMusic(false);
+		}
 	}
+
+
 	public void LevelNext() {
 		StartCoroutine(LevelNextRoutine(1));
 	}
