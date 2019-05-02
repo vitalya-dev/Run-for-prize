@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour {
 	public void Pause() {
 		Time.timeScale = 1 - Time.timeScale;
 		pause_menu.SetActive(Time.timeScale < 1);
+		FindObjectOfType<SoundManager>().PauseMusic();
 	}
 	public void LevelNext() {
 		StartCoroutine(LevelNextRoutine(1));
