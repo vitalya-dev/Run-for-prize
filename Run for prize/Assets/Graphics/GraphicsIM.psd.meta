@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1556575888
+timeCreated: 1556801578
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,7 @@ TextureImporter:
     21300018: Girl Frame 1
     21300020: Girl Frame 3
     21300022: Girl Frame 2
+    21300024: Girl With Closed Eyes
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -211,6 +212,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 63
+        y: 480
+        width: 18
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Girl With Closed Eyes
+      rect:
+        serializedVersion: 2
+        x: 122
         y: 480
         width: 18
         height: 24

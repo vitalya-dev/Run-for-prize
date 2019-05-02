@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GirlWaitState : StateMachineBehaviour {
+public class GirlWatchState : StateMachineBehaviour {
 	LevelController current_level;
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -13,6 +13,8 @@ public class GirlWaitState : StateMachineBehaviour {
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		if (current_level.complete)
 			animator.SetTrigger("Win");
+		if (!animator.GetComponent<GirlController>().piggy.collisionBelow)
+			animator.SetTrigger("Scarry");
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state
