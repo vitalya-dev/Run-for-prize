@@ -2,28 +2,24 @@
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour {
-	public AudioClip[] tracks;
+	public AudioClip[] clips;
 
-	void Start() {
-		if (tracks.Length > 0) {
-			int i = Random.Range(0, tracks.Length);
-			PlayClipAt(tracks[i], transform.position);
-		}
+	public void PauseMusic(bool trigger) {
+		if (trigger)
+			GetComponent<AudioSource>().Pause();
+		else
+			GetComponent<AudioSource>().Play();
 	}
 
-	public void PauseMusic() {
-		
-	}
-
-	public AudioSource PlayClipAt(AudioClip track, Vector3 position, float volume = 1f) {
-		if (track != null) {
+	public AudioSource PlayClipAt(AudioClip clip, Vector3 position, float volume = 1f) {
+		if (clip != null) {
 			/* ==================================================== */
-			GameObject o = new GameObject("SoundFX" + track.name);
+			GameObject o = new GameObject("SoundFX" + clip.name);
 			o.transform.position = position;
-			Destroy(o, track.length);
+			Destroy(o, clip.length);
 			/* ==================================================== */
 			AudioSource music = o.AddComponent<AudioSource>();
-			music.clip = track;
+			music.clip = clip;
 			music.volume = volume;
 			music.Play();
 			/* ==================================================== */
