@@ -46,6 +46,9 @@ public class ActionManager : MonoBehaviour {
 	public void rotate(float axis) {
 		if (axis < 0 && action_stack.Count > 0) {
 			push(pop());
+		} else if (axis > 0 && action_stack.Count > 0) {
+			for (int i = 1; i < action_stack.Count; i++)
+				push(pop());	
 		}
 	}
 }
