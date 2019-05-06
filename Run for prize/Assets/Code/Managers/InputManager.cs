@@ -30,5 +30,8 @@ public class InputManager : MonoBehaviour {
 			if (hit.collider && hit.collider.GetComponent<Action>())
 				GameObject.FindObjectOfType<ActionManager>().push(hit.collider.GetComponent<Action>());
 		}
+
+		if (Input.mouseScrollDelta.y != 0)
+			GameObject.FindObjectOfType<ActionManager>().rotate(Input.mouseScrollDelta.y);
 	}
 }

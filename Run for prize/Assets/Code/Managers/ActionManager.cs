@@ -42,4 +42,10 @@ public class ActionManager : MonoBehaviour {
 		}
 		action_stack.Enqueue(action);
 	}
+
+	public void rotate(float axis) {
+		if (axis < 0 && action_stack.Count > 0) {
+			push(pop());
+		}
+	}
 }
