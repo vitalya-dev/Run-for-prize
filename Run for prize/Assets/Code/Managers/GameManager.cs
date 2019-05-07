@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour {
 			pause_time = Time.realtimeSinceStartup;
 		} else {
 			if (Time.realtimeSinceStartup - pause_time < 0.2)
-				Debug.Log("EXIT");
+				Application.Quit();
 			Time.timeScale = 1;
 			pause_menu.SetActive(false);
 			FindObjectOfType<SoundManager>().PauseMusic(false);
