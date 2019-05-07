@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1556947449
+timeCreated: 1557201502
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -18,6 +18,7 @@ TextureImporter:
     21300022: Girl Frame 2
     21300024: Girl With Closed Eyes
     21300026: Roll Piggy
+    21300028: Yellow Box
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -244,6 +245,19 @@ TextureImporter:
         height: 51
       alignment: 9
       pivot: {x: 0.1644996, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Yellow Box
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 511
+        width: 98
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
