@@ -1,18 +1,25 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 
 public class GirlWatchState : StateMachineBehaviour {
 	LevelController current_level;
 
-	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-			current_level = FindObjectOfType<GameManager>().current_level;
+		current_level = FindObjectOfType<GameManager>().current_level;
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		if (current_level.complete)
+		GirlController girl = animator.GetComponent<GirlController>();
+		if (current_level.complete) {
 			animator.SetTrigger("Win");
+			FindObjectOfType<SoundManager>().PlayClipAt(
+				girl.that_was_awesome,
+				girl.transform.position,
+				0.7f
+			);
+		}
 		if (!animator.GetComponent<GirlController>().piggy.collisionBelow)
 			animator.SetTrigger("Scarry");
 	}

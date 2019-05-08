@@ -4596,7 +4596,6 @@ GameObject:
   - 212: {fileID: 1475468008}
   - 95: {fileID: 1475468009}
   - 114: {fileID: 1475468010}
-  - 114: {fileID: 1475468011}
   m_Layer: 9
   m_Name: Girl
   m_TagString: Untagged
@@ -4679,17 +4678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piggy: {fileID: 1251999078}
---- !u!114 &1475468011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1475468006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc813f44b2f74294ca1d43cb4458edf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  that_was_awesome: {fileID: 8300000, guid: 3371cb2d793b3224eb0071a6cfeb8588, type: 3}
 --- !u!1 &1505432538
 GameObject:
   m_ObjectHideFlags: 0
