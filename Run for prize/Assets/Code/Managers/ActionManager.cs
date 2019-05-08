@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ActionManager : MonoBehaviour {
+	public Action[] actions;
 	private Queue<Action> action_stack;
 	private Vector3 start_position;
 
 	void Start() {
-		Action[] actions = FindObjectsOfType<Action>();
 		/* ===================================================================== */
 		for (var i = 0; i < actions.Length; i++)
 			for (var j = i + 1; j < actions.Length; j++)

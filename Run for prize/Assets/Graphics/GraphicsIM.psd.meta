@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1557201502
+timeCreated: 1557210292
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -19,6 +19,8 @@ TextureImporter:
     21300024: Girl With Closed Eyes
     21300026: Roll Piggy
     21300028: Yellow Box
+    21300030: RMB
+    21300032: LMB
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -257,6 +259,32 @@ TextureImporter:
         width: 98
         height: 28
       alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RMB
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 240
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LMB
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 240
+        width: 13
+        height: 15
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
