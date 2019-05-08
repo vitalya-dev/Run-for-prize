@@ -22,15 +22,8 @@ public class HeroFlyState : HBaseFSM {
 						arrow.from_direction == personage.axis
 					) {
 						personage.face = arrow.to_direction;
-						personage.axis = arrow.to_direction;
-					} else if (
-						arrow.from_direction != Vector2.zero &&
-						arrow.from_direction != personage.axis
-					) {
-						animator.SetTrigger("Crash");
-					} else {
-						personage.face = arrow.to_direction;
 					}
+					if (arrow.from_direction == Vector2.zero) personage.face = arrow.to_direction;
 					arrow.GetComponent<ExplodeController>().Explode();
 					break;
 				case "Prize":
