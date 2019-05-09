@@ -20,8 +20,14 @@ public class GirlWatchState : StateMachineBehaviour {
 				0.7f
 			);
 		}
-		if (!animator.GetComponent<GirlController>().piggy.collisionBelow)
+		if (!animator.GetComponent<GirlController>().piggy.collisionBelow) {
 			animator.SetTrigger("Scarry");
+			FindObjectOfType<SoundManager>().PlayClipAt(
+				girl.scream,
+				girl.transform.position,
+				0.7f
+			);
+		}
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

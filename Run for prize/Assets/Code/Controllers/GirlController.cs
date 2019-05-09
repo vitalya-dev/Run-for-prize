@@ -5,4 +5,5 @@ public class GirlController : MonoBehaviour {
 	public PersonageController piggy;
 
 	public AudioClip that_was_awesome;
+	public AudioClip scream;
 }
