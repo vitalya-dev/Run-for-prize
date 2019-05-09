@@ -10,8 +10,8 @@ public class SoundManager : MonoBehaviour {
 			GetComponent<AudioSource>().Play();
 	}
 
-	public AudioSource PlayClipAt(AudioClip clip, Vector3 position, float volume = 1f) {
-		if (clip != null) {
+	public AudioSource PlayClipAt(AudioClip clip, Vector3 position, float volume = 1f, bool unique = true) {
+		if (clip && !GameObject.Find("SoundFX" + clip.name)) {
 			/* ==================================================== */
 			GameObject o = new GameObject("SoundFX" + clip.name);
 			o.transform.position = position;
