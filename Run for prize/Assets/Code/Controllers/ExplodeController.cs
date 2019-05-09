@@ -8,7 +8,7 @@ public class ExplodeController : MonoBehaviour {
 	public void Explode() {
 		/* ================================================================================================= */
 		if (explode_clip)
-			FindObjectOfType<SoundManager>().PlayClipAt(explode_clip, this.transform.position, 0.7f);
+			FindObjectOfType<SoundManager>().PlayClipAt(explode_clip, this.transform.position, 0.7f, false);
 		/* ================================================================================================= */
 		GameObject bomb = Instantiate(bomb_prefab, transform.position, Quaternion.identity) as GameObject;
 		GameObject.Destroy(bomb.gameObject, bomb.GetComponent<ParticleSystem>().startLifetime);

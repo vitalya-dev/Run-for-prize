@@ -4679,7 +4679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   piggy: {fileID: 1251999078}
   that_was_awesome: {fileID: 8300000, guid: 3371cb2d793b3224eb0071a6cfeb8588, type: 3}
-  scream: {fileID: 8300000, guid: c049c5b1d48674f4b8d1ab6edbc15504, type: 3}
+  scream: {fileID: 8300000, guid: cc454985546b4c44787da925460b9061, type: 3}
 --- !u!1 &1505432538
 GameObject:
   m_ObjectHideFlags: 0

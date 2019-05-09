@@ -2,7 +2,7 @@
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour {
-	
+
 	public void PauseMusic(bool trigger) {
 		if (trigger)
 			GetComponent<AudioSource>().Pause();
@@ -11,8 +11,11 @@ public class SoundManager : MonoBehaviour {
 	}
 
 	public AudioSource PlayClipAt(AudioClip clip, Vector3 position, float volume = 1f, bool unique = true) {
-		if (clip && !GameObject.Find("SoundFX" + clip.name)) {
-			/* ==================================================== */
+		if (unique && GameObject.Find("SoundFX" + clip.name))
+			return null;
+		else if (!clip)
+			return null;
+		else {
 			GameObject o = new GameObject("SoundFX" + clip.name);
 			o.transform.position = position;
 			Destroy(o, clip.length);
@@ -23,8 +26,6 @@ public class SoundManager : MonoBehaviour {
 			music.Play();
 			/* ==================================================== */
 			return music;
-		} else {
-			return null;
 		}
 	}
 }
