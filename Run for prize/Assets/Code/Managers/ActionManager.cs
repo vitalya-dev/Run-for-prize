@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ActionManager : MonoBehaviour {
 	public Action[] actions;
-	private Queue<Action> action_stack;
+	private List<Action> action_list;
 	private Vector3 start_position;
 
 	void Start() {
@@ -18,37 +18,50 @@ public class ActionManager : MonoBehaviour {
 					actions[j] = temp;
 				}
 		/* ===================================================================== */
-		action_stack = new Queue<Action>(actions);
+		action_list = new List<Action>(actions);
 		/* ===================================================================== */
-		start_position = action_stack.Peek().transform.position;
+		start_position = action_list[0].transform.position;
 		/* ===================================================================== */
 	}
 
 	public Action pop() {
-		if (action_stack.Count > 0) {
-			foreach (var action in action_stack) {
-				action.transform.Translate(new Vector3(-1, 0, 0));
+		if (action_list.Count > 0) {
+			/* ================================== */
+			Action action = action_list[0];
+			action_list.RemoveAt(0);
+			/* ================================== */
+			foreach (var a in action_list) {
+				a.transform.Translate(new Vector3(-1, 0, 0));
 			}
-			return action_stack.Dequeue();
-		} else return null;
+			/* ================================== */
+			return action;
+		} else {
+			return null;
+		}
 	}
 
 	public void push(Action action) {
-		if (action_stack.Count > 0) {
-			action.transform.position = action_stack.Peek().transform.position;
-			action.transform.Translate(new Vector3(action_stack.Count, 0, 0));
-		} else {
-			action.transform.position = start_position;
-		}
-		action_stack.Enqueue(action);
+		action.transform.position = start_position;
+		foreach (var a in action_list)
+			a.transform.Translate(new Vector3(1, 0, 0));
+		action_list.Insert(0, action);
 	}
 
 	public void rotate(float axis) {
-		if (axis < 0 && action_stack.Count > 0) {
-			push(pop());
-		} else if (axis > 0 && action_stack.Count > 0) {
-			for (int i = 1; i < action_stack.Count; i++)
-				push(pop());	
+		if (axis < 0 && action_list.Count > 0) {
+			Action action = pop();
+			/* ******************************** */
+			action.transform.Translate(new Vector3(action_list.Count, 0, 0));
+			/* ******************************** */
+			action_list.Add(action);
+			/* ******************************** */
+		} else if (axis > 0 && action_list.Count > 0) {
+			Action action = action_list[action_list.Count - 1];
+			/* ******************************** */
+			action_list.Remove(action);
+			/* ******************************** */
+			push(action);
+			/* ******************************** */
 		}
 	}
 }
