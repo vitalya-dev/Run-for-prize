@@ -30,6 +30,11 @@ public class GameManager : MonoBehaviour {
 		FindObjectOfType<ScoreManager>().Restart();
 	}
 
+	public void Exit() {
+		Debug.Log("Quit...");
+		Application.Quit();
+	}
+
 	public void Pause() {
 		if (Time.timeScale > 0) {
 			Time.timeScale = 0;
