@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1557491974
+timeCreated: 1557576685
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -26,6 +26,7 @@ TextureImporter:
     21300038: ESC 2X
     21300040: EXIT
     21300042: Mouse Wheel
+    21300044: That is control
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -168,7 +169,7 @@ TextureImporter:
       name: Arrow Left
       rect:
         serializedVersion: 2
-        x: 193
+        x: 192
         y: 512
         width: 16
         height: 16
@@ -181,7 +182,7 @@ TextureImporter:
       name: Arrow Right To Left
       rect:
         serializedVersion: 2
-        x: 207
+        x: 208
         y: 512
         width: 16
         height: 16
@@ -356,6 +357,19 @@ TextureImporter:
         height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: That is control
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 72
+        width: 66
+        height: 62
+      alignment: 9
+      pivot: {x: 0.16760808, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
