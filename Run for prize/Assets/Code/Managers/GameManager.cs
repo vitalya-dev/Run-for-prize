@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	private int current_level_index;
+	private int current_level_index = 0;
 
 	private float pause_time;
 
@@ -23,6 +23,11 @@ public class GameManager : MonoBehaviour {
 			pause_menu = GameObject.Find("Pause Menu");
 		pause_menu.SetActive(false);
 		/* ============================================== */
+		Camera.main.transform.position = new Vector3(
+			levels[current_level_index].transform.position.x,
+			levels[current_level_index].transform.position.y,
+			Camera.main.transform.position.z
+		);
 	}
 
 	public void LevelRestart() {
@@ -49,7 +54,6 @@ public class GameManager : MonoBehaviour {
 			FindObjectOfType<SoundManager>().PauseMusic(false);
 		}
 	}
-
 
 	public void LevelNext() {
 		StartCoroutine(LevelNextRoutine(1));

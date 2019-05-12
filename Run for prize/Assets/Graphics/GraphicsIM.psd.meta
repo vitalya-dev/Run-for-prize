@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1557576685
+timeCreated: 1557601573
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -27,6 +27,7 @@ TextureImporter:
     21300040: EXIT
     21300042: Mouse Wheel
     21300044: That is control
+    21300046: HELP
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -370,6 +371,19 @@ TextureImporter:
         height: 62
       alignment: 9
       pivot: {x: 0.16760808, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HELP
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 168
+        width: 33
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
