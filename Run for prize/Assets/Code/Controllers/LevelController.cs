@@ -10,6 +10,7 @@ public class LevelController : MonoBehaviour {
 		}
 		set {
 			gameObject.transform.Find("Level").gameObject.SetActive(value);
+			gameObject.transform.Find("Actions").gameObject.SetActive(value);
 		}
 	}
 
@@ -17,17 +18,18 @@ public class LevelController : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake() {
+		/* ======================================================== */
 		GameObject level = transform.Find("Level").gameObject;
 		level.SetActive(false);
-
+		/* ======================================================== */
+		transform.Find("Actions").gameObject.SetActive(false);
+		/* ======================================================== */
 		level_backup = GameObject.Instantiate(level, level.transform.position, Quaternion.identity, transform) as GameObject;
 		level_backup.SetActive(false);
 	}
 
 	public void Restart() {
 		GameObject oldLevel = transform.Find("Level").gameObject;
-		Debug.Log(oldLevel);
-
 		/* ================================================================= */
 		GameObject newLevel = GameObject.Instantiate(
 			level_backup,

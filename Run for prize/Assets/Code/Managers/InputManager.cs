@@ -16,7 +16,7 @@ public class InputManager : MonoBehaviour {
 				Mathf.Infinity
 			);
 			if (!hit.collider) {
-				Action action = GameObject.FindObjectOfType<ActionManager>().pop();
+				Action action = GameObject.FindObjectOfType<ActionController>().pop();
 				if (action) {
 					Vector3 pos = Camera.main.ScreenPointToRay(Input.mousePosition).origin;
 					pos = new Vector3(
@@ -35,10 +35,10 @@ public class InputManager : MonoBehaviour {
 				Mathf.Infinity
 			);
 			if (hit.collider && hit.collider.GetComponent<Action>())
-				GameObject.FindObjectOfType<ActionManager>().push(hit.collider.GetComponent<Action>());
+				GameObject.FindObjectOfType<ActionController>().push(hit.collider.GetComponent<Action>());
 		}
 
 		if (Input.mouseScrollDelta.y != 0)
-			GameObject.FindObjectOfType<ActionManager>().rotate(Input.mouseScrollDelta.y);
+			GameObject.FindObjectOfType<ActionController>().rotate(Input.mouseScrollDelta.y);
 	}
 }
