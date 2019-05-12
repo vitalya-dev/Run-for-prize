@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void LevelNext() {
+		LevelComplete();
 		StartCoroutine(LevelNextRoutine(1));
 	}
 
