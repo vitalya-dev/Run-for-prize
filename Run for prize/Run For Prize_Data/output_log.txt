@@ -14,7 +14,7 @@ Platform assembly: C:\Users\Vitalya\Desktop\Run-for-prize\Run for prize\Run For 
 Loading C:\Users\Vitalya\Desktop\Run-for-prize\Run for prize\Run For Prize_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Vitalya\Desktop\Run-for-prize\Run for prize\Run For Prize_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Vitalya\Desktop\Run-for-prize\Run for prize\Run For Prize_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.113 seconds
+- Completed reload, in  0.051 seconds
 Platform assembly: C:\Users\Vitalya\Desktop\Run-for-prize\Run for prize\Run For Prize_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Vitalya\Desktop\Run-for-prize\Run for prize\Run For Prize_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -22,10 +22,10 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 0.710100 ms
+UnloadTime: 0.697500 ms
 Quit...
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 28b4 -> priority: 1 
+  Thread -> id: 2fe0 -> priority: 1 
