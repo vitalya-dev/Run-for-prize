@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -40,10 +41,12 @@ public class ActionController : MonoBehaviour {
 	}
 
 	public void push(Action action) {
-		action.transform.position = start_position;
-		foreach (var a in action_list)
-			a.transform.Translate(new Vector3(1, 0, 0));
-		action_list.Insert(0, action);
+		if (Array.IndexOf(actions, action) != -1) {
+			action.transform.position = start_position;
+			foreach (var a in action_list)
+				a.transform.Translate(new Vector3(1, 0, 0));
+			action_list.Insert(0, action);
+		}
 	}
 
 	public void rotate(float axis) {
