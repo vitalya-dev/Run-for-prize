@@ -51,6 +51,7 @@ public class LevelController : MonoBehaviour {
 	}
 
 	public void Rotate() {
-		
+		GameObject grounds = transform.Find("Level/Grounds").gameObject;
+		grounds.transform.Rotate(0, 180, 0);
 	}
 }
