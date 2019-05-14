@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	[SerializeField]
 	private int current_level_index = 0;
 
 	private float pause_time;
