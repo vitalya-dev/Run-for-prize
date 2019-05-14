@@ -23,11 +23,16 @@ public class HeroFlyState : HBaseFSM {
 					) {
 						personage.face = arrow.to_direction;
 					}
-					if (arrow.from_direction == Vector2.zero) personage.face = arrow.to_direction;
+					if (arrow.from_direction == Vector2.zero)personage.face = arrow.to_direction;
 					arrow.GetComponent<ExplodeController>().Explode();
 					break;
 				case "Prize":
 					animator.SetTrigger("Win");
+					break;
+				case "Rotate":
+					RotateAction rotate = collisionUnder.GetComponent<RotateAction>();
+					GameObject.FindObjectOfType<GameManager>().LevelRotate();
+					rotate.GetComponent<ExplodeController>().Explode();
 					break;
 				case "Roll":
 					collisionUnder.GetComponent<ExplodeController>().Explode();

@@ -49,4 +49,8 @@ public class LevelController : MonoBehaviour {
 		/* ================================================================= */
 		complete = false;
 	}
+
+	public void Rotate() {
+		
+	}
 }

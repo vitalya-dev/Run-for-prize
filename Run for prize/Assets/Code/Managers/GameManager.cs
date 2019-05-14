@@ -36,6 +36,10 @@ public class GameManager : MonoBehaviour {
 		FindObjectOfType<ScoreManager>().Restart();
 	}
 
+	public void LevelRotate() {
+		levels[current_level_index].Rotate();
+	}
+
 	public void Exit() {
 		Debug.Log("Quit...");
 		Application.Quit();
