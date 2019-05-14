@@ -65,7 +65,8 @@ public class HeroIdleState : HBaseFSM {
 					animator.SetTrigger("Crash");
 					break;
 				default:
-					collisionUnder.GetComponent<ExplodeController>().Explode();
+					if (collisionUnder.GetComponent<ExplodeController>())
+						collisionUnder.GetComponent<ExplodeController>().Explode();
 					break;
 			}
 		} else {
