@@ -33,13 +33,20 @@ public class GameManager : MonoBehaviour {
 
 	public void LevelRestart() {
 		Time.timeScale = 1f;
+		StopAllCoroutines();
 		levels[current_level_index].Restart();
 		FindObjectOfType<ScoreManager>().Restart();
 	}
 
 	public void LevelRotate() {
-		Time.timeScale = 0.5f;
+		StartCoroutine(SlowMOEffect(0.2f, 2));
 		levels[current_level_index].Rotate();
+	}
+
+	private IEnumerator SlowMOEffect(float scale, int duration) {
+		Time.timeScale = scale;
+		yield return new WaitForSeconds(duration);
+		Time.timeScale = 1.0f;
 	}
 
 	public void Exit() {
