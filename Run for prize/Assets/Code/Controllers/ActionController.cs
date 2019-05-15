@@ -20,7 +20,8 @@ public class ActionController : MonoBehaviour {
 		/* ===================================================================== */
 		action_list = new List<Action>(actions);
 		/* ===================================================================== */
-		start_position = action_list[0].transform.position;
+		if (action_list.Count > 0)
+			start_position = action_list[0].transform.position;
 		/* ===================================================================== */
 	}
 
