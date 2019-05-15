@@ -32,11 +32,13 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void LevelRestart() {
+		Time.timeScale = 1f;
 		levels[current_level_index].Restart();
 		FindObjectOfType<ScoreManager>().Restart();
 	}
 
 	public void LevelRotate() {
+		Time.timeScale = 0.5f;
 		levels[current_level_index].Rotate();
 	}
 
