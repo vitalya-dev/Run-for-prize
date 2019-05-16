@@ -53,5 +53,8 @@ public class LevelController : MonoBehaviour {
 	public void Rotate() {
 		GameObject grounds = transform.Find("Level/Grounds").gameObject;
 		grounds.GetComponent<Animator>().SetTrigger("Rotate");
+
+		GameObject actions = transform.Find("Actions").gameObject;
+		actions.GetComponent<Animator>().SetTrigger("Rotate");
 	}
 }
