@@ -8,6 +8,8 @@ public class ActionController : MonoBehaviour {
 	private List<Action> action_list;
 	private Vector3 start_position;
 
+	public GameObject placed;
+
 	void Start() {
 		/* ===================================================================== */
 		for (var i = 0; i < actions.Length; i++)
@@ -25,7 +27,7 @@ public class ActionController : MonoBehaviour {
 		/* ===================================================================== */
 	}
 
-	public Action pop() {
+	public Action pop(bool change_parent = true) {
 		if (action_list.Count > 0) {
 			/* ================================== */
 			Action action = action_list[0];
@@ -35,15 +37,20 @@ public class ActionController : MonoBehaviour {
 				a.transform.Translate(new Vector3(-1, 0, 0));
 			}
 			/* ================================== */
+			if (change_parent)
+				action.transform.parent = placed.transform;
+			/* ================================== */
 			return action;
 		} else {
 			return null;
 		}
 	}
 
-	public void push(Action action) {
+	public void push(Action action, bool change_parent = true) {
 		if (Array.IndexOf(actions, action) != -1) {
 			action.transform.position = start_position;
+			if (change_parent)
+				action.transform.parent = placed.transform.parent;
 			foreach (var a in action_list)
 				a.transform.Translate(new Vector3(1, 0, 0));
 			action_list.Insert(0, action);
@@ -52,7 +59,7 @@ public class ActionController : MonoBehaviour {
 
 	public void rotate(float axis) {
 		if (axis < 0 && action_list.Count > 0) {
-			Action action = pop();
+			Action action = pop(false);
 			/* ******************************** */
 			action.transform.Translate(new Vector3(action_list.Count, 0, 0));
 			/* ******************************** */
@@ -63,7 +70,7 @@ public class ActionController : MonoBehaviour {
 			/* ******************************** */
 			action_list.Remove(action);
 			/* ******************************** */
-			push(action);
+			push(action, false);
 			/* ******************************** */
 		}
 	}
