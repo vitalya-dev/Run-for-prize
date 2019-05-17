@@ -30,7 +30,7 @@ public class LevelController : MonoBehaviour {
 
 	public void Restart() {
 		/* ================================================================= */
-		foreach (Effefcts effect in FindObjectsOfType<Effefcts>())
+		foreach (Effects effect in FindObjectsOfType<Effects>())
 			effect.StopAllCoroutines();
 		/* ================================================================= */
 		GameObject oldLevel = transform.Find("Level").gameObject;
@@ -57,8 +57,8 @@ public class LevelController : MonoBehaviour {
 
 	public void Rotate() {
 		GameObject grounds = transform.Find("Level/Grounds").gameObject;
-		grounds.GetComponent<Effefcts>().rotate(.1f);
+		grounds.GetComponent<Effects>().rotate(.1f);
 		GameObject actions = transform.Find("Actions/Placed").gameObject;
-		actions.GetComponent<Effefcts>().rotate(.1f);
+		actions.GetComponent<Effects>().rotate(.1f);
 	}
 }

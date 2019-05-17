@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Effefcts : MonoBehaviour {
+public class Effects : MonoBehaviour {
 
 	public void rotate(float duration) {
 		StartCoroutine(rotate_coroutine(duration));
