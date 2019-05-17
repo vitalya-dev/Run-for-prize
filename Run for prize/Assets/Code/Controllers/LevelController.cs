@@ -43,6 +43,7 @@ public class LevelController : MonoBehaviour {
 		GameObject.Destroy(oldLevel);
 		/* ================================================================= */
 		Transform actions = transform.Find("Actions");
+		actions.rotation = Quaternion.Euler(0, 0, 0);
 		for (int i = 0; i < actions.childCount; i++) {
 			actions.GetChild(i).gameObject.SetActive(true);
 		}
@@ -52,9 +53,9 @@ public class LevelController : MonoBehaviour {
 
 	public void Rotate() {
 		GameObject grounds = transform.Find("Level/Grounds").gameObject;
-		grounds.GetComponent<Animator>().SetTrigger("Rotate");
-
+		// grounds.GetComponent<Animator>().Play("Ground Rotation Animation");
+		grounds.GetComponent<Effefcts>().rotate(.1f);
 		GameObject actions = transform.Find("Actions").gameObject;
-		actions.GetComponent<Animator>().SetTrigger("Rotate");
+		actions.GetComponent<Effefcts>().rotate(.1f);
 	}
 }
