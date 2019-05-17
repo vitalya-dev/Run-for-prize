@@ -24,11 +24,15 @@ public class LevelController : MonoBehaviour {
 		/* ======================================================== */
 		transform.Find("Actions").gameObject.SetActive(false);
 		/* ======================================================== */
-		level_backup = GameObject.Instantiate(level, level.transform.position, Quaternion.identity, transform) as GameObject;
+		level_backup = GameObject.Instantiate(level, level.transform.position, Quaternion.identity, transform)as GameObject;
 		level_backup.SetActive(false);
 	}
 
 	public void Restart() {
+		/* ================================================================= */
+		foreach (Effefcts effect in FindObjectsOfType<Effefcts>())
+			effect.StopAllCoroutines();
+		/* ================================================================= */
 		GameObject oldLevel = transform.Find("Level").gameObject;
 		/* ================================================================= */
 		GameObject newLevel = GameObject.Instantiate(
@@ -53,7 +57,6 @@ public class LevelController : MonoBehaviour {
 
 	public void Rotate() {
 		GameObject grounds = transform.Find("Level/Grounds").gameObject;
-		// grounds.GetComponent<Animator>().Play("Ground Rotation Animation");
 		grounds.GetComponent<Effefcts>().rotate(.1f);
 		GameObject actions = transform.Find("Actions/Placed").gameObject;
 		actions.GetComponent<Effefcts>().rotate(.1f);

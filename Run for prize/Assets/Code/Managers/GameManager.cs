@@ -39,11 +39,11 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void LevelRotate() {
-		StartCoroutine(SlowMOEffect(0.2f, 2));
+		StartCoroutine(SlowMOEffect(0.2f, 0.5f));
 		levels[current_level_index].Rotate();
 	}
 
-	private IEnumerator SlowMOEffect(float scale, int duration) {
+	private IEnumerator SlowMOEffect(float scale, float duration) {
 		Time.timeScale = scale;
 		yield return new WaitForSeconds(duration);
 		Time.timeScale = 1.0f;
