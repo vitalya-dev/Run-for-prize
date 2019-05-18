@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void LevelRotate() {
-		StartCoroutine(SlowMOEffect(0.2f, 0.5f));
+		StartCoroutine(SlowMOEffect(0.2f, 0.1f));
 		levels[current_level_index].Rotate();
 	}
 

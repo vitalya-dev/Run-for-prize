@@ -33,6 +33,7 @@ public class HeroFlyState : HBaseFSM {
 					RotateAction rotate = collisionUnder.GetComponent<RotateAction>();
 					GameObject.FindObjectOfType<GameManager>().LevelRotate();
 					rotate.GetComponent<ExplodeController>().Explode();
+					animator.SetTrigger("Stop");
 					break;
 				case "Roll":
 					collisionUnder.GetComponent<ExplodeController>().Explode();
