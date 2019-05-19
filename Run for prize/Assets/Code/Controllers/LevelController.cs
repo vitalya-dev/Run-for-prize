@@ -10,7 +10,6 @@ public class LevelController : MonoBehaviour {
 		}
 		set {
 			gameObject.transform.Find("Level").gameObject.SetActive(value);
-			gameObject.transform.Find("Actions").gameObject.SetActive(value);
 		}
 	}
 
@@ -22,9 +21,7 @@ public class LevelController : MonoBehaviour {
 		GameObject level = transform.Find("Level").gameObject;
 		level.SetActive(false);
 		/* ======================================================== */
-		transform.Find("Actions").gameObject.SetActive(false);
-		/* ======================================================== */
-		level_backup = GameObject.Instantiate(level, level.transform.position, Quaternion.identity, transform)as GameObject;
+		level_backup = GameObject.Instantiate(level, level.transform.position, Quaternion.identity, transform) as GameObject;
 		level_backup.SetActive(false);
 	}
 
@@ -46,19 +43,13 @@ public class LevelController : MonoBehaviour {
 		/* ================================================================= */
 		GameObject.Destroy(oldLevel);
 		/* ================================================================= */
-		Transform actions = transform.Find("Actions/Placed");
-		for (int i = 0; i < actions.childCount; i++) {
-			actions.GetChild(i).gameObject.SetActive(true);
-		}
-		actions.rotation = Quaternion.Euler(0, 0, 0);
-		/* ================================================================= */
 		complete = false;
 	}
 
 	public void Rotate() {
 		GameObject grounds = transform.Find("Level/Grounds").gameObject;
 		grounds.GetComponent<Effects>().rotate(.1f);
-		GameObject actions = transform.Find("Actions/Placed").gameObject;
+		GameObject actions = transform.Find("Level/Actions/Placed").gameObject;
 		actions.GetComponent<Effects>().rotate(.1f);
 	}
 }
