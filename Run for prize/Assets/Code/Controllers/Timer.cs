@@ -5,12 +5,14 @@ using UnityEngine.Events;
 
 public class Timer : MonoBehaviour {
 
+	public UnityEvent start_callback = new UnityEvent();
 	public UnityEvent finish_callback = new UnityEvent();
 	public UnityEvent ticktack_callback = new UnityEvent();
 
 	public int sec = 0;
 
 	void Start() {
+		start_callback.Invoke();
 		StartCoroutine(timer(sec));
 	}
 

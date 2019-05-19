@@ -2,6 +2,16 @@
 using UnityEngine;
 
 public class InputManager : MonoBehaviour {
+	private bool _times_out = false;
+
+	public bool times_out {
+		get {
+			return _times_out;
+		}
+		set {
+			_times_out = value;
+		}
+	}
 
 	void Update() {
 		/* ################################################################## */
@@ -12,7 +22,7 @@ public class InputManager : MonoBehaviour {
 			FindObjectOfType<GameManager>().Pause();
 		}
 		/* ################################################################## */
-		if (Input.GetMouseButtonDown(0)) {
+		if (Input.GetMouseButtonDown(0) && !times_out) {
 			RaycastHit2D hit = Physics2D.Raycast(
 				Camera.main.ScreenPointToRay(Input.mousePosition).origin,
 				Vector2.zero,
@@ -32,7 +42,7 @@ public class InputManager : MonoBehaviour {
 			}
 		}
 		/* ################################################################## */
-		if (Input.GetMouseButtonDown(1)) {
+		if (Input.GetMouseButtonDown(1) && !times_out) {
 			RaycastHit2D hit = Physics2D.Raycast(
 				Camera.main.ScreenPointToRay(Input.mousePosition).origin,
 				Vector2.zero,
