@@ -11,6 +11,8 @@ public class Timer : MonoBehaviour {
 
 	public int sec = 0;
 
+	public float time_factor = 1;
+
 	void Start() {
 		start_callback.Invoke();
 		StartCoroutine(timer(sec));
@@ -19,7 +21,7 @@ public class Timer : MonoBehaviour {
 	private IEnumerator timer(int s) {
 		for (int i = 0; i < s; i++) {
 			ticktack_callback.Invoke();
-			yield return new WaitForSeconds(1);
+			yield return new WaitForSeconds(1f * time_factor);
 		}
 		finish_callback.Invoke();
 	}

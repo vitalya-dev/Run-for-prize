@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ActionController : MonoBehaviour {
 	public Action[] actions;
@@ -11,6 +12,14 @@ public class ActionController : MonoBehaviour {
 	public GameObject placed;
 
 	void Start() {
+		for (var i = 0; i < actions.Length; i++) {
+			int rnd = Random.Range(0, actions.Length);
+			/* ============================================ */
+			Vector3 temp = actions[i].transform.position;
+			actions[i].transform.position = actions[rnd].transform.position;
+			actions[rnd].transform.position = temp;
+			/* ============================================ */
+		}
 		/* ===================================================================== */
 		for (var i = 0; i < actions.Length; i++)
 			for (var j = i + 1; j < actions.Length; j++)
