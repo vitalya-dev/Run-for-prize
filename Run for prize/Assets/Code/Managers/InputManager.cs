@@ -4,11 +4,14 @@ using UnityEngine;
 public class InputManager : MonoBehaviour {
 
 	void Update() {
+		/* ################################################################## */
 		if (Input.GetKeyDown(KeyCode.R))
 			GameObject.FindObjectOfType<GameManager>().LevelRestart();
+		/* ################################################################## */
 		if (Input.GetKeyDown(KeyCode.Escape)) {
 			FindObjectOfType<GameManager>().Pause();
 		}
+		/* ################################################################## */
 		if (Input.GetMouseButtonDown(0)) {
 			RaycastHit2D hit = Physics2D.Raycast(
 				Camera.main.ScreenPointToRay(Input.mousePosition).origin,
@@ -28,6 +31,7 @@ public class InputManager : MonoBehaviour {
 				}
 			}
 		}
+		/* ################################################################## */
 		if (Input.GetMouseButtonDown(1)) {
 			RaycastHit2D hit = Physics2D.Raycast(
 				Camera.main.ScreenPointToRay(Input.mousePosition).origin,
@@ -37,8 +41,6 @@ public class InputManager : MonoBehaviour {
 			if (hit.collider && hit.collider.GetComponent<Action>())
 				GameObject.FindObjectOfType<ActionController>().push(hit.collider.GetComponent<Action>());
 		}
-
-		if (Input.mouseScrollDelta.y != 0)
-			GameObject.FindObjectOfType<ActionController>().rotate(Input.mouseScrollDelta.y);
+		/* ################################################################## */
 	}
 }

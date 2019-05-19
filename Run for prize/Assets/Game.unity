@@ -1875,6 +1875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1794b0581d9d02f45880d7550c3eaf56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countdown: 5
   complete: 0
 --- !u!1 &287625276
 GameObject:
@@ -4998,6 +4999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1794b0581d9d02f45880d7550c3eaf56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countdown: 0
   complete: 0
 --- !u!114 &1015744094
 MonoBehaviour:
