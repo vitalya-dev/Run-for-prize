@@ -1,41 +1,36 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 
 public class CountdownController : MonoBehaviour {
 
 	public Sprite[] elements;
+	
+	private int counter = -1;
 
-	void Start() {
-		do_count();
-	}
-
-	public void do_count() {
-		StartCoroutine(do_count_coroutine());
-	}
-
-	private IEnumerator do_count_coroutine() {
+	public void count_it() {
 		/* ======================================= */
-		Vector2 intial_scale = transform.localScale;
+		StopAllCoroutines();
+		transform.localScale = new Vector3(1, 1, 1);
 		/* ======================================= */
-		for (int i = 0; i < elements.Length; i++) {
-			/* ======================================= */
-			transform.localScale = intial_scale;
-			/* ======================================= */
-			GetComponent<SpriteRenderer>().sprite = elements[i];
-			StartCoroutine(make_it_bigger_coroutine(1));
-			/* ======================================= */
-			yield return new WaitForSeconds(1.1f);
+		counter += 1;
+		/* ======================================= */
+		if (counter < elements.Length) {
+			GetComponent<SpriteRenderer>().sprite = elements[counter];
+			StartCoroutine(make_it_bigger_coroutine());
 		}
-		/* ======================================= */
-		GetComponent<SpriteRenderer>().sprite = null;
 	}
 
-	private IEnumerator make_it_bigger_coroutine(int duration) {
-		float flow = 0;
-		while (flow < duration) {
-			flow += Time.deltaTime;
+	private IEnumerator make_it_bigger_coroutine() {
+		while (true) {
 			transform.localScale += new Vector3(.3f, .3f, 0);
 			yield return null;
 		}
+	}
+
+	public void done() {
+		StopAllCoroutines();
+		transform.localScale = new Vector3(1, 1, 1);
+		GetComponent<SpriteRenderer>().sprite = null;
+		counter = -1;
 	}
 }
