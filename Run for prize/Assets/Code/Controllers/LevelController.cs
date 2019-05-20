@@ -52,4 +52,19 @@ public class LevelController : MonoBehaviour {
 		GameObject actions = transform.Find("Level/Actions/Placed").gameObject;
 		actions.GetComponent<Effects>().rotate(.1f);
 	}
+
+	public void vibrate(float bpm) {
+		StartCoroutine(vibrate_coroutine(bpm));
+	}
+
+	private IEnumerator vibrate_coroutine(float bpm) {
+		int k = 1;
+		while (true) {
+			/* ============================ */
+			transform.localScale += new Vector3(0.001f, 0.001f, 0f) * k;
+			k *= -1;
+			/* ============================ */
+			yield return new WaitForSeconds(60.0f / bpm);
+		}
+	}
 }
