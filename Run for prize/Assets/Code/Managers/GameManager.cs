@@ -15,8 +15,6 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	private int current_level_index = 0;
 
-	private float pause_time;
-
 	public void Start() {
 		levels[current_level_index].active = true;
 		/* ============================================== */
@@ -55,18 +53,9 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void Pause() {
-		if (Time.timeScale > 0) {
-			Time.timeScale = 0;
-			pause_menu.SetActive(true);
-			FindObjectOfType<SoundManager>().PauseMusic(true);
-			pause_time = Time.realtimeSinceStartup;
-		} else {
-			if (Time.realtimeSinceStartup - pause_time < 0.2)
-				Application.Quit();
-			Time.timeScale = 1;
-			pause_menu.SetActive(false);
-			FindObjectOfType<SoundManager>().PauseMusic(false);
-		}
+		pause_menu.SetActive(Time.timeScale > 0);
+		FindObjectOfType<SoundManager>().PauseMusic(Time.timeScale > 0);
+		Time.timeScale = 1 - Time.timeScale;
 	}
 
 	public void LevelNext() {

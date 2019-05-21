@@ -23,7 +23,7 @@ public class CountdownController : MonoBehaviour {
 	private IEnumerator make_it_bigger_coroutine() {
 		while (true) {
 			transform.localScale += new Vector3(.3f, .3f, 0);
-			yield return null;
+			yield return new WaitForSeconds(0.01f);
 		}
 	}
 
