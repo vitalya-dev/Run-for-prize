@@ -65,6 +65,10 @@ public class InputManager : MonoBehaviour {
 		Action current_action = GameObject.FindObjectOfType<ActionController>().first();
 		if (current_action)
 			highlight_cell.GetComponent<SpriteRenderer>().sprite = current_action.GetComponent<SpriteRenderer>().sprite;
+		else
+			highlight_cell.GetComponent<SpriteRenderer>().sprite = null;
+		if (times_out)
+			highlight_cell.GetComponent<SpriteRenderer>().sprite = null;
 		/* ################################################################## */
 	}
 }
