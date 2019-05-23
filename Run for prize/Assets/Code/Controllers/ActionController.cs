@@ -55,6 +55,10 @@ public class ActionController : MonoBehaviour {
 		}
 	}
 
+	public Action first() {
+		if (action_list.Count > 0) return action_list[0]; else return null;
+	}
+
 	public void push(Action action, bool change_parent = true) {
 		if (Array.IndexOf(actions, action) != -1) {
 			action.transform.position = start_position;

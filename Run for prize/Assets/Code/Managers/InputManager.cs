@@ -62,5 +62,9 @@ public class InputManager : MonoBehaviour {
 		);
 		highlight_cell.transform.position = highlight_cell_pos;
 		/* ################################################################## */
+		Action current_action = GameObject.FindObjectOfType<ActionController>().first();
+		if (current_action)
+			highlight_cell.GetComponent<SpriteRenderer>().sprite = current_action.GetComponent<SpriteRenderer>().sprite;
+		/* ################################################################## */
 	}
 }
