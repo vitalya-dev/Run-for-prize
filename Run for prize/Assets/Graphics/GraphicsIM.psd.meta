@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1558269193
+timeCreated: 1558586774
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -34,6 +34,7 @@ TextureImporter:
     21300054: 3
     21300056: 4
     21300058: 5
+    21300060: Highlight
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -468,6 +469,19 @@ TextureImporter:
         height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Highlight
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 272
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
