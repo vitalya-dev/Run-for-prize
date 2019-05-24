@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1558586774
+timeCreated: 1558671466
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -35,6 +35,7 @@ TextureImporter:
     21300056: 4
     21300058: 5
     21300060: Highlight
+    21300062: Girl Intro
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -482,6 +483,19 @@ TextureImporter:
         height: 16
       alignment: 1
       pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Girl Intro
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 72
+        width: 71
+        height: 61
+      alignment: 9
+      pivot: {x: 0.16713832, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
