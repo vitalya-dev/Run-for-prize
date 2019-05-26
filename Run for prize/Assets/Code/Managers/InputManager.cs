@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class InputManager : MonoBehaviour {
 	private bool _times_out = false;
@@ -15,6 +17,8 @@ public class InputManager : MonoBehaviour {
 	public GameObject highlight_cell;
 
 	void Update() {
+		if (Input.GetKeyDown(KeyCode.Space))
+			GameObject.FindObjectOfType<Timer>().stop();
 		/* ################################################################## */
 		if (Input.GetKeyDown(KeyCode.R))
 			GameObject.FindObjectOfType<GameManager>().LevelRestart();

@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-
 public class Timer : MonoBehaviour {
 
 	public UnityEvent start_callback = new UnityEvent();
@@ -12,6 +11,8 @@ public class Timer : MonoBehaviour {
 	public int sec = 0;
 
 	public float time_factor = 1;
+
+	private bool done = false;
 
 	void Start() {
 		start_callback.Invoke();
@@ -24,5 +25,14 @@ public class Timer : MonoBehaviour {
 			yield return new WaitForSeconds(1f * time_factor);
 		}
 		finish_callback.Invoke();
+		done = true;
+	}
+
+	public void stop() {
+		if (!done) {
+			StopAllCoroutines();
+			finish_callback.Invoke();
+			done = true;
+		}
 	}
 }
