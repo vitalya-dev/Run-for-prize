@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1558672227
+timeCreated: 1558848415
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -36,6 +36,9 @@ TextureImporter:
     21300058: 5
     21300060: Highlight
     21300062: Girl Intro
+    21300064: Color Noise 1
+    21300066: Color Noise 2
+    21300068: Color Noise 3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -496,6 +499,45 @@ TextureImporter:
         height: 60
       alignment: 9
       pivot: {x: 0.16713832, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Color Noise 1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 848
+        width: 384
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Color Noise 2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 848
+        width: 384
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Color Noise 3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 672
+        width: 384
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

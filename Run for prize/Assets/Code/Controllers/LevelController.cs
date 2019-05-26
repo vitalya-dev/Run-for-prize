@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour {
 	private GameObject level_backup;
+	[SerializeField]
+	private GameObject color_noise;
 
 	public bool active {
 		get {
@@ -21,11 +23,22 @@ public class LevelController : MonoBehaviour {
 		GameObject level = transform.Find("Level").gameObject;
 		level.SetActive(false);
 		/* ======================================================== */
-		level_backup = GameObject.Instantiate(level, level.transform.position, Quaternion.identity, transform) as GameObject;
+		level_backup = GameObject.Instantiate(level, level.transform.position, Quaternion.identity, transform)as GameObject;
 		level_backup.SetActive(false);
 	}
 
 	public void Restart() {
+		StartCoroutine(RestartRoutine());
+	}
+
+	private IEnumerator RestartRoutine() {
+		GameObject noise = Instantiate(
+			color_noise,
+			transform.position + new Vector3(0, 0, -1),
+			Quaternion.identity
+		)as GameObject;
+		Destroy(noise, 0.15f);
+		yield return new WaitForSeconds(0.15f);
 		/* ================================================================= */
 		foreach (Effects effect in FindObjectsOfType<Effects>())
 			effect.StopAllCoroutines();
