@@ -18,7 +18,10 @@ public class InputManager : MonoBehaviour {
 
 	void Update() {
 		if (Input.GetKeyDown(KeyCode.Space))
-			GameObject.FindObjectOfType<Timer>().stop();
+			if (GameObject.FindObjectOfType<GameManager>().current_level.complete)
+				GameObject.FindObjectOfType<GameManager>().LevelNext();
+			else
+				GameObject.FindObjectOfType<Timer>().stop();
 		/* ################################################################## */
 		if (Input.GetKeyDown(KeyCode.R))
 			GameObject.FindObjectOfType<GameManager>().LevelRestart();
