@@ -10452,8 +10452,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 962251624}
-        m_MethodName: set_disabled
+      - m_Target: {fileID: 1307975759}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10461,7 +10461,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
@@ -16089,6 +16089,7 @@ Transform:
   - {fileID: 650285250}
   - {fileID: 962251623}
   - {fileID: 896740839}
+  - {fileID: 1307975758}
   m_Father: {fileID: 1837407445}
   m_RootOrder: 0
 --- !u!1 &903767826
@@ -17522,7 +17523,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 962251622}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 9.6, z: 0}
+  m_LocalPosition: {x: -5.3, y: 6.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -17539,8 +17540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2f3d9b8b42f704692b4b93644c74b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlight_cell_prefab: {fileID: 1000010082794478, guid: 80d6f82e5dd3aec4dad171c160e3f3e4,
-    type: 2}
   spacekey_callback:
     m_PersistentCalls:
       m_Calls:
@@ -24161,6 +24160,74 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &1307975757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1307975758}
+  - 114: {fileID: 1307975759}
+  m_Layer: 10
+  m_Name: MouseHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1307975758
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1307975757}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.77, y: 7.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 901979157}
+  m_RootOrder: 10
+--- !u!114 &1307975759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1307975757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d33cb023f9a2e21439ca26189c242cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlight_cell_prefab: {fileID: 1000010082794478, guid: 80d6f82e5dd3aec4dad171c160e3f3e4,
+    type: 2}
+  lmb_callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1307975759}
+        m_MethodName: place_action
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  rkey_callback:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  esc_callback:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1331532677
 GameObject:
   m_ObjectHideFlags: 0
