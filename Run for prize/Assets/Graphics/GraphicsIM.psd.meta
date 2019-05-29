@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1558938716
+timeCreated: 1559127031
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -40,6 +40,8 @@ TextureImporter:
     21300066: Color Noise 2
     21300068: Color Noise 3
     21300070: Arrow Right
+    21300072: Good Piggy 1
+    21300074: Good Piggy 2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -552,6 +554,32 @@ TextureImporter:
         height: 16
       alignment: 1
       pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Good Piggy 1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 592
+        width: 70
+        height: 59
+      alignment: 9
+      pivot: {x: 0.31582338, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Good Piggy 2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 592
+        width: 84
+        height: 54
+      alignment: 9
+      pivot: {x: 0.26350075, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
