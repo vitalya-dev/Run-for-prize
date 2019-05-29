@@ -60,7 +60,8 @@ public class GameManager : MonoBehaviour {
 
 	public void LevelNext() {
 		LevelComplete();
-		StartCoroutine(LevelNextRoutine(0.1f));
+		if (current_level_index + 1 < levels.Length)
+			StartCoroutine(LevelNextRoutine(0.1f));
 	}
 
 	public void LevelComplete() {
