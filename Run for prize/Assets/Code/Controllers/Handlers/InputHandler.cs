@@ -3,34 +3,41 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
-public class InputManager : MonoBehaviour {
-	private bool _times_out = false;
-	public bool times_out {
+public class InputHandler : InputHandlerHelper {
+	private bool _disabled = false;
+	public bool disabled {
 		get {
-			return _times_out;
+			return _disabled;
 		}
 		set {
-			_times_out = value;
+			_disabled = value;
 		}
 	}
 
-	public GameObject highlight_cell;
+	public  GameObject highlight_cell_prefab;
+	private GameObject highlight_cell;
+
+	public UnityEvent spacekey_callback = new UnityEvent();
+	public UnityEvent rkey_callback = new UnityEvent();
+	public UnityEvent esc_callback = new UnityEvent();
+
+
+	void Start() {
+		 highlight_cell = GameObject.Instantiate(highlight_cell_prefab, Vector3.zero, Quaternion.identity) as GameObject;
+	}
 
 	void Update() {
 		if (Input.GetKeyDown(KeyCode.Space))
-			if (GameObject.FindObjectOfType<GameManager>().current_level.complete)
-				GameObject.FindObjectOfType<GameManager>().LevelNext();
-			else
-				GameObject.FindObjectOfType<Timer>().stop();
+			spacekey_callback.Invoke();
 		/* ################################################################## */
 		if (Input.GetKeyDown(KeyCode.R))
-			GameObject.FindObjectOfType<GameManager>().LevelRestart();
+			rkey_callback.Invoke();
 		/* ################################################################## */
 		if (Input.GetKeyDown(KeyCode.Escape)) {
-			FindObjectOfType<GameManager>().Pause();
+			esc_callback.Invoke();
 		}
 		/* ################################################################## */
-		if (Input.GetMouseButtonDown(0) && !times_out) {
+		if (Input.GetMouseButtonDown(0) && !disabled) {
 			RaycastHit2D hit = Physics2D.Raycast(
 				Camera.main.ScreenPointToRay(Input.mousePosition).origin,
 				Vector2.zero,
@@ -50,7 +57,7 @@ public class InputManager : MonoBehaviour {
 			}
 		}
 		/* ################################################################## */
-		if (Input.GetMouseButtonDown(1) && !times_out) {
+		if (Input.GetMouseButtonDown(1) && !disabled) {
 			RaycastHit2D hit = Physics2D.Raycast(
 				Camera.main.ScreenPointToRay(Input.mousePosition).origin,
 				Vector2.zero,
@@ -74,7 +81,7 @@ public class InputManager : MonoBehaviour {
 			highlight_cell.GetComponent<SpriteRenderer>().sprite = current_action.GetComponent<SpriteRenderer>().sprite;
 		else
 			highlight_cell.GetComponent<SpriteRenderer>().sprite = null;
-		if (times_out)
+		if (disabled)
 			highlight_cell.GetComponent<SpriteRenderer>().sprite = null;
 		/* ################################################################## */
 	}
