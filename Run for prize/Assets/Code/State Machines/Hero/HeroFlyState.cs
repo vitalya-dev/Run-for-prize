@@ -15,6 +15,10 @@ public class HeroFlyState : HBaseFSM {
 		if (!personage.moving && personage.collisionUnder) {
 			Collider2D collisionUnder = personage.collisionUnder;
 			switch (collisionUnder.tag) {
+				case "Solid":
+				case "Wall":
+					animator.SetTrigger("Crash");
+					break;
 				case "Arrow":
 					ArrowAction arrow = collisionUnder.GetComponent<ArrowAction>();
 					if (
