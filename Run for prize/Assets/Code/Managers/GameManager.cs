@@ -75,7 +75,6 @@ public class GameManager : MonoBehaviour {
 		/* ====================================================== */
 		current_level_index += 1;
 		levels[current_level_index].active = true;
-		levels[current_level_index].vibrate(120);
 		/* ====================================================== */
 		Camera.main.transform.position = new Vector3(
 			levels[current_level_index].transform.position.x,
