@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1559127031
+timeCreated: 1559220611
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -42,6 +42,7 @@ TextureImporter:
     21300070: Arrow Right
     21300072: Good Piggy 1
     21300074: Good Piggy 2
+    21300076: Girl tell controll
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -580,6 +581,19 @@ TextureImporter:
         height: 54
       alignment: 9
       pivot: {x: 0.26350075, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Girl tell controll
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 665
+        width: 201
+        height: 122
+      alignment: 9
+      pivot: {x: 0.12841311, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
