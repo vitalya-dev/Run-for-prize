@@ -10,6 +10,13 @@ public class HandlerHelper : MonoBehaviour {
 			GameObject.FindObjectOfType<Timer>().stop();
 	}
 
+	public void restart_or_level_next() {
+		if (GameObject.FindObjectOfType<GameManager>().current_level.complete)
+			GameObject.FindObjectOfType<GameManager>().LevelNext();
+		else
+			GameObject.FindObjectOfType<GameManager>().LevelRestart();
+	}
+
 	public void place_action() {
 		RaycastHit2D hit = Physics2D.Raycast(
 			Camera.main.ScreenPointToRay(Input.mousePosition).origin,

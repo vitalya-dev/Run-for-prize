@@ -1,10 +1,17 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
+
+// [System.Serializable]
+// public class myFloatEvent : UnityEvent<float> { }
 
 public class LevelController : MonoBehaviour {
 	private GameObject level_backup;
 	[SerializeField]
 	private GameObject color_noise;
+
+	[SerializeField]
+	public UnityEvent complete_callback = new UnityEvent();
 
 	public bool active {
 		get {
@@ -15,7 +22,16 @@ public class LevelController : MonoBehaviour {
 		}
 	}
 
-	public bool complete = false;
+	private bool _complete = false;
+	public bool complete {
+		set {
+			_complete = value;
+			if (value) complete_callback.Invoke();
+		}
+		get {
+			return _complete;
+		}
+	}
 
 	// Use this for initialization
 	void Awake() {
