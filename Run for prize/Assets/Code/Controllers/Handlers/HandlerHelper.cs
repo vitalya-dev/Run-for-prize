@@ -37,6 +37,14 @@ public class HandlerHelper : MonoBehaviour {
 		}
 	}
 
+	public void place_action_or_timer_stop() {
+		Action action = GameObject.FindObjectOfType<ActionController>().first();
+		if (action) 
+			place_action();
+		else
+			GameObject.FindObjectOfType<Timer>().stop();
+	}
+
 	public void remove_action() {
 		RaycastHit2D hit = Physics2D.Raycast(
 			Camera.main.ScreenPointToRay(Input.mousePosition).origin,

@@ -24624,7 +24624,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1307975759}
-        m_MethodName: place_action
+        m_MethodName: place_action_or_timer_stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
