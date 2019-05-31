@@ -40,4 +40,16 @@ public class HandlerHelper : MonoBehaviour {
 			GameObject.FindObjectOfType<ActionController>().push(hit.collider.GetComponent<Action>());
 	}
 
+	public void remove_action_or_timer_stop() {
+		RaycastHit2D hit = Physics2D.Raycast(
+			Camera.main.ScreenPointToRay(Input.mousePosition).origin,
+			Vector2.zero,
+			Mathf.Infinity
+		);
+		if (hit.collider && hit.collider.GetComponent<Action>())
+			GameObject.FindObjectOfType<ActionController>().push(hit.collider.GetComponent<Action>());
+		else
+			GameObject.FindObjectOfType<Timer>().stop();
+	}
+
 }

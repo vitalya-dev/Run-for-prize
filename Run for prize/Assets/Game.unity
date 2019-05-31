@@ -4503,7 +4503,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 261012122}
-        m_MethodName: remove_action
+        m_MethodName: remove_action_or_timer_stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23759,7 +23759,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1259408455}
-        m_MethodName: remove_action
+        m_MethodName: remove_action_or_timer_stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24533,7 +24533,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1307975759}
-        m_MethodName: remove_action
+        m_MethodName: remove_action_or_timer_stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -25268,7 +25268,7 @@ MonoBehaviour:
   - {fileID: 1991246906}
   - {fileID: 272418165}
   - {fileID: 1570830404}
-  current_level_index: 0
+  current_level_index: 1
 --- !u!4 &1351534438
 Transform:
   m_ObjectHideFlags: 0
@@ -29323,7 +29323,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1585215707}
-        m_MethodName: remove_action
+        m_MethodName: remove_action_or_timer_stop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
