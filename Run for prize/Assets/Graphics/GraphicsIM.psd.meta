@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1559220611
+timeCreated: 1559405016
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -43,6 +43,11 @@ TextureImporter:
     21300072: Good Piggy 1
     21300074: Good Piggy 2
     21300076: Girl tell controll
+    21300078: Piggy part 1
+    21300080: Piggy part 3
+    21300082: Piggy part 2
+    21300084: Piggy part 4
+    21300086: Girl Oh Nooo
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -594,6 +599,71 @@ TextureImporter:
         height: 122
       alignment: 9
       pivot: {x: 0.12841311, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Piggy part 1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 628
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Piggy part 3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 616
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Piggy part 2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 628
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Piggy part 4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 615
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Girl Oh Nooo
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 640
+        width: 18
+        height: 21
+      alignment: 9
+      pivot: {x: 0.7534163, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
