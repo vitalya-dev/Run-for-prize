@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1559472630
+timeCreated: 1559570268
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -58,10 +58,17 @@ TextureImporter:
     21300102: Girl Continue Crying 3
     21300104: Girl Continue Crying 4
     21300106: Girl Continue Crying 5
+    21300108: House Background
+    21300110: Window
+    21300112: Lamp
+    21300114: Girl Sleep
+    21300116: Piggy sleep
+    21300118: The door
+    21300120: Zzzzzzzz
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -101,7 +108,12 @@ TextureImporter:
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -804,6 +816,97 @@ TextureImporter:
         height: 21
       alignment: 9
       pivot: {x: 0.7534163, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House Background
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1313
+        width: 394
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Window
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1139
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Lamp
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1067
+        width: 48
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Girl Sleep
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1048
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Piggy sleep
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1048
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: The door
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1051
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zzzzzzzz
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1012
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
