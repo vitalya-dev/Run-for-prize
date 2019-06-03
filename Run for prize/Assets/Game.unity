@@ -3893,7 +3893,7 @@ Transform:
   m_Children:
   - {fileID: 326596659}
   - {fileID: 379456390}
-  - {fileID: 1715475601}
+  - {fileID: 414081177}
   - {fileID: 1268419423}
   - {fileID: 1002952058}
   m_Father: {fileID: 674457406}
@@ -7155,6 +7155,35 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!1 &414081176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 414081177}
+  m_Layer: 0
+  m_Name: Zzzzzzzz
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &414081177
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414081176}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.96, y: -0.82, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1715475601}
+  m_Father: {fileID: 204001658}
+  m_RootOrder: 2
 --- !u!1 &415844321
 GameObject:
   m_ObjectHideFlags: 0
@@ -22152,7 +22181,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a5d6417476e896549af12b1088ce7867, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -33713,6 +33742,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1715475601}
   - 212: {fileID: 1715475602}
+  - 95: {fileID: 1715475603}
   m_Layer: 0
   m_Name: Zzzzzzzz
   m_TagString: Untagged
@@ -33727,12 +33757,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1715475600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.48, y: 0.44, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 204001658}
-  m_RootOrder: 2
+  m_Father: {fileID: 414081177}
+  m_RootOrder: 0
 --- !u!212 &1715475602
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33762,10 +33792,27 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300120, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
+  m_Sprite: {fileID: 21300122, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!95 &1715475603
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1715475600}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eabaec84e7e890f489ca0710678cc593, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1716424965
 GameObject:
   m_ObjectHideFlags: 0

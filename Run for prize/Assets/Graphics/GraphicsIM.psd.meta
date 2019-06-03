@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1559570268
+timeCreated: 1559573103
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -65,6 +65,10 @@ TextureImporter:
     21300116: Piggy sleep
     21300118: The door
     21300120: Zzzzzzzz
+    21300122: Zzzzzz1
+    21300124: Zzzzzz2
+    21300126: Zzzzzz3
+    21300128: Zzzzzz4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -907,6 +911,58 @@ TextureImporter:
         height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zzzzzz1
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1046
+        width: 44
+        height: 39
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zzzzzz2
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1045
+        width: 38
+        height: 32
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zzzzzz3
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1041
+        width: 32
+        height: 29
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Zzzzzz4
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1038
+        width: 27
+        height: 25
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
