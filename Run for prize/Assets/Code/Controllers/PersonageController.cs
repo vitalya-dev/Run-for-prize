@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider2D))]
 public class PersonageController : MonoBehaviour {
@@ -9,6 +10,8 @@ public class PersonageController : MonoBehaviour {
 
 	[HideInInspector]
 	public Vector2 axis = new Vector2(-1, 0);
+
+	public UnityEvent fly_callback = new UnityEvent();
 
 	public bool moving {
 		get {
