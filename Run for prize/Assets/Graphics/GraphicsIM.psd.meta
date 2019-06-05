@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e0506b49079d6be439bfa794dd844b45
-timeCreated: 1559729767
+timeCreated: 1559735625
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -76,6 +76,7 @@ TextureImporter:
     21300138: What this
     21300140: Evil
     21300142: You come home
+    21300144: What the
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -1046,6 +1047,19 @@ TextureImporter:
         y: 568
         width: 135
         height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: What the
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 16
+        width: 45
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
