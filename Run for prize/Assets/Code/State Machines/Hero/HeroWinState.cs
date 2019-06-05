@@ -6,7 +6,7 @@ public class HeroWinState : HBaseFSM {
 	// OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
 		base.OnStateEnter(animator, stateInfo, layerIndex);
-
+		personage.win_callback.Invoke();
 		/* ================================================================= */
 		personage.collisionUnder.GetComponent<ExplodeController>().Explode();
 		/* ================================================================= */

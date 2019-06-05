@@ -12,6 +12,7 @@ public class PersonageController : MonoBehaviour {
 	public Vector2 axis = new Vector2(-1, 0);
 
 	public UnityEvent fly_callback = new UnityEvent();
+	public UnityEvent win_callback = new UnityEvent();
 
 	public bool moving {
 		get {
