@@ -82,6 +82,11 @@ TextureImporter:
     21300154: Ready
     21300156: Then air
     21300158: Its started
+    21300160: Girl dance 1
+    21300162: Girl dance 2
+    21300164: This was funny
+    21300166: How do you feel
+    21300168: It cannot continue long
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1732,13 +1737,113 @@ TextureImporter:
         width: 42
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: f74648ee186f1ed4cab7aca8294494b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl dance 1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1264
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b37afe08d7a1e469c2ee23291076dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl dance 2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1264
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b64ec7e96321d94db3789579819112b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This was funny
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1413
+        width: 99
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb01b8b6040eb042811e647734e3f89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: How do you feel
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1356
+        width: 112
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d821f0d7ed1ec74091ab0fb08a19b6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: It cannot continue long
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1310
+        width: 119
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd7faf52ee016e418981d57b818cbf2
       vertices: []
       indices: 
       edges: []
