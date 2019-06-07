@@ -80,6 +80,7 @@ TextureImporter:
     21300150: Strange Dream
     21300152: First time i have such a dream
     21300154: Ready
+    21300156: Then air
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1690,13 +1691,33 @@ TextureImporter:
         width: 42
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: ead8aa2408e1b184ebc94e4604b0a92e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Then air
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 253
+        width: 68
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b191a7540d7664c994a17037e82eff
       vertices: []
       indices: 
       edges: []
