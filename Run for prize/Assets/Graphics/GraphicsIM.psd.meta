@@ -81,6 +81,7 @@ TextureImporter:
     21300152: First time i have such a dream
     21300154: Ready
     21300156: Then air
+    21300158: Its started
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1711,13 +1712,33 @@ TextureImporter:
         width: 68
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 68b191a7540d7664c994a17037e82eff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Its started
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 142
+        width: 42
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74648ee186f1ed4cab7aca8294494b3
       vertices: []
       indices: 
       edges: []
