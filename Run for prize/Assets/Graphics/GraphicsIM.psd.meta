@@ -91,6 +91,8 @@ TextureImporter:
     21300172: Girl On Piggy Right 2
     21300174: Girl On Piggy Left 1
     21300176: Girl On Piggy Left 2
+    21300178: Xa
+    21300180: This was awesome
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1881,7 +1883,7 @@ TextureImporter:
         width: 24
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1901,7 +1903,7 @@ TextureImporter:
         width: 23
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1921,13 +1923,53 @@ TextureImporter:
         width: 23
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: bd85258a495822d499a2535863baf1c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xa
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1592
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467e95e78a171194abf1b9a2a5b6afaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: This was awesome
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1702
+        width: 187
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f59535e96b41141b2deca41b048de1
       vertices: []
       indices: 
       edges: []
