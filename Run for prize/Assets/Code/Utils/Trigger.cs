@@ -6,6 +6,9 @@ using UnityEngine.Events;
 public class Trigger : MonoBehaviour {
     public UnityEvent trigger_callback;
 
+    [TextArea]
+    public string json;
+
     void OnEnable() {
         trigger_callback.Invoke();
     }

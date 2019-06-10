@@ -87,6 +87,10 @@ TextureImporter:
     21300164: This was funny
     21300166: How do you feel
     21300168: It cannot continue long
+    21300170: Girl On Piggy Right 1
+    21300172: Girl On Piggy Right 2
+    21300174: Girl On Piggy Left 1
+    21300176: Girl On Piggy Left 2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1797,7 +1801,7 @@ TextureImporter:
         width: 99
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1817,7 +1821,7 @@ TextureImporter:
         width: 112
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1837,13 +1841,93 @@ TextureImporter:
         width: 119
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 1dd7faf52ee016e418981d57b818cbf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl On Piggy Right 1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1632
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0b0354cc7bdd145aedac6261cef16b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl On Piggy Right 2
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1632
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874c611368ce38440a7ca2abda91b1e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl On Piggy Left 1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1632
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f2e1eadae74f040b77ae2547fdd09e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl On Piggy Left 2
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1632
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd85258a495822d499a2535863baf1c8
       vertices: []
       indices: 
       edges: []
