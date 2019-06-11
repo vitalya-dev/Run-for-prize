@@ -93,6 +93,8 @@ TextureImporter:
     21300176: Girl On Piggy Left 2
     21300178: Xa
     21300180: This was awesome
+    21300182: Girl Sleeping
+    21300184: Z
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -1258,10 +1260,10 @@ TextureImporter:
       name: House Background
       rect:
         serializedVersion: 2
-        x: 201
-        y: 1313
-        width: 394
-        height: 170
+        x: 406
+        y: 1498
+        width: 391
+        height: 168
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1963,13 +1965,53 @@ TextureImporter:
         width: 187
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 49f59535e96b41141b2deca41b048de1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl Sleeping
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1073
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502607457a3ade148a0bc3d2c06e5155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Z
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1327
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1914d45a8cc8aa84fa57c5abff2c3f5e
       vertices: []
       indices: 
       edges: []
