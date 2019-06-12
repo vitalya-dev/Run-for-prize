@@ -3,7 +3,7 @@ guid: e0506b49079d6be439bfa794dd844b45
 TextureImporter:
   fileIDToRecycleName:
     21300000: Solid
-    21300002: Prize
+    21300002: Memories
     21300004: Background
     21300006: Arrow Up
     21300008: Fly
@@ -95,6 +95,17 @@ TextureImporter:
     21300180: This was awesome
     21300182: Girl Sleeping
     21300184: Z
+    21300186: Cute Gril Look Right
+    21300188: Cute Gril Look Left
+    21300190: Piggy
+    21300192: Where are we piggy
+    21300194: Is this dream
+    21300196: Look the memory. Go get them
+    21300198: Memory Shining 1
+    21300200: Memory Shining 2
+    21300202: Memory Shining 3
+    21300204: Memory Shining 4
+    21300206: Memory Shining 0
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -197,7 +208,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prize
+      name: Memories
       rect:
         serializedVersion: 2
         x: 112
@@ -1477,26 +1488,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Where are we piggy
-      rect:
-        serializedVersion: 2
-        x: 745
-        y: 98
-        width: 71
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 649a7728dc48bc04a86e56a38f131d76
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Girl Ooooo 1
       rect:
         serializedVersion: 2
@@ -2005,13 +1996,233 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 1914d45a8cc8aa84fa57c5abff2c3f5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute Gril Look Right
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1739
+        width: 21
+        height: 26
+      alignment: 9
+      pivot: {x: 0.71428573, y: 0.34615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51be64907a8221d448486a6b8c923d5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute Gril Look Left
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1739
+        width: 21
+        height: 26
+      alignment: 9
+      pivot: {x: 0.2857143, y: 0.34615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfc2a578ba5f4746b202c6a0f11ce1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 544
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b06a31b5ac27c40b64d71210b98bcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Where are we piggy
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1711
+        width: 90
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd9bb7c6fbb43b4fa9fa93b0e77fea4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Is this dream
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1700
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f0e3180ec4f16408fa1373c517a2da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Look the memory. Go get them
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1762
+        width: 128
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6a64b7294edf74e9cdee0f2d184dd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memory Shining 1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1547
+        width: 20
+        height: 20
+      alignment: 9
+      pivot: {x: 0.3, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c712a4136634cc47af6d736b6d5a607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memory Shining 2
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1546
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0.3181818, y: 0.13636364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0828212ee355454aaaa54329cab9796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memory Shining 3
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1545
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.16666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc453a5cd530ead47bca107baf9853bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memory Shining 4
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1543
+        width: 28
+        height: 28
+      alignment: 9
+      pivot: {x: 0.35714287, y: 0.21428573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f72cedc719f3041bb1f6810836f809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Memory Shining 0
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1549
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a532b4a1ee785b4ebef026880a09978
       vertices: []
       indices: 
       edges: []
