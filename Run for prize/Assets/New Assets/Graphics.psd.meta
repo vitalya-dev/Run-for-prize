@@ -2132,11 +2132,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 211
-        y: 1547
-        width: 20
-        height: 20
+        y: 1511
+        width: 22
+        height: 21
       alignment: 9
-      pivot: {x: 0.3, y: 0.1}
+      pivot: {x: 0.3181818, y: 0.0952381}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2151,12 +2151,12 @@ TextureImporter:
       name: Memory Shining 2
       rect:
         serializedVersion: 2
-        x: 242
-        y: 1546
-        width: 22
-        height: 22
+        x: 241
+        y: 1508
+        width: 26
+        height: 27
       alignment: 9
-      pivot: {x: 0.3181818, y: 0.13636364}
+      pivot: {x: 0.34615386, y: 0.1851852}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2171,38 +2171,18 @@ TextureImporter:
       name: Memory Shining 3
       rect:
         serializedVersion: 2
-        x: 273
-        y: 1545
-        width: 24
-        height: 24
+        x: 271
+        y: 1506
+        width: 30
+        height: 31
       alignment: 9
-      pivot: {x: 0.33333334, y: 0.16666667}
+      pivot: {x: 0.36666667, y: 0.22580644}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: fc453a5cd530ead47bca107baf9853bd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Memory Shining 4
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 1543
-        width: 28
-        height: 28
-      alignment: 9
-      pivot: {x: 0.35714287, y: 0.21428573}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1f72cedc719f3041bb1f6810836f809
       vertices: []
       indices: 
       edges: []
