@@ -106,6 +106,10 @@ TextureImporter:
     21300202: Memory Shining 3
     21300204: Memory Shining 4
     21300206: Memory Shining 0
+    21300208: Weee Weee Weee
+    21300210: Why you. I Need rest
+    21300212: Sad face
+    21300214: Look there piggy.
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2111,10 +2115,10 @@ TextureImporter:
       name: Look the memory. Go get them
       rect:
         serializedVersion: 2
-        x: 495
-        y: 1762
-        width: 128
-        height: 43
+        x: 516
+        y: 1827
+        width: 134
+        height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2203,6 +2207,86 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3a532b4a1ee785b4ebef026880a09978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weee Weee Weee
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1857
+        width: 51
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d996cb27ecfa7824695a410041f29305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Why you. I Need rest
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1852
+        width: 124
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887ab1576a97e824dba39ea44b3fcb2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sad face
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1781
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876b12d17a8efeb4f823879a2c67d696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Look there piggy.
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1957
+        width: 107
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29466505d2234b46a65ca8c8044163d
       vertices: []
       indices: 
       edges: []
