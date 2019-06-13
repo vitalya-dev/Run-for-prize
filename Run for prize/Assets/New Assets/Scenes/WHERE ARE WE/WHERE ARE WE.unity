@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 315305159}
   - component: {fileID: 315305158}
   m_Layer: 0
-  m_Name: Timeline
+  m_Name: CUTSCENE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
