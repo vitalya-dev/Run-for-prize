@@ -13,13 +13,16 @@ namespace NewGeneration {
 
         public void move(string input_json) {
             SpaceAndTime input = JsonUtility.FromJson<SpaceAndTime>(input_json);
-            move(new Vector3(input.x, input.y, input.z), input.t);
+            move(new Vector3(input.x, input.y, input.z), input.t, (Space)input.relativeTo);
         }
 
-        public void move(Vector3 dest, float time) {
+        public void move(Vector3 dest, float time, Space relativeTo) {
             if (!moving) {
                 _moving = true;
-                StartCoroutine(move_routine(dest, time));
+                if (relativeTo == Space.World)
+                    StartCoroutine(move_routine(dest, time));
+                else if (relativeTo == Space.Self)
+                    StartCoroutine(move_routine(transform.position + dest, time));
             }
         }
 

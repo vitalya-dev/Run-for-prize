@@ -8,5 +8,6 @@ namespace NewGeneration {
         public float y;
         public float z;
         public float t;
+        public int relativeTo; // World 0 Self 1
     }
 }

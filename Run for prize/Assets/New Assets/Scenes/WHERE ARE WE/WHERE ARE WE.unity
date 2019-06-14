@@ -193,6 +193,7 @@ Transform:
   - {fileID: 2006878214}
   - {fileID: 1581181090}
   - {fileID: 1181002467}
+  - {fileID: 961638345}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -539,7 +540,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 549be168d9985d3409ac8155181cc1a4, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -562,6 +563,8 @@ PlayableDirector:
     value: {fileID: 1080361227}
   - key: {fileID: 114285348535442326, guid: 549be168d9985d3409ac8155181cc1a4, type: 2}
     value: {fileID: 834253811}
+  - key: {fileID: 114466985681566988, guid: 549be168d9985d3409ac8155181cc1a4, type: 2}
+    value: {fileID: 961638344}
   m_ExposedReferences:
     m_References:
     - 3d72a6c619ad4ed4c913fbfb4d776a8d: {fileID: 1824427031}
@@ -2133,6 +2136,66 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &961638344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961638345}
+  - component: {fileID: 961638346}
+  m_Layer: 0
+  m_Name: Piggi Roll Triiger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &961638345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961638344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6752012}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &961638346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961638344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1969ecc737840ae4c96649b2bbfb25e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger_callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1485652407}
+        m_MethodName: roll
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: '{ "x": -8, "y": 0, "z": 0, "t": 2, "relativeTo": 1 }'
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  json: 
 --- !u!1 &965480610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2811,6 +2874,7 @@ GameObject:
   - component: {fileID: 1485652407}
   - component: {fileID: 1485652406}
   - component: {fileID: 1485652405}
+  - component: {fileID: 1485652408}
   m_Layer: 0
   m_Name: Piggy
   m_TagString: Untagged
@@ -2826,7 +2890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485652402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.756, y: -1.522391, z: -1}
+  m_LocalPosition: {x: 8.5, y: -1.5, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6752012}
@@ -2916,6 +2980,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc4de65127b186d48a4d05a3e454a0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1485652408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485652402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e942bd05092efd4493deb01db516413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snap_x: 0.5
+  snap_y: 0.5
 --- !u!1 &1496306888
 GameObject:
   m_ObjectHideFlags: 0
