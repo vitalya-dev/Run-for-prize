@@ -6,9 +6,10 @@ namespace NewGeneration {
     [RequireComponent(typeof(BasicRotation))]
     [RequireComponent(typeof(BasicTranslation))]
     public class Roll : MonoBehaviour {
+        private bool _rolling = false;
         public bool rolling {
             get {
-                return GetComponent<BasicTranslation>().moving || GetComponent<BasicRotation>().rotating;
+                return GetComponent<BasicTranslation>().moving || GetComponent<BasicRotation>().rotating || _rolling;
             }
         }
 
@@ -18,15 +19,17 @@ namespace NewGeneration {
         }
 
         public void roll(Vector3 dest, float time, Space relativeTo) {
-            if (!rolling)
+            if (!rolling) {
+                _rolling = true;
                 StartCoroutine(roll_routine(dest, time, relativeTo));
+            }
         }
 
         private IEnumerator roll_routine(Vector3 dest, float time, Space relativeTo) {
             /* *********************** */
             float distance = 0;
             float speed = 0;
-            Vector3  dir = Vector3.zero;
+            Vector3 dir = Vector3.zero;
             /* *********************** */
             if (relativeTo == Space.World) {
                 distance = Vector3.Distance(dest, transform.position);
@@ -43,6 +46,8 @@ namespace NewGeneration {
                 GetComponent<BasicTranslation>().move(dir, speed, Space.Self);
                 yield return new WaitForSeconds(speed + 0.1f);
             }
+             /* *********************** */
+            _rolling = false;
         }
     }
 }
