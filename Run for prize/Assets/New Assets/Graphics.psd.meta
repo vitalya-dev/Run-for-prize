@@ -110,6 +110,8 @@ TextureImporter:
     21300210: Why you. I Need rest
     21300212: Sad face
     21300214: Look there piggy.
+    21300216: Graphics_0
+    21300218: Cute Gril Scarry
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2280,13 +2282,33 @@ TextureImporter:
         width: 107
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: d29466505d2234b46a65ca8c8044163d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cute Gril Scarry
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1740
+        width: 21
+        height: 26
+      alignment: 9
+      pivot: {x: 0.2857143, y: 0.34615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837dc60ed03e06e41b6f4013019f966c
       vertices: []
       indices: 
       edges: []
