@@ -110,8 +110,16 @@ TextureImporter:
     21300210: Why you. I Need rest
     21300212: Sad face
     21300214: Look there piggy.
-    21300216: Graphics_0
+    21300216: What happened
     21300218: Cute Gril Scarry
+    21300220: Look. The leverage
+    21300222: Book say that it controll subconcious
+    21300224: Leverage
+    21300226: Lets try
+    21300228: Black curtain
+    21300230: Help piggu
+    21300232: Use button
+    21300234: You dont have time
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2309,6 +2317,186 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 837dc60ed03e06e41b6f4013019f966c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What happened
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1974
+        width: 76
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5711e14c7acb15c4885f54e0169da6d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Look. The leverage
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1881
+        width: 131
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329ea734a1fb837458422efc2d81dd7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Book say that it controll subconcious
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1805
+        width: 178
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71043a80e8d6537449a646326a0f76c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leverage
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2048
+        width: 128
+        height: 16
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40bc0b26c702d345b898b1fdda34d94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lets try
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1981
+        width: 88
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab761bdf2deb64d4c8717bb2877e94f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Black curtain
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 2200
+        width: 384
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f325241fbdc094f4bb115f428928058d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Help piggu
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 2275
+        width: 211
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52df08547e461704d9e7ce6f5c43458e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Use button
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2250
+        width: 204
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687a0ae27ee327d478f7f988ed8f83bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: You dont have time
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 2229
+        width: 86
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb25d39c912ddfa4da82b8ad1631a844
       vertices: []
       indices: 
       edges: []
