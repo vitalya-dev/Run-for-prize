@@ -18,7 +18,8 @@ namespace NewGeneration {
         public string state_as_string {
             get {
                 return state.ToString();
-            } set {
+            }
+            set {
                 state = (State)System.Enum.Parse(typeof(State), value);
             }
         }
@@ -28,7 +29,7 @@ namespace NewGeneration {
                 return transform.right;
             }
             set {
-                transform.rotation = Quaternion.Euler(0, 0, Vector2.Angle(Vector2.right, value));
+                transform.rotation = Quaternion.LookRotation(transform.forward, new Vector2(-value.y, value.x));
             }
         }
 
@@ -70,6 +71,8 @@ namespace NewGeneration {
                     if (!trans_comp.moving)
                         if (collisionBelow && collisionBelow.tag == "Ground")
                             state = State.ROLL;
+                        else if (collisionBelow && collisionBelow.tag == "Wall")
+                            state = State.COLLIDE;
                         else
                             trans_comp.move(new Vector3(0, -1, 0), 1 / (speed * 2), Space.Self);
                     break;
@@ -91,6 +94,10 @@ namespace NewGeneration {
                     }
                     break;
             }
+        }
+
+        void OnDrawGizmos() {
+            Handles.Label(transform.position + new Vector3(0, 0.7f, 0), state.ToString(), gizmo_style);
         }
     }
 }

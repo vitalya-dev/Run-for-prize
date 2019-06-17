@@ -120,6 +120,7 @@ TextureImporter:
     21300230: Help piggu
     21300232: Use button
     21300234: You dont have time
+    21300236: The wall
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2490,13 +2491,33 @@ TextureImporter:
         width: 86
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: fb25d39c912ddfa4da82b8ad1631a844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The wall
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 703
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b77d9b67f3ce946bfb49f852fead7f
       vertices: []
       indices: 
       edges: []
