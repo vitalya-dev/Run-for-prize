@@ -6,6 +6,8 @@ using UnityEngine.Events;
 using UnityEditor;
 #endif
 
+using Action = NewGeneration.Actions.Action;
+
 namespace NewGeneration {
 
     [RequireComponent(typeof(BasicRotation))]
@@ -15,14 +17,38 @@ namespace NewGeneration {
         public GUIStyle gizmo_style = new GUIStyle();
 
         public enum State { FLY, FALL, ROLL, IDLE, COLLIDE, INVALID }
+
         [SerializeField]
-        private State state = State.IDLE;
-        public string state_as_string {
+        private State _state = State.IDLE;
+
+        public State state {
             get {
-                return state.ToString();
+                return _state;
             }
             set {
-                state = (State)System.Enum.Parse(typeof(State), value);
+                _state = value;
+                switch (_state) {
+                    case State.FALL:
+                        fall_callback.Invoke();
+                        break;
+                    case State.IDLE:
+                        idle_callback.Invoke();
+                        break;
+                    case State.ROLL:
+                        roll_callback.Invoke();
+                        break;
+                    case State.COLLIDE:
+                        collide_callback.Invoke();
+                        break;
+                }
+            }
+        }
+        public string state_as_string {
+            get {
+                return _state.ToString();
+            }
+            set {
+                _state = (State)System.Enum.Parse(typeof(State), value);
             }
         }
 
@@ -42,7 +68,7 @@ namespace NewGeneration {
             }
         }
 
-        public Vector3 roll_axis;
+        public Vector3 direction;
 
         public float speed = 1;
 
@@ -73,15 +99,15 @@ namespace NewGeneration {
         // Update is called once per frame
         void Update() {
             // face = new Vector2(direction.x, direction.y);
-            switch (state) {
+            switch (_state) {
                 case State.FALL:
-                    GetComponent<Animator>().Play(state.ToString());
+                    GetComponent<Animator>().Play(_state.ToString());
                     var trans_comp = GetComponent<BasicTranslation>();
                     if (!trans_comp.moving) {
                         if (collisionBelow && collisionBelow.tag == "Ground") {
-                            set_state(State.ROLL);
+                            state = State.ROLL;
                         } else if (collisionBelow && collisionBelow.tag == "Wall") {
-                            set_state(State.COLLIDE);
+                            state = State.COLLIDE;
                         } else
                             trans_comp.move(new Vector3(0, -1, 0), 1 / (speed * 2), Space.Self);
                     }
@@ -89,17 +115,38 @@ namespace NewGeneration {
                 case State.IDLE:
                     GetComponent<Animator>().Play(state.ToString());
                     break;
-                case State.ROLL:
+                case State.FLY:
                     GetComponent<Animator>().Play(state.ToString());
-                    if (Mathf.Abs(roll_axis.y) > 0 || roll_axis.magnitude < 1) {
-                        set_state(State.INVALID);
+                    face = direction;
+                    var trnsl_comp = GetComponent<BasicTranslation>();
+                    if (!trnsl_comp.moving) {
+                        if (collisionZ) {
+                            if (collisionZ.GetComponent<NewGeneration.Actions.Action>()) {
+                                var action = collisionZ.GetComponent<NewGeneration.Actions.Action>();
+                                action.act_on(this);
+                            } else
+                                state = State.INVALID;
+                        } else
+                            trnsl_comp.move(direction, 1 / (speed * 2), Space.Self);
+                    }
+                    break;
+                case State.ROLL:
+                    GetComponent<Animator>().Play(_state.ToString());
+                    if (Mathf.Abs(direction.y) > 0 || direction.magnitude < 1) {
+                        state = State.INVALID;
                     } else {
                         var roll_comp = GetComponent<Roll>();
                         if (!roll_comp.rolling) {
-                            if (!collisionBelow) {
-                                set_state(State.FALL);
+                            if (collisionZ) {
+                                if (collisionZ.GetComponent<NewGeneration.Actions.Action>()) {
+                                    var action = collisionZ.GetComponent<NewGeneration.Actions.Action>();
+                                    action.act_on(this);
+                                } else
+                                    state = State.COLLIDE;
+                            } else if (!collisionBelow) {
+                                state = State.FALL;
                             } else {
-                                roll_comp.roll(roll_axis.normalized, 1 / speed, Space.Self);
+                                roll_comp.roll(direction.normalized, 1 / speed, Space.Self);
                             }
                         }
                     }
@@ -107,26 +154,8 @@ namespace NewGeneration {
             }
         }
 
-        public void set_state(State new_state) {
-            state = new_state;
-            switch (state) {
-                case State.FALL:
-                    fall_callback.Invoke();
-                    break;
-                case State.IDLE:
-                    idle_callback.Invoke();
-                    break;
-                case State.ROLL:
-                    roll_callback.Invoke();
-                    break;
-                case State.COLLIDE:
-                    collide_callback.Invoke();
-                    break;
-            }
-        }
-
         void OnDrawGizmos() {
-            Handles.Label(transform.position + new Vector3(0, 0.7f, 0), state.ToString(), gizmo_style);
+            Handles.Label(transform.position + new Vector3(0, 0.7f, 0), _state.ToString(), gizmo_style);
         }
     }
 }
