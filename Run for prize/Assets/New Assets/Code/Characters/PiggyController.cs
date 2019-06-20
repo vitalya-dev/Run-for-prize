@@ -125,7 +125,7 @@ namespace NewGeneration {
                                 var action = collisionZ.GetComponent<NewGeneration.Actions.Action>();
                                 action.act_on(this);
                             } else
-                                state = State.INVALID;
+                                state = State.COLLIDE;
                         } else
                             trnsl_comp.move(direction, 1 / (speed * 2), Space.Self);
                     }

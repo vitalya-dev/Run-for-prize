@@ -7,7 +7,7 @@ namespace NewGeneration {
         public GameObject level;
         private GameObject level_backup;
 
-        void Start() {
+        void Awake() {
             if (level == null) {
                 throw new MissingComponentException("Level not set");
             }
@@ -17,7 +17,7 @@ namespace NewGeneration {
         }
 
         public void restart() {
-            GameObject.Destroy(level);
+            GameObject.DestroyImmediate(level);
             /////////////////////////////////////////////////
             level = Instantiate(level_backup);
             level.name = level_backup.name;

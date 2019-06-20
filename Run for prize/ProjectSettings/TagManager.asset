@@ -15,6 +15,7 @@ TagManager:
   - Wall
   - Rotate
   - Ground
+  - Action
   layers:
   - Default
   - TransparentFX

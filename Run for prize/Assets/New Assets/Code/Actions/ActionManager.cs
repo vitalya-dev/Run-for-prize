@@ -20,12 +20,50 @@ namespace NewGeneration {
                 /* ============================================================= */
                 if (action.type == Action.Type.FLY) {
                     actions.Add(action);
-                }   
+                }
                 /* ============================================================= */
                 action.transform.parent = placed.transform;
                 /* ============================================================= */
                 if (action.type == Action.Type.FLY) {
                     action.gameObject.SetActive(false);
+                }
+            }
+
+            shuffle(actions);
+        }
+
+        private void shuffle<T>(List<T> list) {
+            for (int i = 0; i < list.Count; i++) {
+                /*===========================================*/
+                T temp = list[i];
+                int randomIndex = Random.Range(i, list.Count);
+                /*===========================================*/
+                list[i] = list[randomIndex];
+                list[randomIndex] = temp;
+            }
+        }
+
+        public void place_action(Vector3 mouse_position) {
+            if (actions.Count > 0) {
+                RaycastHit2D hit = Physics2D.Raycast(
+                    Camera.main.ScreenPointToRay(mouse_position).origin,
+                    Vector2.zero,
+                    Mathf.Infinity
+                );
+                if (!hit.collider) {
+                    /* ============================ */
+                    Action action = actions[0];
+                    actions.RemoveAt(0);
+                    /* ============================ */
+                    Vector3 pos = Camera.main.ScreenPointToRay(mouse_position).origin;
+                    pos = new Vector3(
+                        Mathf.Floor(pos.x),
+                        Mathf.Ceil(pos.y),
+                        Mathf.Round(action.transform.position.z)
+                    );
+                    action.transform.position = pos;
+                    /* ============================ */
+                    action.gameObject.SetActive(true);
                 }
             }
         }
