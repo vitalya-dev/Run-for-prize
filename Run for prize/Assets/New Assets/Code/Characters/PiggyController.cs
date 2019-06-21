@@ -132,22 +132,21 @@ namespace NewGeneration {
                     break;
                 case State.ROLL:
                     GetComponent<Animator>().Play(_state.ToString());
-                    if (Mathf.Abs(direction.y) > 0 || direction.magnitude < 1) {
-                        state = State.INVALID;
-                    } else {
-                        var roll_comp = GetComponent<Roll>();
-                        if (!roll_comp.rolling) {
-                            if (collisionZ) {
-                                if (collisionZ.GetComponent<NewGeneration.Actions.Action>()) {
-                                    var action = collisionZ.GetComponent<NewGeneration.Actions.Action>();
-                                    action.act_on(this);
-                                } else
-                                    state = State.COLLIDE;
-                            } else if (!collisionBelow) {
-                                state = State.FALL;
-                            } else {
-                                roll_comp.roll(direction.normalized, 1 / speed, Space.Self);
-                            }
+
+                    var roll_comp = GetComponent<Roll>();
+                    if (!roll_comp.rolling) {
+                        if (collisionZ) {
+                            if (collisionZ.GetComponent<NewGeneration.Actions.Action>()) {
+                                var action = collisionZ.GetComponent<NewGeneration.Actions.Action>();
+                                action.act_on(this);
+                            } else
+                                state = State.COLLIDE;
+                        } else if (!collisionBelow) {
+                            state = State.FALL;
+                        } else if (Mathf.Abs(direction.y) > 0 || direction.magnitude < 1) {
+                            state = State.INVALID;
+                        } else {
+                            roll_comp.roll(direction.normalized, 1 / speed, Space.Self);
                         }
                     }
                     break;
