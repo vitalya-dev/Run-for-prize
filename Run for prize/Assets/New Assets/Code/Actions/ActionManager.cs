@@ -10,6 +10,12 @@ namespace NewGeneration {
         [SerializeField]
         private List<Action> actions;
 
+        public Action current_action {
+            get {
+                return actions.Count > 0 ? actions[0] : null;
+            }
+        }
+
         void Start() {
             placed = new GameObject("Placed");
             placed.transform.parent = this.transform.parent;
