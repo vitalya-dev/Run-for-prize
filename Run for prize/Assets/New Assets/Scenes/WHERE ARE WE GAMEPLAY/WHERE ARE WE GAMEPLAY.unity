@@ -5814,6 +5814,7 @@ GameObject:
   - component: {fileID: 712310386}
   - component: {fileID: 712310384}
   - component: {fileID: 712310383}
+  - component: {fileID: 712310387}
   m_Layer: 10
   m_Name: Arrow Up
   m_TagString: Action
@@ -5937,6 +5938,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   direction: {x: 0, y: 1}
+--- !u!114 &712310387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712310381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea585c0dd5ed404d9516316a433a5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explode_clip: {fileID: 0}
+  bomb_prefab: {fileID: 1000012647370010, guid: 2c596584fad3a90448604ce0288e85f3,
+    type: 3}
 --- !u!1 &718923443
 GameObject:
   m_ObjectHideFlags: 0
@@ -9954,6 +9970,7 @@ GameObject:
   - component: {fileID: 1372994333}
   - component: {fileID: 1372994332}
   - component: {fileID: 1372994334}
+  - component: {fileID: 1372994335}
   - component: {fileID: 1372994331}
   m_Layer: 10
   m_Name: Fly
@@ -10077,6 +10094,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+--- !u!114 &1372994335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372994329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea585c0dd5ed404d9516316a433a5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explode_clip: {fileID: 0}
+  bomb_prefab: {fileID: 1000010629428988, guid: 4971974cf4d6bfb478bc6ee01233c4c1,
+    type: 3}
 --- !u!1 &1388901444
 GameObject:
   m_ObjectHideFlags: 0
@@ -10289,6 +10321,7 @@ GameObject:
   - component: {fileID: 1401747818}
   - component: {fileID: 1401747817}
   - component: {fileID: 1401747816}
+  - component: {fileID: 1401747820}
   - component: {fileID: 1401747819}
   m_Layer: 10
   m_Name: Arrow Left
@@ -10305,7 +10338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401747814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 2, z: 0}
+  m_LocalPosition: {x: -2, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2042531097}
@@ -10413,6 +10446,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   direction: {x: -1, y: 0}
+--- !u!114 &1401747820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401747814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea585c0dd5ed404d9516316a433a5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explode_clip: {fileID: 0}
+  bomb_prefab: {fileID: 1000012719314770, guid: 95d032e4f483a2240b95a4c210ae6461,
+    type: 3}
 --- !u!1 &1416549597
 GameObject:
   m_ObjectHideFlags: 0
@@ -10793,6 +10841,7 @@ GameObject:
   - component: {fileID: 1485652405}
   - component: {fileID: 1485652408}
   - component: {fileID: 1485652410}
+  - component: {fileID: 1485652413}
   - component: {fileID: 1485652411}
   m_Layer: 10
   m_Name: Piggy
@@ -11052,7 +11101,18 @@ MonoBehaviour:
   _state: 2
   fly_callback:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2006878215}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Girl Scarry
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   fall_callback:
@@ -11095,9 +11155,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1485652402}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1485652413}
+        m_MethodName: explode
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11110,7 +11170,29 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   invalid_callback:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2112769521}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1485652413}
+        m_MethodName: explode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   direction: {x: -1, y: 0, z: 0}
@@ -11118,6 +11200,21 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &1485652413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485652402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea585c0dd5ed404d9516316a433a5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explode_clip: {fileID: 0}
+  bomb_prefab: {fileID: 1000012647370010, guid: 2c596584fad3a90448604ce0288e85f3,
+    type: 3}
 --- !u!1 &1496306888
 GameObject:
   m_ObjectHideFlags: 0
@@ -11724,6 +11821,7 @@ GameObject:
   - component: {fileID: 1581181091}
   - component: {fileID: 1581181092}
   - component: {fileID: 1581181094}
+  - component: {fileID: 1581181095}
   - component: {fileID: 1581181093}
   m_Layer: 10
   m_Name: Memories
@@ -11852,6 +11950,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1581181095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581181089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea585c0dd5ed404d9516316a433a5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explode_clip: {fileID: 0}
+  bomb_prefab: {fileID: 1000012026261254, guid: 4c46ffcf4f8a39b4ea3c28dd5ad5eea2,
+    type: 3}
 --- !u!1 &1593697274
 GameObject:
   m_ObjectHideFlags: 0
@@ -13530,7 +13643,18 @@ MonoBehaviour:
       PublicKeyToken=null
   rmb_callback:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2112769521}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: NewGeneration.MouseUnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
 --- !u!1 &1911153026
@@ -13909,6 +14033,7 @@ GameObject:
   - component: {fileID: 1927499302}
   - component: {fileID: 1927499300}
   - component: {fileID: 1927499299}
+  - component: {fileID: 1927499303}
   m_Layer: 10
   m_Name: Roll
   m_TagString: Action
@@ -13924,7 +14049,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927499297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: 2, z: 0}
+  m_LocalPosition: {x: -3, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2042531097}
@@ -14031,6 +14156,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+--- !u!114 &1927499303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927499297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea585c0dd5ed404d9516316a433a5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explode_clip: {fileID: 0}
+  bomb_prefab: {fileID: 1000012026261254, guid: 4c46ffcf4f8a39b4ea3c28dd5ad5eea2,
+    type: 3}
 --- !u!1 &1932572074
 GameObject:
   m_ObjectHideFlags: 0
@@ -15120,7 +15260,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.85
+  orthographic size: 7.16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

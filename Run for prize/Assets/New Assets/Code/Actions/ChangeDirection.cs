@@ -7,7 +7,7 @@ namespace NewGeneration.Actions {
         public Vector2 direction;
         public override void act_on(PiggyController piggy) {
             piggy.direction = direction;
-            GameObject.Destroy(gameObject);
+            GetComponent<Explode>().explode();
         }
     }
 }

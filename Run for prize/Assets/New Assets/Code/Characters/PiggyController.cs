@@ -31,6 +31,9 @@ namespace NewGeneration {
                     case State.FALL:
                         fall_callback.Invoke();
                         break;
+                    case State.FLY:
+                        fly_callback.Invoke();
+                        break;
                     case State.IDLE:
                         idle_callback.Invoke();
                         break;
@@ -39,6 +42,9 @@ namespace NewGeneration {
                         break;
                     case State.COLLIDE:
                         collide_callback.Invoke();
+                        break;
+                    case State.INVALID:
+                        invalid_callback.Invoke();
                         break;
                 }
             }

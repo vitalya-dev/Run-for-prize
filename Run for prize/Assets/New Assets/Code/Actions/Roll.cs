@@ -6,7 +6,7 @@ namespace NewGeneration.Actions {
     public class Roll : Action {
         public override void act_on(PiggyController piggy) {
             piggy.state = PiggyController.State.ROLL;
-            GameObject.Destroy(gameObject);
+            GetComponent<Explode>().explode();
         }
     }
 }
