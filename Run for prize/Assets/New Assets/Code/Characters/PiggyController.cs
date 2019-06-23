@@ -51,10 +51,10 @@ namespace NewGeneration {
         }
         public string state_as_string {
             get {
-                return _state.ToString();
+                return state.ToString();
             }
             set {
-                _state = (State)System.Enum.Parse(typeof(State), value);
+                state = (State)System.Enum.Parse(typeof(State), value);
             }
         }
 
