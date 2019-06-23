@@ -14,8 +14,8 @@ namespace NewGeneration {
 
         public void explode() {
             // /* ================================================================================================= */
-            // if (explode_clip)
-            //     FindObjectOfType<SoundManager>().PlayClipAt(explode_clip, this.transform.position, 0.7f, false);
+            if (explode_clip)
+                SoundUtils.play_clip(explode_clip, 0.3f);
             // /* ================================================================================================= */
             GameObject bomb = Instantiate(
                 bomb_prefab,
