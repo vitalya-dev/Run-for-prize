@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace NewGeneration {
     public class LevelManager : MonoBehaviour {
@@ -23,6 +24,10 @@ namespace NewGeneration {
             level.name = level_backup.name;
             level.SetActive(true);
             /////////////////////////////////////////////////
+        }
+
+        public void complete() {
+            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
         }
     }
 }

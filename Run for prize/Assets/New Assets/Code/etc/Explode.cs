@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace NewGeneration {
     public class Explode : MonoBehaviour {
         public AudioClip explode_clip;
         public GameObject bomb_prefab;
+        public UnityEvent explode_callback;
 
         void Start() {
             if (!bomb_prefab)
@@ -25,6 +27,8 @@ namespace NewGeneration {
             GameObject.Destroy(bomb, bomb.GetComponent<ParticleSystem>().main.startLifetime.constant);
             /* ================================================================================================= */
             GameObject.Destroy(gameObject);
+            /* ================================================================================================= */
+            explode_callback.Invoke();
         }
     }
 }

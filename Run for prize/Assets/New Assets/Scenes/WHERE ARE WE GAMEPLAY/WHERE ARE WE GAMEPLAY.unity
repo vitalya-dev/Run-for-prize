@@ -1708,7 +1708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &145667295
 Transform:
   m_ObjectHideFlags: 0
@@ -6116,7 +6116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712310381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: -1, z: 0}
+  m_LocalPosition: {x: -7, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2042531097}
@@ -6239,6 +6239,11 @@ MonoBehaviour:
   explode_clip: {fileID: 8300000, guid: 78f0e18b0cb663e42b1a16716eb9f6e6, type: 3}
   bomb_prefab: {fileID: 1000012647370010, guid: 2c596584fad3a90448604ce0288e85f3,
     type: 3}
+  explode_callback:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &718923443
 GameObject:
   m_ObjectHideFlags: 0
@@ -10516,6 +10521,11 @@ MonoBehaviour:
   explode_clip: {fileID: 8300000, guid: 78f0e18b0cb663e42b1a16716eb9f6e6, type: 3}
   bomb_prefab: {fileID: 1000010629428988, guid: 4971974cf4d6bfb478bc6ee01233c4c1,
     type: 3}
+  explode_callback:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1388901444
 GameObject:
   m_ObjectHideFlags: 0
@@ -10745,7 +10755,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401747814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 2, z: 0}
+  m_LocalPosition: {x: -7, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2042531097}
@@ -10868,6 +10878,11 @@ MonoBehaviour:
   explode_clip: {fileID: 8300000, guid: 78f0e18b0cb663e42b1a16716eb9f6e6, type: 3}
   bomb_prefab: {fileID: 1000012719314770, guid: 95d032e4f483a2240b95a4c210ae6461,
     type: 3}
+  explode_callback:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1416549597
 GameObject:
   m_ObjectHideFlags: 0
@@ -11622,6 +11637,11 @@ MonoBehaviour:
   explode_clip: {fileID: 8300000, guid: 78f0e18b0cb663e42b1a16716eb9f6e6, type: 3}
   bomb_prefab: {fileID: 1000012647370010, guid: 2c596584fad3a90448604ce0288e85f3,
     type: 3}
+  explode_callback:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1496306888
 GameObject:
   m_ObjectHideFlags: 0
@@ -12372,6 +12392,22 @@ MonoBehaviour:
   explode_clip: {fileID: 8300000, guid: 78f0e18b0cb663e42b1a16716eb9f6e6, type: 3}
   bomb_prefab: {fileID: 1000012026261254, guid: 4c46ffcf4f8a39b4ea3c28dd5ad5eea2,
     type: 3}
+  explode_callback:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1002957162}
+        m_MethodName: complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1593697274
 GameObject:
   m_ObjectHideFlags: 0
@@ -14456,7 +14492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927499297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 2, z: 0}
+  m_LocalPosition: {x: -8, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2042531097}
@@ -14578,6 +14614,11 @@ MonoBehaviour:
   explode_clip: {fileID: 8300000, guid: 78f0e18b0cb663e42b1a16716eb9f6e6, type: 3}
   bomb_prefab: {fileID: 1000012026261254, guid: 4c46ffcf4f8a39b4ea3c28dd5ad5eea2,
     type: 3}
+  explode_callback:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1932572074
 GameObject:
   m_ObjectHideFlags: 0
