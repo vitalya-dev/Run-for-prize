@@ -121,6 +121,11 @@ TextureImporter:
     21300232: Use button
     21300234: You dont have time
     21300236: The wall
+    21300238: Violet Background
+    21300240: Green Ground
+    21300242: A little home
+    21300244: Graphics_0
+    21300246: House wall
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2518,6 +2523,86 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c7b77d9b67f3ce946bfb49f852fead7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Violet Background
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2462
+        width: 388
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1edb8724ba04045a36050eb2027d24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green Ground
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2416
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161803ac49a25e84883f8c030a7a3b90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A little home
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 2490
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc65d155796c0148bc4927918f9ffc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House wall
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2490
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349876285ef83ae44a8c6e540d1f115c
       vertices: []
       indices: 
       edges: []
