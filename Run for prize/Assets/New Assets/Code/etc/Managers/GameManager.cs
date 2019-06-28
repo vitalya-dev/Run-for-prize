@@ -14,11 +14,13 @@ namespace NewGeneration {
 
         // called second
         void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-
+            Debug.Log("On Scene Loaded");
+            if (scenes.FindIndex(s => s.name == scene.name) != -1)
+                SceneManager.SetActiveScene(scene);
         }
 
         void OnSceneUnloaded(Scene scene) {
-            int scene_index =  scenes.FindIndex(s => s.name == scene.name);
+            int scene_index = scenes.FindIndex(s => s.name == scene.name);
             if (scene_index != -1) {
                 scene_index += 1;
                 SceneManager.LoadSceneAsync(scenes[scene_index].name, LoadSceneMode.Additive);

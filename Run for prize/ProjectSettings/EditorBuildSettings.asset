@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/New Assets/Scenes/GLOBAL.unity
     guid: 3cdaa74c9a062ee4e8b15e4a4d13b999
+  - enabled: 1
+    path: Assets/New Assets/Scenes/RUN WITH PIGGY/RUN WITH PIGGY.unity
+    guid: 2a6ecf52b0bc1d5489fb3d20cafc1747
   m_configObjects: {}
