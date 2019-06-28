@@ -9,21 +9,22 @@ namespace NewGeneration {
         private GameObject level_backup;
 
         void Awake() {
-            if (level == null) {
-                throw new MissingComponentException("Level not set");
+            if (level) {
+                level_backup = Instantiate(level, level.transform.position, Quaternion.identity);
+                level_backup.name = level.name;
+                level_backup.SetActive(false);
             }
-            level_backup = Instantiate(level, level.transform.position, Quaternion.identity);
-            level_backup.name = level.name;
-            level_backup.SetActive(false);
         }
 
         public void restart() {
-            GameObject.DestroyImmediate(level);
-            /////////////////////////////////////////////////
-            level = Instantiate(level_backup);
-            level.name = level_backup.name;
-            level.SetActive(true);
-            /////////////////////////////////////////////////
+            if (level_backup) {
+                GameObject.DestroyImmediate(level);
+                /////////////////////////////////////////////////
+                level = Instantiate(level_backup);
+                level.name = level_backup.name;
+                level.SetActive(true);
+                /////////////////////////////////////////////////
+            }
         }
 
         public void complete() {
