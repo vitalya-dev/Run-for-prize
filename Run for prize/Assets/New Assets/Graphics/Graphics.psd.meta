@@ -2571,9 +2571,9 @@ TextureImporter:
       name: A little home
       rect:
         serializedVersion: 2
-        x: 539
-        y: 2490
-        width: 34
+        x: 649
+        y: 2491
+        width: 33
         height: 54
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
