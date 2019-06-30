@@ -124,8 +124,10 @@ TextureImporter:
     21300238: Violet Background
     21300240: Green Ground
     21300242: A little home
-    21300244: Graphics_0
+    21300244: Piggy Fly 1
     21300246: House wall
+    21300248: Piggy Fly 2
+    21300250: Piggy Fly 3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2603,6 +2605,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 349876285ef83ae44a8c6e540d1f115c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Fly 1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 512
+        width: 30
+        height: 16
+      alignment: 9
+      pivot: {x: 0.73333335, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23637a9cc5db3e24cb6377bd22767731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Fly 2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 512
+        width: 30
+        height: 16
+      alignment: 9
+      pivot: {x: 0.73333335, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2974caf79ba3d67428b0e3a843687a6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Fly 3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 512
+        width: 30
+        height: 16
+      alignment: 9
+      pivot: {x: 0.73333335, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd35784150c2ce8409118e8f07e4b742
       vertices: []
       indices: 
       edges: []
