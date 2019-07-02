@@ -8,7 +8,7 @@ namespace NewGeneration {
     public class ActionManager : MonoBehaviour {
         private GameObject placed;
         [SerializeField]
-        private List<Action> actions;
+        private List<Action> actions = new List<Action>();
 
         public Action current_action {
             get {
@@ -51,26 +51,26 @@ namespace NewGeneration {
 
         public void place_action(Vector3 mouse_position) {
             if (actions.Count > 0) {
+                /* ============================ */
+                Action action = actions[0];
+                actions.RemoveAt(0);
+                /* ============================ */
+                Vector3 pos = Camera.main.ScreenPointToRay(mouse_position).origin;
+                pos = new Vector3(
+                    Mathf.Floor(pos.x),
+                    Mathf.Ceil(pos.y),
+                    Mathf.Round(action.transform.position.z)
+                );
                 RaycastHit2D hit = Physics2D.Raycast(
                     Camera.main.ScreenPointToRay(mouse_position).origin,
                     Vector2.zero,
                     Mathf.Infinity
                 );
-                if (!hit.collider) {
-                    /* ============================ */
-                    Action action = actions[0];
-                    actions.RemoveAt(0);
-                    /* ============================ */
-                    Vector3 pos = Camera.main.ScreenPointToRay(mouse_position).origin;
-                    pos = new Vector3(
-                        Mathf.Floor(pos.x),
-                        Mathf.Ceil(pos.y),
-                        Mathf.Round(action.transform.position.z)
-                    );
-                    action.transform.position = pos;
-                    /* ============================ */
-                    action.gameObject.SetActive(true);
-                }
+                /* ============================ */
+                action.transform.position = pos;
+                action.gameObject.SetActive(true);
+                action.place_on(hit.collider);
+                /* ============================ */
             }
         }
     }

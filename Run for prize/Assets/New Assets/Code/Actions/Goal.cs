@@ -8,5 +8,9 @@ namespace NewGeneration.Actions {
             piggy.state = PiggyController.State.IDLE;
             GetComponent<Explode>().explode();
         }
+
+        public override void place_on(Collider2D collider) {
+            GetComponent<Explode>().explode();
+        }
     }
 }

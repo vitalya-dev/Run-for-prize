@@ -9,5 +9,10 @@ namespace NewGeneration.Actions {
             piggy.direction = direction;
             GetComponent<Explode>().explode();
         }
+
+        public override void place_on(Collider2D collider) {
+            if (collider)
+                GetComponent<Explode>().explode();
+        }
     }
 }
