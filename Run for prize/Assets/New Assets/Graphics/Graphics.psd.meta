@@ -131,6 +131,10 @@ TextureImporter:
     21300252: Remember piggy
     21300254: Lets go for new advanture
     21300256: Bomb
+    21300258: WINDMILL BODY
+    21300260: WINDMILL DOOR
+    21300262: WINDMILL WINDOW
+    21300264: WINDMILL HANDS
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2728,6 +2732,86 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1be0e40049595204d91b5c7417cc10b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WINDMILL BODY
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 2631
+        width: 54
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bc71d574e29744eb6dd98b1c7d558a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WINDMILL DOOR
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 2739
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0297e9ea34062c64ba591f177126e93a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WINDMILL WINDOW
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 2689
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ce1acbab271524791a19fad3ba9ae2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WINDMILL HANDS
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 2671
+        width: 108
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5299b7bf6f37aef4189b6fa793728184
       vertices: []
       indices: 
       edges: []
