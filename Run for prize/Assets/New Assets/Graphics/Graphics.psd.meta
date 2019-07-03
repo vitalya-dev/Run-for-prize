@@ -135,6 +135,9 @@ TextureImporter:
     21300260: WINDMILL DOOR
     21300262: WINDMILL WINDOW
     21300264: WINDMILL HANDS
+    21300266: Piggy Sleep Head
+    21300268: Piggi Sleep body
+    21300270: Girl sleep
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2812,6 +2815,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5299b7bf6f37aef4189b6fa793728184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Sleep Head
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 2838
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0cee5a2a670d347bf121222ae998cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggi Sleep body
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 2868
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a484150b19fe56848a6f58a16beb5092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl sleep
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 2842
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87440daf2681c046807934f48282692
       vertices: []
       indices: 
       edges: []
