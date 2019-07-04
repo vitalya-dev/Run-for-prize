@@ -140,6 +140,7 @@ TextureImporter:
     21300270: Girl sleep
     21300272: Whatch stars
     21300274: Good times
+    21300276: What comes next
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2890,7 +2891,7 @@ TextureImporter:
         width: 96
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2910,13 +2911,33 @@ TextureImporter:
         width: 96
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 492359e5425f86b43ac5347c9157d1fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What comes next
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 2117
+        width: 179
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221d750659aa55446a3aa77d7a38b8b3
       vertices: []
       indices: 
       edges: []
