@@ -14,7 +14,7 @@ namespace NewGeneration {
                 throw new MissingReferenceException("Bomb prefab not set");
         }
 
-        public void explode() {
+        public void explode(float delay = 0) {
             // /* ================================================================================================= */
             if (explode_clip)
                 SoundUtils.play_clip(explode_clip, 0.3f);
@@ -26,7 +26,7 @@ namespace NewGeneration {
             )as GameObject;
             GameObject.Destroy(bomb, bomb.GetComponent<ParticleSystem>().main.startLifetime.constant);
             /* ================================================================================================= */
-            GameObject.Destroy(gameObject);
+            GameObject.Destroy(gameObject, delay);
             /* ================================================================================================= */
             explode_callback.Invoke();
         }
