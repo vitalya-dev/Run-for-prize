@@ -16,7 +16,7 @@ namespace NewGeneration {
     public class PiggyController : MonoBehaviour {
         public GUIStyle gizmo_style = new GUIStyle();
 
-        public enum State { FLY, FALL, ROLL, IDLE, COLLIDE, INVALID }
+        public enum State { FLY, FALL, ROLL, IDLE, COLLIDE, INVALID, WAIT }
 
         [SerializeField]
         private State _state = State.IDLE;
