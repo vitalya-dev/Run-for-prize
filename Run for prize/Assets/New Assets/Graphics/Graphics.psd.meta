@@ -148,6 +148,8 @@ TextureImporter:
     21300286: Doctor 2
     21300288: Stetoskop
     21300290: Medical Table
+    21300292: Hospital Background
+    21300294: Hospital Ground
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3085,6 +3087,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 894d28575b98d624a873ae22add4a14a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital Background
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 2940
+        width: 392
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a8d866c4f09fc4f897e5398999c029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hospital Ground
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3120
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da2c70c8cd33124e9f18f59bf98ed3d
       vertices: []
       indices: 
       edges: []
