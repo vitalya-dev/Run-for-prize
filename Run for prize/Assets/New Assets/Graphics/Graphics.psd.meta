@@ -141,6 +141,13 @@ TextureImporter:
     21300272: Whatch stars
     21300274: Good times
     21300276: What comes next
+    21300278: Girl Cry Cry 1
+    21300280: Girl Cry Cry 2
+    21300282: Piggy Almost Dead
+    21300284: Doctor 1
+    21300286: Doctor 2
+    21300288: Stetoskop
+    21300290: Medical Table
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2931,13 +2938,153 @@ TextureImporter:
         width: 179
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 221d750659aa55446a3aa77d7a38b8b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl Cry Cry 1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2720
+        width: 21
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a12943138c3d44d91bce53e33c9d37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl Cry Cry 2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 2744
+        width: 21
+        height: 26
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a55a79ae69e694f807e52c42244451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Almost Dead
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 2711
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793f602e123afab4a97cc2a30b8a27f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doctor 1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 2741
+        width: 23
+        height: 55
+      alignment: 9
+      pivot: {x: 0.21739131, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cf2b6d3eef6774391a5a0e78ca6df0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Doctor 2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 2742
+        width: 23
+        height: 55
+      alignment: 9
+      pivot: {x: 0.21739131, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e284b85c99b9750499c753280cd75208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stetoskop
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2705
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1682b78ede2fa6e46a5227b925bf83cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medical Table
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2744
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894d28575b98d624a873ae22add4a14a
       vertices: []
       indices: 
       edges: []
