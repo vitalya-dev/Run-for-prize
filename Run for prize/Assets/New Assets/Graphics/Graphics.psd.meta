@@ -151,6 +151,9 @@ TextureImporter:
     21300292: Hospital Background
     21300294: Hospital Ground
     21300296: Flip Horizontal
+    21300298: Piggy...
+    21300300: '...'
+    21300302: Please wait
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3148,6 +3151,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f1da1b1ebed2eb345b471b478bc5886b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy...
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 2026
+        width: 45
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c6756b81dca6c47952032908079b6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '...'
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1984
+        width: 25
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b272339f45cb2408f4b6f92f6db432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Please wait
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 2019
+        width: 90
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a1ba6be750d3b408cdc4a5df99972f
       vertices: []
       indices: 
       edges: []
