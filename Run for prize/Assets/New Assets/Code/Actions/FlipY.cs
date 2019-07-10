@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace NewGeneration.Actions {
-    public class FlipX : Action {
+    public class FlipY : Action {
         public string[] flip_objects;
         public float flip_duration;
 
@@ -11,7 +11,7 @@ namespace NewGeneration.Actions {
             /* ================================================================ */
             GameObject flip_x_helper = new GameObject("FlipHelper");
             flip_x_helper.AddComponent<FlipHelper>();
-            flip_x_helper.GetComponent<FlipHelper>().flip_x(piggy, flip_objects, flip_duration);
+            flip_x_helper.GetComponent<FlipHelper>().flip_y(piggy, flip_objects, flip_duration);
             /* ================================================================ */
             GetComponent<Explode>().explode();
         }
@@ -21,5 +21,4 @@ namespace NewGeneration.Actions {
                 GetComponent<Explode>().explode();
         }
     }
-
 }
