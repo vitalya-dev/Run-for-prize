@@ -154,6 +154,11 @@ TextureImporter:
     21300298: Piggy...
     21300300: '...'
     21300302: Please wait
+    21300304: Blue Ground
+    21300306: Green
+    21300308: Tree
+    21300310: Girl say goodbay 1
+    21300312: Girl say goodbay 2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3099,8 +3104,8 @@ TextureImporter:
       name: Hospital Background
       rect:
         serializedVersion: 2
-        x: 44
-        y: 2940
+        x: 53
+        y: 3218
         width: 392
         height: 168
       alignment: 0
@@ -3211,6 +3216,86 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 32a1ba6be750d3b408cdc4a5df99972f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 2912
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb731b36ad0eb9e4e891520c74bbfcee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2961
+        width: 129
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173fd38bbb8404f48bbc65026dfcd19a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl say goodbay 1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2992
+        width: 22
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5735d4afdff8b4449d2124bd934c80c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl say goodbay 2
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 2992
+        width: 23
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5217391, y: 0.56}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b81a958d71355f439c05f61b9cc3cba
       vertices: []
       indices: 
       edges: []
