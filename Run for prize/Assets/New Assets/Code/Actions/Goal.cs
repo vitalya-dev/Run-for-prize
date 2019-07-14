@@ -10,7 +10,8 @@ namespace NewGeneration.Actions {
         }
 
         public override void place_on(Collider2D collider) {
-            GetComponent<Explode>().explode();
+            if (collider)
+                GetComponent<Explode>().explode();
         }
     }
 }

@@ -159,6 +159,11 @@ TextureImporter:
     21300308: Tree
     21300310: Girl say goodbay 1
     21300312: Girl say goodbay 2
+    21300314: Please dont go
+    21300316: Piggy Part 1
+    21300318: Piggy Part 2
+    21300320: Piggy Part 3
+    21300322: Piggy Part 4
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3296,6 +3301,106 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1b81a958d71355f439c05f61b9cc3cba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Please dont go
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 2128
+        width: 102
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbe3fe91e29b55409a4ca7885396289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Part 1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2999
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870d115475625ae458baee328eade00a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Part 2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2999
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdfe6f04f69fca4cb408c1f389c5b1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Part 3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2992
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4245381016e784b8829be65c2a5d0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Part 4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2992
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e09f48a7d8f86a429e7caf773e4ad09
       vertices: []
       indices: 
       edges: []
