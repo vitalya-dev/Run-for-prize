@@ -649,7 +649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 199703918}
   m_Layer: 0
-  m_Name: CUTSCENES
+  m_Name: SECONDARY SCENES
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3124,7 +3124,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 7e9652a981d4b9b44a4dac442b5f0a90, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0

@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/New Assets/Scenes/INTRO/INTRO.unity
     guid: 57cc2b31247bd51498e81332f1f4d503
   - enabled: 1
-    path: Assets/New Assets/Scenes/WHERE ARE WE/WHERE ARE WE.unity
+    path: Assets/New Assets/Scenes/WHERE ARE WE/WHERE ARE WE (INTRO).unity
     guid: 713a02769c59c4d4fa364f2f0119fd6b
   - enabled: 1
     path: Assets/New Assets/Scenes/WHERE ARE WE GAMEPLAY/WHERE ARE WE GAMEPLAY.unity
