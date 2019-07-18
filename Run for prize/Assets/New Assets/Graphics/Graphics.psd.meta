@@ -164,6 +164,11 @@ TextureImporter:
     21300318: Piggy Part 2
     21300320: Piggy Part 3
     21300322: Piggy Part 4
+    21300324: Look Piggy. Subconcious cup
+    21300326: Do you know what i;m think
+    21300328: You need to look
+    21300330: What
+    21300332: I stand here...
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3401,6 +3406,106 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0e09f48a7d8f86a429e7caf773e4ad09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Look Piggy. Subconcious cup
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1706
+        width: 269
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab51f0bfc332bc41884b0e8c6a4cbe7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Do you know what i;m think
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2338
+        width: 164
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2812134265d5a340b96de1cbf80d28e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: You need to look
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2304
+        width: 139
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcbd1b12d52eeb44bb610a21a1a184c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 2263
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a0427745e714b4eb62301ae59a7b09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: I stand here...
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2169
+        width: 136
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64a7f21f0e26c74c878824ca0a565fb
       vertices: []
       indices: 
       edges: []
