@@ -88,7 +88,7 @@ MonoBehaviour:
   - m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 114933035552555966}
-    m_Duration: 5
+    m_Duration: 5.766666666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114976296876935072}
     m_EaseInDuration: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Remember piggy
     m_Version: 1
-  - m_Start: 5.766666666666667
+  - m_Start: 6.666666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 114787452955559308}
     m_Duration: 5

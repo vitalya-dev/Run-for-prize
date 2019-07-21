@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/New Assets/Scenes/RUN WITH PIGGY/RUN WITH PIGGY.unity
     guid: 2a6ecf52b0bc1d5489fb3d20cafc1747
   - enabled: 1
-    path: Assets/New Assets/Scenes/BOLD AS LOVE (GAMEPLAY)/BOLD AS LOVE (GAMEPLAY).unity
+    path: Assets/New Assets/Scenes/BOLD AS LOVE (GAMEPLAY)/OLD BOLD AS LOVE (GAMEPLAY).unity
     guid: 11b7ab8752ca7d34dbb09319eb27c0fb
   m_configObjects: {}

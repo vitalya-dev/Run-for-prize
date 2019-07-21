@@ -7668,7 +7668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 607836512}
   m_Layer: 0
-  m_Name: CUTSCENES
+  m_Name: Shoots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10169,10 +10169,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 816692879}
-  - component: {fileID: 816692881}
   - component: {fileID: 816692880}
   m_Layer: 0
-  m_Name: COMPLETE
+  m_Name: Complete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10192,26 +10191,7 @@ Transform:
   m_Father: {fileID: 607836512}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &816692880
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816692878}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!320 &816692881
+--- !u!320 &816692880
 PlayableDirector:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10220,22 +10200,24 @@ PlayableDirector:
   m_GameObject: {fileID: 816692878}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 72ebd1d576c06fd48b6674faf3d1fc4f, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 055bf85fc1362604792ab12be19e80b7, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 114506407015124590, guid: 72ebd1d576c06fd48b6674faf3d1fc4f, type: 2}
+  - key: {fileID: 114506407015124590, guid: 055bf85fc1362604792ab12be19e80b7, type: 2}
     value: {fileID: 1996479462}
-  - key: {fileID: 114290230325472232, guid: 72ebd1d576c06fd48b6674faf3d1fc4f, type: 2}
+  - key: {fileID: 114290230325472232, guid: 055bf85fc1362604792ab12be19e80b7, type: 2}
     value: {fileID: 1996479465}
-  - key: {fileID: 114354601889145810, guid: 72ebd1d576c06fd48b6674faf3d1fc4f, type: 2}
-    value: {fileID: 326476193}
-  - key: {fileID: 114591563546190692, guid: 72ebd1d576c06fd48b6674faf3d1fc4f, type: 2}
+  - key: {fileID: 114591563546190692, guid: 055bf85fc1362604792ab12be19e80b7, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 114611881721107542, guid: 72ebd1d576c06fd48b6674faf3d1fc4f, type: 2}
+  - key: {fileID: 114354601889145810, guid: 055bf85fc1362604792ab12be19e80b7, type: 2}
+    value: {fileID: 326476193}
+  - key: {fileID: 114611881721107542, guid: 055bf85fc1362604792ab12be19e80b7, type: 2}
     value: {fileID: 166944194}
+  - key: {fileID: 114090677939219726, guid: 055bf85fc1362604792ab12be19e80b7, type: 2}
+    value: {fileID: 1485652402}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &827902474
@@ -13668,7 +13650,7 @@ GameObject:
   - component: {fileID: 1158099072}
   - component: {fileID: 1158099075}
   m_Layer: 10
-  m_Name: Arrow Up (1)
+  m_Name: Arrow Up
   m_TagString: Action
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16703,7 +16685,7 @@ MonoBehaviour:
   collide_callback:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2112769521}
+      - m_Target: {fileID: 2112769520}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -16730,7 +16712,7 @@ MonoBehaviour:
   invalid_callback:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2112769520}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -16743,7 +16725,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1485652413}
         m_MethodName: explode
-        m_Mode: 1
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18190,7 +18172,7 @@ MonoBehaviour:
   explode_callback:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 816692881}
+      - m_Target: {fileID: 816692880}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -20847,7 +20829,7 @@ MonoBehaviour:
   rmb_callback:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2112769521}
+      - m_Target: {fileID: 2112769520}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -22475,7 +22457,7 @@ SpriteRenderer:
   m_Size: {x: 24, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1996479465
@@ -23003,7 +22985,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042531096}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -23393,10 +23375,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112769519}
-  - component: {fileID: 2112769521}
   - component: {fileID: 2112769520}
   m_Layer: 0
-  m_Name: RESTART
+  m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23416,26 +23397,7 @@ Transform:
   m_Father: {fileID: 607836512}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2112769520
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112769518}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!320 &2112769521
+--- !u!320 &2112769520
 PlayableDirector:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23444,25 +23406,23 @@ PlayableDirector:
   m_GameObject: {fileID: 2112769518}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: a28625c759404a942838d55cf2da792e, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: f74cd0b7a966372418f20c7e59f3c754, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 114757921409144630, guid: a28625c759404a942838d55cf2da792e, type: 2}
+  - key: {fileID: 114757921409144630, guid: f74cd0b7a966372418f20c7e59f3c754, type: 2}
     value: {fileID: 1996479462}
-  - key: {fileID: 114932043335885704, guid: a28625c759404a942838d55cf2da792e, type: 2}
-    value: {fileID: 2112769520}
-  - key: {fileID: 114393912270072248, guid: a28625c759404a942838d55cf2da792e, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 114395113977867340, guid: a28625c759404a942838d55cf2da792e, type: 2}
+  - key: {fileID: 114395113977867340, guid: f74cd0b7a966372418f20c7e59f3c754, type: 2}
     value: {fileID: 1996479465}
-  - key: {fileID: 114631308984249378, guid: a28625c759404a942838d55cf2da792e, type: 2}
+  - key: {fileID: 114393912270072248, guid: f74cd0b7a966372418f20c7e59f3c754, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114631308984249378, guid: f74cd0b7a966372418f20c7e59f3c754, type: 2}
     value: {fileID: 1695150445}
-  - key: {fileID: 114088247315898544, guid: a28625c759404a942838d55cf2da792e, type: 2}
+  - key: {fileID: 114088247315898544, guid: f74cd0b7a966372418f20c7e59f3c754, type: 2}
     value: {fileID: 166944194}
-  - key: {fileID: 114188094652940434, guid: a28625c759404a942838d55cf2da792e, type: 2}
+  - key: {fileID: 114188094652940434, guid: f74cd0b7a966372418f20c7e59f3c754, type: 2}
     value: {fileID: 1485652402}
   m_ExposedReferences:
     m_References: []
