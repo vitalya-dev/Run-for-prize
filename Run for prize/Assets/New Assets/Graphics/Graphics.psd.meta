@@ -169,6 +169,7 @@ TextureImporter:
     21300328: You need to look
     21300330: What
     21300332: I stand here...
+    21300334: What a beutifull night
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3439,7 +3440,7 @@ TextureImporter:
         width: 164
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3459,7 +3460,7 @@ TextureImporter:
         width: 139
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3479,7 +3480,7 @@ TextureImporter:
         width: 14
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3499,13 +3500,33 @@ TextureImporter:
         width: 136
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: f64a7f21f0e26c74c878824ca0a565fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What a beutifull night
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2196
+        width: 100
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f8fac4e03c9604bad7297a33209ed6
       vertices: []
       indices: 
       edges: []

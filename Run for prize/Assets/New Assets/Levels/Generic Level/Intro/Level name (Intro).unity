@@ -445,6 +445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1275439086}
+  - component: {fileID: 1275439087}
   m_Layer: 0
   m_Name: Open
   m_TagString: Untagged
@@ -466,6 +467,23 @@ Transform:
   m_Father: {fileID: 1962401316}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1275439087
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275439085}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1283338575
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +493,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1283338576}
+  - component: {fileID: 1283338577}
   m_Layer: 0
   m_Name: Dialog
   m_TagString: Untagged
@@ -496,6 +515,23 @@ Transform:
   m_Father: {fileID: 1962401316}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1283338577
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283338575}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1501829107
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1962401316}
+  - component: {fileID: 1962401317}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -746,6 +783,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1962401317
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962401315}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1996479462
 GameObject:
   m_ObjectHideFlags: 0
