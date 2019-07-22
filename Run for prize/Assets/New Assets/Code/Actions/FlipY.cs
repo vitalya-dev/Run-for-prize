@@ -9,9 +9,9 @@ namespace NewGeneration.Actions {
 
         public override void act_on(PiggyController piggy) {
             /* ================================================================ */
-            GameObject flip_x_helper = new GameObject("FlipHelper");
-            flip_x_helper.AddComponent<FlipHelper>();
-            flip_x_helper.GetComponent<FlipHelper>().flip_y(piggy, flip_objects, flip_duration);
+            GameObject flip_y_helper = new GameObject("FlipHelper");
+            flip_y_helper.AddComponent<FlipHelper>();
+            flip_y_helper.GetComponent<FlipHelper>().flip_y(piggy, flip_objects, flip_duration);
             /* ================================================================ */
             GetComponent<Explode>().explode();
         }
