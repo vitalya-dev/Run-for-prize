@@ -28,7 +28,8 @@ namespace NewGeneration {
         }
 
         public void complete() {
-            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+            Scene current_scene = SceneManager.GetActiveScene();
+            SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
         }
     }
 }

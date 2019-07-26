@@ -6091,7 +6091,7 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
-  type: 0
+  type: 1
   direction: {x: -1, y: 0}
 --- !u!114 &447479798
 MonoBehaviour:

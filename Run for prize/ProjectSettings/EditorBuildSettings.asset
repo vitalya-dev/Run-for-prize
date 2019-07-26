@@ -6,22 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/New Assets/_____________Scenes/INTRO/INTRO.unity
-    guid: 57cc2b31247bd51498e81332f1f4d503
+    path: Assets/New Assets/Levels/And The God Made Love/Intro/And The God Made Love
+      (Intro).unity
+    guid: b57448799ced8234c95e7f7c63306051
   - enabled: 1
-    path: Assets/New Assets/_____________Scenes/WHERE ARE WE/WHERE ARE WE (INTRO).unity
-    guid: 713a02769c59c4d4fa364f2f0119fd6b
+    path: Assets/New Assets/Levels/Are You Experienced/Intro/Are You Experienced (Intro).unity
+    guid: bb0d3dcfae6620140ae4cbc64f48f93e
   - enabled: 1
-    path: Assets/New Assets/_____________Scenes/WHERE ARE WE GAMEPLAY/WHERE ARE WE
-      GAMEPLAY.unity
-    guid: 6d58f9d421c04c24381c4d2cbf1c3967
+    path: Assets/New Assets/Levels/Are You Experienced/Gameplay/Are You Experienced
+      (Gameplay).unity
+    guid: 0cd685bd248f7914eac1b3af6f618114
   - enabled: 1
-    path: Assets/New Assets/_____________Scenes/GLOBAL.unity
-    guid: 3cdaa74c9a062ee4e8b15e4a4d13b999
+    path: Assets/New Assets/Levels/Are You Experienced/After/Are You Experienced (After).unity
+    guid: 3f12a02fccecbaf4089dfbbca2afb0fb
   - enabled: 1
-    path: Assets/New Assets/_____________Scenes/RUN WITH PIGGY/RUN WITH PIGGY.unity
-    guid: 2a6ecf52b0bc1d5489fb3d20cafc1747
+    path: Assets/New Assets/Levels/Bold As Love/Intro/Bold As Love (Intro).unity
+    guid: 969f958a22f3b4d44b9b0d7c4248a42d
   - enabled: 1
-    path: Assets/New Assets/Scenes/BOLD AS LOVE (GAMEPLAY)/OLD BOLD AS LOVE (GAMEPLAY).unity
-    guid: 11b7ab8752ca7d34dbb09319eb27c0fb
+    path: Assets/New Assets/Levels/Bold As Love/Gameplay/Bold As Love (Gameplay).unity
+    guid: 164e86a63a75e8841a9d7a41ba7f0ca9
+  - enabled: 1
+    path: Assets/New Assets/Levels/Bold As Love/After/Bold As Love (After).unity
+    guid: 608055620576c574a9464672ce072bbb
+  - enabled: 1
+    path: Assets/New Assets/Levels/When You Were Young/Intro/When You Were Young (Intro).unity
+    guid: 315b466f7e6e0184d98f9705ce10b4ca
+  - enabled: 1
+    path: Assets/New Assets/Levels/When You Were Young/Gameplay/When You Were Young
+      (Gameplay).unity
+    guid: aadb9f6b990850a47a5e0b98c3fee1da
+  - enabled: 1
+    path: Assets/New Assets/Levels/When You Were Young/After/When You Were Young (After).unity
+    guid: d7cb3d7a36b42f943be52e9d3b07ff45
+  - enabled: 1
+    path: Assets/New Assets/Levels/Break In The Wall/Intro/Break In The Wall (Intro).unity
+    guid: 44512755500d13d46ae1ef7242cf253a
+  - enabled: 1
+    path: Assets/New Assets/Levels/Break In The Wall/Gameplay/Break In The Wall (Gameplay).unity
+    guid: 38998d63cfba4e0419eccd59b65d37f8
+  - enabled: 1
+    path: Assets/New Assets/Levels/Break In The Wall/After/Break In The Wall (After).unity
+    guid: 577337374720ab240bcd0a3e549f055e
   m_configObjects: {}

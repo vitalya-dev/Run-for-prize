@@ -2293,7 +2293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1640236529
 Transform:
   m_ObjectHideFlags: 0
@@ -2527,9 +2527,12 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 114171982549827180, guid: 97a1e3208518c714ba2426202d328619, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 114542307304046216, guid: 97a1e3208518c714ba2426202d328619, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 321ac9d9940a92d4b85c49ebbfa020ed: {fileID: 1283338575}
+    - 027696d2677445248aae40898b61598c: {fileID: 2051533658}
     - 5ed974e28980fe34aac0eb2a52b61c41: {fileID: 1640236528}
     - b68fdbb2b6022f1419c38bead3121b34: {fileID: 1640236528}
     - 2fe97020375527241bc832c1c9b3f790: {fileID: 1283338575}
@@ -2655,7 +2658,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &2051533659
 Animator:
   serializedVersion: 3
@@ -2790,7 +2793,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.53
+  orthographic size: 7.48
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
