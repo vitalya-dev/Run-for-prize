@@ -19,7 +19,9 @@ namespace NewGeneration.Actions {
         public abstract void place_on(Collider2D collider);
 
         void OnDrawGizmos() {
+#if UNITY_EDITOR
             Handles.Label(transform.position + new Vector3(0, 0.7f, 0), type.ToString(), gizmo_style);
+#endif
         }
     }
 }

@@ -160,7 +160,9 @@ namespace NewGeneration {
         }
 
         void OnDrawGizmos() {
+            #if UNITY_EDITOR
             Handles.Label(transform.position + new Vector3(0, 0.7f, 0), _state.ToString(), gizmo_style);
+            #endif
         }
     }
 }
