@@ -173,8 +173,9 @@ TextureImporter:
     21300336: Im sorry
     21300338: Girl Home Background
     21300340: Girl Home Ground
-    21300342: Graphics_0
+    21300342: The End Background
     21300344: Somewhere
+    21300346: The end
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3612,6 +3613,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3ec99c57c524f64488263037ec304010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The End Background
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 3629
+        width: 394
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f70b37b2f23400488710c90d951e794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The end
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 3724
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6288b553ec28f2a48b8df6520be33930
       vertices: []
       indices: 
       edges: []

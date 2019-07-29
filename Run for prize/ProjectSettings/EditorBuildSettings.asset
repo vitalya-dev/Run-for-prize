@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/New Assets/Levels/Break In The Wall/After/Break In The Wall (After).unity
     guid: 577337374720ab240bcd0a3e549f055e
+  - enabled: 1
+    path: Assets/New Assets/Levels/Fresh Strawberries/Intro/Fresh Strawberries (Intro).unity
+    guid: fdb1e2c918f75dd43a8b32d39aca1052
   m_configObjects: {}

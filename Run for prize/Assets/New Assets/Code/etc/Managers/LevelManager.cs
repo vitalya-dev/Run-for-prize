@@ -29,7 +29,10 @@ namespace NewGeneration {
 
         public void complete() {
             Scene current_scene = SceneManager.GetActiveScene();
-            SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
+            if (current_scene.buildIndex + 1 >= SceneManager.sceneCountInBuildSettings)
+                Application.Quit();
+            else
+                SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
         }
     }
 }
