@@ -34,5 +34,9 @@ namespace NewGeneration {
             else
                 SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
         }
+
+        public void play_pause() {
+            Time.timeScale = 1 - Time.timeScale;
+        }
     }
 }
