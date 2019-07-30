@@ -4981,7 +4981,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1494164185}
-  - component: {fileID: 1494164186}
+  - component: {fileID: 465061112}
   m_Layer: 0
   m_Name: Keyboard Handler
   m_TagString: Untagged
@@ -5003,7 +5003,7 @@ Transform:
   m_Father: {fileID: 1731892776}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1494164186
+--- !u!114 &465061112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
