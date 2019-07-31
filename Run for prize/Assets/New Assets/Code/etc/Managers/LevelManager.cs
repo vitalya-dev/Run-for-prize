@@ -30,13 +30,18 @@ namespace NewGeneration {
         public void complete() {
             Scene current_scene = SceneManager.GetActiveScene();
             if (current_scene.buildIndex + 1 >= SceneManager.sceneCountInBuildSettings)
-                Application.Quit();
+                quit();
             else
                 SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
         }
 
         public void play_pause() {
             Time.timeScale = 1 - Time.timeScale;
+        }
+
+        public void quit() {
+            Debug.Log("Quit");
+            Application.Quit();
         }
     }
 }
