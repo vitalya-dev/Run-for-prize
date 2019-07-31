@@ -10595,7 +10595,7 @@ MonoBehaviour:
   type: 0
   flip_objects:
   - Level/Ground
-  flip_duration: 1
+  flip_duration: 0.3
 --- !u!114 &1688763475
 MonoBehaviour:
   m_ObjectHideFlags: 0
