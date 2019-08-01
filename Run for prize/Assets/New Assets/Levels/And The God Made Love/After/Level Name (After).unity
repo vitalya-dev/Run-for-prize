@@ -471,7 +471,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 355169743}
-        m_MethodName: play_pause
+        m_MethodName: complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -486,8 +486,8 @@ MonoBehaviour:
   space_callback:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 355169743}
+        m_MethodName: complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
