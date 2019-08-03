@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/New Assets/Levels/Episodes/Intro/Episodes (Intro).unity
+    guid: bb06422661da77e44a36c814bc8908dd
+  - enabled: 1
+    path: Assets/New Assets/Levels/Episodes/Gameplay/Episodes (Gameplay).unity
+    guid: 2146ce7b47c371b4ea0728e89f672890
+  - enabled: 1
     path: Assets/New Assets/Levels/And The God Made Love/Intro/And The God Made Love
       (Intro).unity
     guid: b57448799ced8234c95e7f7c63306051
