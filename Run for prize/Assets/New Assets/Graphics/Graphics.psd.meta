@@ -177,6 +177,8 @@ TextureImporter:
     21300344: Somewhere
     21300346: The end
     21300348: Gray Screen
+    21300350: Level Selection Background
+    21300352: Level Icon
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3667,13 +3669,33 @@ TextureImporter:
         width: 394
         height: 170
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 7e3008bc9f14e3f41be74b68c1b2e57b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Icon
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 3867
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe655f3619367a48b01e95ef61d5c08
       vertices: []
       indices: 
       edges: []
