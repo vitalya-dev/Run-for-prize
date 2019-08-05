@@ -16,7 +16,7 @@ namespace NewGeneration {
     public class PiggyController : MonoBehaviour {
         public GUIStyle gizmo_style = new GUIStyle();
 
-        public enum State { FLY, FALL, ROLL, IDLE, COLLIDE, INVALID, WAIT }
+        public enum State { FLY, FALL, ROLL, IDLE, COLLIDE, EVILFLY, INVALID, WAIT }
 
         [SerializeField]
         private State _state = State.IDLE;
@@ -34,6 +34,9 @@ namespace NewGeneration {
                     case State.FLY:
                         fly_callback.Invoke();
                         break;
+                    case State.EVILFLY:
+                        evilfly_callback.Invoke();
+                        break;
                     case State.IDLE:
                         idle_callback.Invoke();
                         break;
@@ -46,6 +49,8 @@ namespace NewGeneration {
                     case State.INVALID:
                         invalid_callback.Invoke();
                         break;
+                    default:
+                        throw new UnityException("State forgetting");
                 }
             }
         }
@@ -59,6 +64,7 @@ namespace NewGeneration {
         }
 
         public UnityEvent fly_callback;
+        public UnityEvent evilfly_callback;
         public UnityEvent fall_callback;
         public UnityEvent roll_callback;
         public UnityEvent idle_callback;
@@ -122,6 +128,7 @@ namespace NewGeneration {
                     GetComponent<Animator>().Play(state.ToString());
                     break;
                 case State.FLY:
+                case State.EVILFLY:
                     GetComponent<Animator>().Play(state.ToString());
                     face = direction;
                     var trnsl_comp = GetComponent<BasicTranslation>();
@@ -156,13 +163,15 @@ namespace NewGeneration {
                         }
                     }
                     break;
+                default:
+                    throw new UnityException("State forgetting");
             }
         }
 
         void OnDrawGizmos() {
-            #if UNITY_EDITOR
+#if UNITY_EDITOR
             Handles.Label(transform.position + new Vector3(0, 0.7f, 0), _state.ToString(), gizmo_style);
-            #endif
+#endif
         }
     }
 }

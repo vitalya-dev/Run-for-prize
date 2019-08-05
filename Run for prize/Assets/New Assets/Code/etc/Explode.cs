@@ -11,7 +11,7 @@ namespace NewGeneration {
 
         void Start() {
             if (!bomb_prefab)
-                throw new MissingReferenceException("Bomb prefab not set");
+                throw new UnityException("Bomb prefab not set");
         }
 
         public void explode(float delay = 0) {

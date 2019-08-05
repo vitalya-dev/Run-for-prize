@@ -179,6 +179,10 @@ TextureImporter:
     21300348: Gray Screen
     21300350: Level Selection Background
     21300352: Level Icon
+    21300354: Piggy Evil Fly 1
+    21300356: Piggy Evil Fly 2
+    21300358: Piggy Evil Fly 3
+    21300360: Evil Flight
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3696,6 +3700,86 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: afe655f3619367a48b01e95ef61d5c08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Evil Fly 1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 3056
+        width: 30
+        height: 16
+      alignment: 9
+      pivot: {x: 0.73333335, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a128ab0d3c4193440814ba8825e12e1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Evil Fly 2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 3056
+        width: 30
+        height: 16
+      alignment: 9
+      pivot: {x: 0.73333335, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac617d802f1c83e4c96449229bc90e5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Evil Fly 3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 3056
+        width: 30
+        height: 16
+      alignment: 9
+      pivot: {x: 0.73333335, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc4e1c017c83d845bbe8d19133364ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evil Flight
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 528
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1f33f1689dd9d4e819096ffe8e004c
       vertices: []
       indices: 
       edges: []

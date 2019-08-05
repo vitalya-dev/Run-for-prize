@@ -8,7 +8,7 @@ namespace NewGeneration {
 
         void Start() {
             if (action_manager == null) 
-                throw new MissingReferenceException("Action manager not set");
+                throw new UnityException("Action manager not set");
             gameObject.AddComponent<SpriteRenderer>();
         }
 
