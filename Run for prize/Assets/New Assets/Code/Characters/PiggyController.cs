@@ -49,8 +49,11 @@ namespace NewGeneration {
                     case State.INVALID:
                         invalid_callback.Invoke();
                         break;
+                    case State.WAIT:
+                        wait_callback.Invoke();
+                        break;
                     default:
-                        throw new UnityException("State forgetting");
+                        throw new UnityException("State forgetting " + state.ToString());
                 }
             }
         }
@@ -70,6 +73,7 @@ namespace NewGeneration {
         public UnityEvent idle_callback;
         public UnityEvent collide_callback;
         public UnityEvent invalid_callback;
+        public UnityEvent wait_callback;
 
         public Vector2 face {
             get {
@@ -138,7 +142,16 @@ namespace NewGeneration {
                                 var action = collisionZ.GetComponent<NewGeneration.Actions.Action>();
                                 action.act_on(this);
                             } else
-                                state = State.COLLIDE;
+                                switch (state) {
+                                    case State.FLY:
+                                        state = State.COLLIDE;
+                                        break;
+                                    case State.EVILFLY:
+                                        if (collisionZ.GetComponent<Explode>())
+                                            collisionZ.GetComponent<Explode>().explode();
+                                        state = State.FLY;
+                                        break;
+                                }
                         } else
                             trnsl_comp.move(direction, 1 / (speed * 2), Space.Self);
                     }
@@ -163,8 +176,10 @@ namespace NewGeneration {
                         }
                     }
                     break;
+                case State.WAIT:
+                    break;
                 default:
-                    throw new UnityException("State forgetting");
+                    throw new UnityException("State forgetting: " + state.ToString());
             }
         }
 

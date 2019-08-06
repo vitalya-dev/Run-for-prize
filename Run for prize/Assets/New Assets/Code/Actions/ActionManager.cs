@@ -50,7 +50,7 @@ namespace NewGeneration {
         }
 
         public void place_action(Vector3 mouse_position) {
-            if (actions.Count > 0) {
+            if (actions.Count > 0 && gameObject.activeSelf) {
                 /* ============================ */
                 Action action = actions[0];
                 actions.RemoveAt(0);
