@@ -183,6 +183,7 @@ TextureImporter:
     21300356: Piggy Evil Fly 2
     21300358: Piggy Evil Fly 3
     21300360: Evil Flight
+    21300362: What a dream
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3780,6 +3781,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9b1f33f1689dd9d4e819096ffe8e004c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: What a dream
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2363
+        width: 128
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24366ae2219f6e14193d6a568f3a8ebf
       vertices: []
       indices: 
       edges: []
