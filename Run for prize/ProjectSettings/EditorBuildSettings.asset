@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/New Assets/Levels/Sam Town/Gameplay/Sam Town (Gameplay).unity
     guid: ba230de7aad36a544ae7d2691d9cd333
   - enabled: 1
+    path: Assets/New Assets/Levels/Sam Town/After/Sam Town (After).unity
+    guid: 02af21ffd8bac674ab37e4e6b53c079e
+  - enabled: 1
     path: Assets/New Assets/Levels/Break In The Wall/Intro/Break In The Wall (Intro).unity
     guid: 44512755500d13d46ae1ef7242cf253a
   - enabled: 1

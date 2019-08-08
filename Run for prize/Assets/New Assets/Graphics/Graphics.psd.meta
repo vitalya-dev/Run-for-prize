@@ -190,6 +190,7 @@ TextureImporter:
     21300370: Tennis Net
     21300372: Tennis Background
     21300374: Take it piggy
+    21300376: Pipe
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3920,13 +3921,33 @@ TextureImporter:
         width: 94
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 420afbc2717ea1c4eae00fdd0a6b7e32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 544
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f888f4f8c2dbd45b83ca16ef234cc1
       vertices: []
       indices: 
       edges: []
