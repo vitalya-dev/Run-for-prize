@@ -10,6 +10,8 @@ namespace NewGeneration {
         [SerializeField]
         private List<Action> actions = new List<Action>();
 
+        public static int attemp_number = 0;
+
         public Action current_action {
             get {
                 return actions.Count > 0 ? actions[0] : null;
@@ -17,6 +19,8 @@ namespace NewGeneration {
         }
 
         void Start() {
+            attemp_number += 1;
+
             placed = new GameObject("Placed");
             placed.transform.parent = this.transform.parent;
             placed.transform.localPosition = new Vector3(0, 0, 0);
@@ -43,6 +47,8 @@ namespace NewGeneration {
                 /*===========================================*/
                 T temp = list[i];
                 int randomIndex = Random.Range(i, list.Count);
+                if (i == 0)
+                    randomIndex = attemp_number % list.Count;
                 /*===========================================*/
                 list[i] = list[randomIndex];
                 list[randomIndex] = temp;

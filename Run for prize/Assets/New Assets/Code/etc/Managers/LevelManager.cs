@@ -8,6 +8,8 @@ namespace NewGeneration {
         public GameObject level;
         private GameObject level_backup;
 
+        public static int f = 0;
+
         void Awake() {
             if (level) {
                 level_backup = Instantiate(level, level.transform.position, Quaternion.identity);
