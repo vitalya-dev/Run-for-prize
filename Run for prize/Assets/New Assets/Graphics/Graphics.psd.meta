@@ -190,7 +190,10 @@ TextureImporter:
     21300370: Tennis Net
     21300372: Tennis Background
     21300374: Take it piggy
-    21300376: Pipe
+    21300376: Pipe Right
+    21300378: Pipe Up
+    21300380: Pipe Let
+    21300382: Pipe Down
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3933,7 +3936,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pipe
+      name: Pipe Right
       rect:
         serializedVersion: 2
         x: 224
@@ -3948,6 +3951,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b5f888f4f8c2dbd45b83ca16ef234cc1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe Up
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 544
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e1012e3df301e48bed09f07a7bd5fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe Let
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 544
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8962f9a6f7a110c4c84736b96d5ae592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe Down
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 544
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6513d3e12e51e1944a7fe856a0abe7c3
       vertices: []
       indices: 
       edges: []
