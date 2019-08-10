@@ -178,7 +178,7 @@ TextureImporter:
     21300346: The end
     21300348: Gray Screen
     21300350: Level Selection Background
-    21300352: Level Icon
+    21300352: Level Icon Active
     21300354: Piggy Evil Fly 1
     21300356: Piggy Evil Fly 2
     21300358: Piggy Evil Fly 3
@@ -194,6 +194,7 @@ TextureImporter:
     21300378: Pipe Up
     21300380: Pipe Let
     21300382: Pipe Down
+    21300384: Level Icon Inactive
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -3696,10 +3697,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Level Icon
+      name: Level Icon Active
       rect:
         serializedVersion: 2
-        x: 571
+        x: 572
         y: 3867
         width: 58
         height: 58
@@ -4011,6 +4012,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6513d3e12e51e1944a7fe856a0abe7c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level Icon Inactive
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 3868
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff7d305cbbcb0c438e85135b6f52c60
       vertices: []
       indices: 
       edges: []
