@@ -195,6 +195,13 @@ TextureImporter:
     21300380: Pipe Let
     21300382: Pipe Down
     21300384: Level Icon Inactive
+    21300386: Girl On Beach
+    21300388: Piggy On Beach
+    21300390: Palm
+    21300392: Sand Ground
+    21300394: Cloud 1
+    21300396: Cloud 2
+    21300398: Cloud 3
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -4025,13 +4032,153 @@ TextureImporter:
         width: 58
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 8ff7d305cbbcb0c438e85135b6f52c60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl On Beach
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 3632
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4df95450faf8fa498498016ede0c5b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy On Beach
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 3616
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178a58ba0c6fb294bb3dd2747bb5bcda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Palm
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 3616
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef52474b8cad79245a743af8c867438e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand Ground
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3584
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77371a26a16a5242b99ee17d5fb1a21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud 1
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 3677
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175dcae1a71d42f47ae5949708abfaf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud 2
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 3694
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af909dc82ef1cf49a0802c3f9433618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cloud 3
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 3691
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac88278f0d5fe0419c3f92d0a38c70e
       vertices: []
       indices: 
       edges: []
