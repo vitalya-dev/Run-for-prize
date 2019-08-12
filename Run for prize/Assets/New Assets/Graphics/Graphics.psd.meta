@@ -3148,10 +3148,10 @@ TextureImporter:
       name: Hospital Background
       rect:
         serializedVersion: 2
-        x: 53
-        y: 3218
-        width: 392
-        height: 168
+        x: 51
+        y: 3216
+        width: 394
+        height: 170
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4193,7 +4193,7 @@ TextureImporter:
         width: 59
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
