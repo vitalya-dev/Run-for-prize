@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.Events;
+
 namespace NewGeneration {
     using Action = NewGeneration.Actions.Action;
 
     public class ActionManager : MonoBehaviour {
+        public UnityEvent place_on_callback;
+
         private GameObject placed;
         [SerializeField]
         private List<Action> actions = new List<Action>();
@@ -77,6 +81,7 @@ namespace NewGeneration {
                 action.gameObject.SetActive(true);
                 action.place_on(hit.collider);
                 /* ============================ */
+                place_on_callback.Invoke();
             }
         }
     }

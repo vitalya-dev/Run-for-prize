@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -8,6 +9,9 @@ using UnityEditor;
 
 namespace NewGeneration.Actions {
     public abstract class Action : MonoBehaviour {
+
+        public UnityEvent place_on_callback;
+
         public GUIStyle gizmo_style = new GUIStyle();
 
         public enum Type {
@@ -16,7 +20,10 @@ namespace NewGeneration.Actions {
         }
         public Type type = Type.FLY;
         public abstract void act_on(PiggyController piggy);
-        public abstract void place_on(Collider2D collider);
+        public virtual void place_on(Collider2D collider) {
+            Debug.Log("foo");
+            place_on_callback.Invoke();
+        }
 
         void OnDrawGizmos() {
 #if UNITY_EDITOR

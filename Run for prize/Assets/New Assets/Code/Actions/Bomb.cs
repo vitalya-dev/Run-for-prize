@@ -10,6 +10,7 @@ namespace NewGeneration.Actions {
         }
 
         public override void place_on(Collider2D collider) {
+            base.place_on(collider);
             if (collider && collider.GetComponent<Explode>()) {
                 collider.GetComponent<Explode>().explode();
                 GetComponent<Explode>().explode();
