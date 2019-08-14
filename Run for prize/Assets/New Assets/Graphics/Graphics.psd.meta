@@ -203,6 +203,7 @@ TextureImporter:
     21300396: Cloud 2
     21300398: Cloud 3
     21300400: What a lfie
+    21300402: Good that we have one another
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -4200,6 +4201,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f52f74576a484524f858bc42401f5398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Good that we have one another
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2401
+        width: 102
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae00afad0d6a4544a3e34dfbc3edfb8
       vertices: []
       indices: 
       edges: []
