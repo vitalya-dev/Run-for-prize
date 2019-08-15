@@ -204,6 +204,7 @@ TextureImporter:
     21300398: Cloud 3
     21300400: What a lfie
     21300402: Good that we have one another
+    21300404: Girl On Piggy Big
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -4214,13 +4215,33 @@ TextureImporter:
         width: 102
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: dae00afad0d6a4544a3e34dfbc3edfb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl On Piggy Big
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2878
+        width: 194
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f5deb9edfd85544858efe0911fc4bd
       vertices: []
       indices: 
       edges: []
