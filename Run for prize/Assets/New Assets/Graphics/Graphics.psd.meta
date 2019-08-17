@@ -217,6 +217,7 @@ TextureImporter:
     21300424: Pyggy Letters
     21300426: Forever
     21300428: Forever Letters
+    21300430: Cannon Ball
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -4434,6 +4435,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9079d5b37b349a44eab3c2326222bf7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon Ball
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 3760
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941102af63c6db2488c90481bc3743e8
       vertices: []
       indices: 
       edges: []
