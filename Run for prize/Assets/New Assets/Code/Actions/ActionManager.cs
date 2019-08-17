@@ -31,6 +31,8 @@ namespace NewGeneration {
 
             foreach (var i in GameObject.FindGameObjectsWithTag("Action")) {
                 var action = i.GetComponent<Action>();
+                if (!action)
+                    throw new UnityException(i.name + " have no action");
                 /* ============================================================= */
                 if (action.type == Action.Type.FLY) {
                     actions.Add(action);

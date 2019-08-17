@@ -206,6 +206,13 @@ TextureImporter:
     21300402: Good that we have one another
     21300404: Girl On Piggy Big
     21300406: Episodes background
+    21300408: Cannon
+    21300410: Cannon Ball 1
+    21300412: Cannon Ball 2
+    21300414: Cannon Ball 3
+    21300416: Canon ball 4
+    21300418: Cannon ball 4
+    21300420: Cannon Ball 4
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -4263,6 +4270,106 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 06c521d49a146fc468d8d7e61971d353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 3728
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0e6c41e3eeba041a57af0a3c1ef74b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon Ball 1
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 3744
+        width: 15
+        height: 15
+      alignment: 9
+      pivot: {x: 0.4666667, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf4a4e4b6ced984bb7527ad21c06ee4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon Ball 2
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 3743
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ec0f3aca9dfa44a82e42ef778a44c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon Ball 3
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 3743
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4375, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4433833fc29d11942945991c30343936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon Ball 4
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 3742
+        width: 15
+        height: 19
+      alignment: 9
+      pivot: {x: 0.4666667, y: 0.5263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6114827ea177054faa8ca8f53e50423
       vertices: []
       indices: 
       edges: []
