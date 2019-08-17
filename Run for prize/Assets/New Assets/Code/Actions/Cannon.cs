@@ -17,7 +17,8 @@ namespace NewGeneration.Actions {
             GameObject cannon_ball = Instantiate(
                 cannon_ball_prefab,
                 transform.position + new Vector3(0.5f, -0.5f) + (Vector3)direction,
-                Quaternion.identity, transform.parent) as GameObject;
+                Quaternion.identity, transform.parent)as GameObject;
+            cannon_ball.GetComponent<CannonBall>().direction = direction;
         }
 
         public override void place_on(Collider2D collider) {

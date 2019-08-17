@@ -206,13 +206,14 @@ TextureImporter:
     21300402: Good that we have one another
     21300404: Girl On Piggy Big
     21300406: Episodes background
-    21300408: Cannon
+    21300408: Cannon Right
     21300410: Cannon Ball 1
     21300412: Cannon Ball 2
     21300414: Cannon Ball 3
     21300416: Canon ball 4
     21300418: Cannon ball 4
     21300420: Cannon Ball 4
+    21300422: Cannon Left
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -4275,7 +4276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cannon
+      name: Cannon Right
       rect:
         serializedVersion: 2
         x: 544
@@ -4370,6 +4371,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e6114827ea177054faa8ca8f53e50423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cannon Left
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 3728
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdc1f683cf64cf47800262570426f96
       vertices: []
       indices: 
       edges: []

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5474102361776401456}
   - component: {fileID: 407321555}
   - component: {fileID: 407321556}
+  - component: {fileID: 1760229446120470542}
+  - component: {fileID: 2079481996}
   m_Layer: 0
   m_Name: Cannon Ball
   m_TagString: Untagged
@@ -114,7 +116,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: -1, y: 0}
-  speed: 10
+  speed: 5
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &407321556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,3 +132,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abc1c62b0bc6f5341b6eb19987fdb590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1760229446120470542
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6468833423296018668}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.4666667, y: 0.53333336}
+    oldSize: {x: 0.9375, y: 0.9375}
+    newSize: {x: 0.9375, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &2079481996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6468833423296018668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ea585c0dd5ed404d9516316a433a5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explode_clip: {fileID: 8300000, guid: a96fb530372cc7e4a8184751284be250, type: 3}
+  bomb_prefab: {fileID: 1000012647370010, guid: 2c596584fad3a90448604ce0288e85f3,
+    type: 3}
+  explode_callback:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
