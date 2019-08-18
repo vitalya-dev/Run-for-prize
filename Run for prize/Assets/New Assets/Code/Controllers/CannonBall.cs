@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace NewGeneration {
     [RequireComponent(typeof(BasicTranslation))]
+    [RequireComponent(typeof(BasicRotation))]
     public class CannonBall : MonoBehaviour {
         public Vector2 direction;
         public float speed;
@@ -22,6 +23,7 @@ namespace NewGeneration {
         // Update is called once per frame
         void Update() {
             var trnsl_comp = GetComponent<BasicTranslation>();
+            var rt_comp = GetComponent<BasicRotation>();
 
             if (!trnsl_comp.moving) {
                 if (collisionZ) {
@@ -29,7 +31,8 @@ namespace NewGeneration {
                         collisionZ.GetComponent<Explode>().explode();
                     GetComponent<Explode>().explode();
                 } else {
-                    trnsl_comp.move(direction, 1 / (speed * 2), Space.Self);
+                    trnsl_comp.move(direction, 1 / speed, Space.Self);
+                    rt_comp.rotate(new Vector3(90 * direction.x, 0, 0), 1 / (speed));
                 }
             }
 
