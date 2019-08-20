@@ -32,7 +32,7 @@ namespace NewGeneration {
                     GetComponent<Explode>().explode();
                 } else {
                     trnsl_comp.move(direction, 1 / speed, Space.Self);
-                    rt_comp.rotate(new Vector3(90 * direction.x, 0, 0), 1 / (speed));
+                    // rt_comp.rotate(new Vector3(90 * direction.x, 0, 0), 1 / (speed));
                 }
             }
 
