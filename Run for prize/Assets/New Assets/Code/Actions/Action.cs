@@ -21,7 +21,6 @@ namespace NewGeneration.Actions {
         public Type type = Type.FLY;
         public abstract void act_on(PiggyController piggy);
         public virtual void place_on(Collider2D collider) {
-            Debug.Log("foo");
             place_on_callback.Invoke();
         }
 
