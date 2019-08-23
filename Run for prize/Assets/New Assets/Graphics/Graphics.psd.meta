@@ -229,7 +229,7 @@ TextureImporter:
     21300448: Happy Girl
     21300450: Tree Outside
     21300452: Sunny Background
-    21300454: Graphics_0
+    21300454: Which one dream is it
     21300456: Light Green Ground
     21300458: New friend
   externalObjects: {}
@@ -4702,13 +4702,33 @@ TextureImporter:
         width: 123
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 018e756979c18cb48995bb4c5227064f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Which one dream is it
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 2645
+        width: 171
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633aaa555fde3c34182d8fc2816ab1ce
       vertices: []
       indices: 
       edges: []
