@@ -23,7 +23,8 @@ EditorBuildSettings:
       (Gameplay).unity
     guid: 0cd685bd248f7914eac1b3af6f618114
   - enabled: 1
-    path: Assets/New Assets/Levels/Are You Experienced/After/Are You Experienced (After).unity
+    path: Assets/New Assets/Levels/Are You Experienced/After1/Are You Experienced
+      (After).unity
     guid: 3f12a02fccecbaf4089dfbbca2afb0fb
   - enabled: 1
     path: Assets/New Assets/Levels/Bold As Love/Intro/Bold As Love (Intro).unity
