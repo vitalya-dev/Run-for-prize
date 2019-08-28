@@ -19,6 +19,14 @@ EditorBuildSettings:
       (Intro).unity
     guid: b57448799ced8234c95e7f7c63306051
   - enabled: 1
+    path: Assets/New Assets/Levels/And The God Made Love/Gameplay/And The God Made
+      Love (Gameplay).unity
+    guid: bb72796538d5433419a096a06f9395d9
+  - enabled: 1
+    path: Assets/New Assets/Levels/And The God Made Love/After/And The God Made Love
+      (After).unity
+    guid: 44ef8ac25e00ce44cac27a78dca70cf1
+  - enabled: 1
     path: Assets/New Assets/Levels/Are You Experienced/Intro/Are You Experienced (Intro).unity
     guid: bb0d3dcfae6620140ae4cbc64f48f93e
   - enabled: 1

@@ -238,6 +238,7 @@ TextureImporter:
     21300466: Are you ill
     21300468: Sleep all day
     21300470: Sunny
+    21300472: Error
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -4848,13 +4849,33 @@ TextureImporter:
         width: 75
         height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 631b99d0a264c9546b6de795a8219f90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Error
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 4849
+        width: 61
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e938417d5d446ab409dfe7140875b783
       vertices: []
       indices: 
       edges: []
