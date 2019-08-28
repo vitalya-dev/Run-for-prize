@@ -29,12 +29,16 @@ namespace NewGeneration {
             }
         }
 
-        public void complete() {
+        public void complete(int i) {
             Scene current_scene = SceneManager.GetActiveScene();
-            if (current_scene.buildIndex + 1 >= SceneManager.sceneCountInBuildSettings)
+            if (current_scene.buildIndex + i >= SceneManager.sceneCountInBuildSettings)
                 quit();
             else
-                SceneManager.LoadSceneAsync(current_scene.buildIndex + 1);
+                SceneManager.LoadSceneAsync(current_scene.buildIndex + i);
+        }
+
+        public void complete() {
+            complete(1);
         }
 
         public void play_pause() {
