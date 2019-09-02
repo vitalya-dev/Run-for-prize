@@ -240,6 +240,7 @@ TextureImporter:
     21300470: Sunny
     21300472: Error
     21300474: More vitamins
+    21300476: Best day of my life
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -4890,13 +4891,33 @@ TextureImporter:
         width: 130
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 353cab9a8788f3e4981e439b7ba7bba0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Best day of my life
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2765
+        width: 159
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00072a716dbd65a418769e0279f7d17f
       vertices: []
       indices: 
       edges: []
