@@ -242,6 +242,12 @@ TextureImporter:
     21300474: More vitamins
     21300476: Best day of my life
     21300478: Black violet and shinny stars
+    21300480: Girl Renouir
+    21300482: Piggy Paint
+    21300484: Molbert
+    21300486: Chair
+    21300488: White Blue Background
+    21300490: Sit still piggy.
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -4932,13 +4938,133 @@ TextureImporter:
         width: 172
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: a2980172135c6b5428b5d2879fa721ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl Renouir
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 4947
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39a523dc3144ea4f8a21493e0a8f8db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piggy Paint
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 4979
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e721ac150817c478d8467306f94828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molbert
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 4945
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68660a9e8ea55f419fe7ecaa3fdb561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 4943
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d94b7e4126f5594fb5c20c639c9a7e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White Blue Background
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 4987
+        width: 394
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1ac71619e7ce94394121a1064d17ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sit still piggy.
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2942
+        width: 102
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef97594cbbaf8f145bae7a134ff60fad
       vertices: []
       indices: 
       edges: []
