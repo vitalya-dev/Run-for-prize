@@ -248,6 +248,7 @@ TextureImporter:
     21300486: Chair
     21300488: White Blue Background
     21300490: Sit still piggy.
+    21300492: Roll more often
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -5058,13 +5059,33 @@ TextureImporter:
         width: 102
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: ef97594cbbaf8f145bae7a134ff60fad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roll more often
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 4873
+        width: 169
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa3b1878334c0e4fa9e1fb6fe3a6fdb
       vertices: []
       indices: 
       edges: []
