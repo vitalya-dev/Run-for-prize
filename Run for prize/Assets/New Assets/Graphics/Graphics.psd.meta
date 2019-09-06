@@ -249,6 +249,9 @@ TextureImporter:
     21300488: White Blue Background
     21300490: Sit still piggy.
     21300492: Roll more often
+    21300494: Girl awake
+    21300496: Buy you are gone
+    21300498: But you are gone
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -2118,8 +2121,8 @@ TextureImporter:
         y: 1073
         width: 31
         height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48387095, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5079,13 +5082,53 @@ TextureImporter:
         width: 169
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 1aa3b1878334c0e4fa9e1fb6fe3a6fdb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl awake
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 5103
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4375, y: 0.3125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7528fad013cd5840b82e67deb067fff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: But you are gone
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 5068
+        width: 101
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb2ee916f961734a9afbba6fce83b93
       vertices: []
       indices: 
       edges: []
