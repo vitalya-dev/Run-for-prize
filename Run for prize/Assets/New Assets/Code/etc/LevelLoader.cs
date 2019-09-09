@@ -4,22 +4,24 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelLoader : MonoBehaviour {
-    public int level_to_load;
+namespace NewGeneration {
+    public class LevelLoader : MonoBehaviour {
+        public string level_to_load;
 
-    public Sprite active_thumb;
-    public Sprite inactive_thumb;
+        public Sprite active_thumb;
+        public Sprite inactive_thumb;
 
-    void Start() {
-        if (level_to_load <= PlayerPrefs.GetInt("Current Level", 1))
-            GetComponent<Image>().sprite = active_thumb;
-        else
-            GetComponent<Image>().sprite = inactive_thumb;
-        GetComponent<Button>().onClick.AddListener(load_level);
-    }
+        void Start() {
+            if (LevelUtils.get_level_build_index(level_to_load) <= PlayerPrefs.GetInt("Current Level Build Index", 0))
+                GetComponent<Image>().sprite = active_thumb;
+            else
+                GetComponent<Image>().sprite = inactive_thumb;
+            GetComponent<Button>().onClick.AddListener(load_level);
+        }
 
-    private void load_level() {
-        if (level_to_load <= PlayerPrefs.GetInt("Current Level", 1))
-            SceneManager.LoadSceneAsync(level_to_load * 3);
+        private void load_level() {
+            if (LevelUtils.get_level_build_index(level_to_load) <= PlayerPrefs.GetInt("Current Level Build Index", 0))
+                SceneManager.LoadSceneAsync(LevelUtils.get_level_build_index(level_to_load));
+        }
     }
 }
