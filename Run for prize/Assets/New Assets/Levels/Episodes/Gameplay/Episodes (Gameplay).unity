@@ -918,6 +918,7 @@ MonoBehaviour:
   level_to_load: When You Were Young (Intro)
   active_thumb: {fileID: 21300352, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
   inactive_thumb: {fileID: 21300384, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
+  first_level: 0
 --- !u!1 &110014290
 GameObject:
   m_ObjectHideFlags: 0
@@ -3626,6 +3627,7 @@ MonoBehaviour:
   level_to_load: And The God Made Love (Intro)
   active_thumb: {fileID: 21300352, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
   inactive_thumb: {fileID: 21300384, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
+  first_level: 1
 --- !u!1 &386268506
 GameObject:
   m_ObjectHideFlags: 0
@@ -7225,6 +7227,7 @@ MonoBehaviour:
   level_to_load: Live Outside (Intro)
   active_thumb: {fileID: 21300352, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
   inactive_thumb: {fileID: 21300384, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
+  first_level: 0
 --- !u!1 &1143888956
 GameObject:
   m_ObjectHideFlags: 0
@@ -8301,6 +8304,7 @@ MonoBehaviour:
   level_to_load: Missed Connection (Intro)
   active_thumb: {fileID: 21300352, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
   inactive_thumb: {fileID: 21300384, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
+  first_level: 0
 --- !u!1 &1303566667
 GameObject:
   m_ObjectHideFlags: 0
@@ -9420,6 +9424,7 @@ MonoBehaviour:
   level_to_load: Sam Town (Intro)
   active_thumb: {fileID: 21300352, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
   inactive_thumb: {fileID: 21300384, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
+  first_level: 0
 --- !u!1 &1501829107
 GameObject:
   m_ObjectHideFlags: 0
@@ -10877,6 +10882,7 @@ MonoBehaviour:
   level_to_load: Polly (Intro)
   active_thumb: {fileID: 21300352, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
   inactive_thumb: {fileID: 21300384, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
+  first_level: 0
 --- !u!1 &1894971606
 GameObject:
   m_ObjectHideFlags: 0
@@ -12082,6 +12088,7 @@ MonoBehaviour:
   level_to_load: Break In The Wall (Intro)
   active_thumb: {fileID: 21300352, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
   inactive_thumb: {fileID: 21300384, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
+  first_level: 0
 --- !u!114 &2087010467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12590,6 +12597,7 @@ MonoBehaviour:
   level_to_load: Bold As Love (Intro)
   active_thumb: {fileID: 21300352, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
   inactive_thumb: {fileID: 21300384, guid: e0506b49079d6be439bfa794dd844b45, type: 3}
+  first_level: 0
 --- !u!1 &2139651412
 GameObject:
   m_ObjectHideFlags: 0
