@@ -252,6 +252,9 @@ TextureImporter:
     21300494: Girl awake
     21300496: Buy you are gone
     21300498: But you are gone
+    21300500: Girl Sit
+    21300502: Yellow Tree
+    21300504: White Tree
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -5129,6 +5132,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: beb2ee916f961734a9afbba6fce83b93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl Sit
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 5110
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1dd2d56639ed64dac4752ed32adb56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow Tree
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 5110
+        width: 81
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe023aef1b83925408d8a96ab89e6f83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White Tree
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 5186
+        width: 88
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06830898b0ba18142a4f445e696d1675
       vertices: []
       indices: 
       edges: []
