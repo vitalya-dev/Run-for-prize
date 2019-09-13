@@ -255,6 +255,9 @@ TextureImporter:
     21300500: Girl Sit
     21300502: Yellow Tree
     21300504: White Tree
+    21300506: Ground in Fall
+    21300508: Groound In Summer
+    21300510: Ground In Winter
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -5185,13 +5188,73 @@ TextureImporter:
         width: 88
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 06830898b0ba18142a4f445e696d1675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground in Fall
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 5206
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad066dd74a6e6d549800afb4f9270806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Groound In Summer
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 5206
+        width: 15
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f1fbd321c4b154a944d3e29ec42b58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground In Winter
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 5206
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e164dad795df9f488727f1096ecabb9
       vertices: []
       indices: 
       edges: []
