@@ -258,6 +258,10 @@ TextureImporter:
     21300506: Ground in Fall
     21300508: Groound In Summer
     21300510: Ground In Winter
+    21300512: Girl Big
+    21300514: Girl Old
+    21300516: Girl Big Sit
+    21300518: Girl Old Sit
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -5255,6 +5259,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7e164dad795df9f488727f1096ecabb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl Big Sit
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 5118
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7640d8124c78c47ab2b5feb813ccce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Girl Old Sit
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 5174
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb6414dd2e7d7f4c9c8adef07a46614
       vertices: []
       indices: 
       edges: []
