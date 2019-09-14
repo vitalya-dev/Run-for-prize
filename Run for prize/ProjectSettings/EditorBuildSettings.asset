@@ -105,6 +105,10 @@ EditorBuildSettings:
       (Intro). Part 1.unity
     guid: e509bfeab5cccca4a830ddb84d641773
   - enabled: 1
+    path: Assets/New Assets/Levels/Fresh Strawberries/Intro. Part 2/Fresh Strawberries
+      (Intro). Part 2.unity
+    guid: e4de14ec7dbd6bf4b89bb873d0acdb85
+  - enabled: 1
     path: Assets/New Assets/Levels/Fresh Strawberries/Intro. Part 3/Fresh Strawberries
       (Intro). Part 3.unity
     guid: fdb1e2c918f75dd43a8b32d39aca1052
