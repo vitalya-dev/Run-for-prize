@@ -115,45 +115,52 @@ namespace NewGeneration {
         // Update is called once per frame
         void Update() {
             // face = new Vector2(direction.x, direction.y);
+            var trnsl_comp = GetComponent<BasicTranslation>();
             switch (_state) {
                 case State.FALL:
                     GetComponent<Animator>().Play(_state.ToString());
-                    var trans_comp = GetComponent<BasicTranslation>();
-                    if (!trans_comp.moving) {
+                    if (!trnsl_comp.moving) {
                         if (collisionBelow && collisionBelow.tag == "Ground") {
                             state = State.ROLL;
                         } else if (collisionBelow && collisionBelow.tag == "Wall") {
                             state = State.COLLIDE;
                         } else
-                            trans_comp.move(new Vector3(0, -1, 0), 1 / (speed * 2), Space.Self);
+                            trnsl_comp.move(new Vector3(0, -1, 0), 1 / (speed * 2), Space.Self);
                     }
                     break;
                 case State.IDLE:
                     GetComponent<Animator>().Play(state.ToString());
                     break;
                 case State.FLY:
+                    GetComponent<Animator>().Play(state.ToString());
+                    face = direction;
+                    if (!trnsl_comp.moving) {
+                        if (collisionZ) {
+                             if (collisionZ.GetComponent<NewGeneration.Actions.Action>()) {
+                                var action = collisionZ.GetComponent<NewGeneration.Actions.Action>();
+                                action.act_on(this);
+                             } else {
+                                state = State.COLLIDE;
+                            }
+                        } else {
+                            trnsl_comp.move(direction, 1 / (speed * 2), Space.Self);
+                        }
+                    }
+                    break;
                 case State.EVILFLY:
                     GetComponent<Animator>().Play(state.ToString());
                     face = direction;
-                    var trnsl_comp = GetComponent<BasicTranslation>();
                     if (!trnsl_comp.moving) {
                         if (collisionZ) {
-                            if (collisionZ.GetComponent<NewGeneration.Actions.Action>()) {
-                                var action = collisionZ.GetComponent<NewGeneration.Actions.Action>();
-                                action.act_on(this);
-                            } else
-                                switch (state) {
-                                    case State.FLY:
-                                        state = State.COLLIDE;
-                                        break;
-                                    case State.EVILFLY:
-                                        if (collisionZ.GetComponent<Explode>())
-                                            collisionZ.GetComponent<Explode>().explode();
-                                        state = State.FLY;
-                                        break;
-                                }
-                        } else
+                            if (collisionZ.GetComponent<Explode>()) {
+                                collisionZ.GetComponent<Explode>().explode();
+                                state = State.FLY;
+                             } else {
+                                state = State.COLLIDE;
+                            }
+                        } else {
                             trnsl_comp.move(direction, 1 / (speed * 2), Space.Self);
+                        }
                     }
                     break;
                 case State.ROLL:
