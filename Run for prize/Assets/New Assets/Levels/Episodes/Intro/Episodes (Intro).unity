@@ -1140,6 +1140,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 114140023174185684, guid: 52f0e2431ab5c314f85bb84095ab4e5f, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 114976953701206974, guid: 52f0e2431ab5c314f85bb84095ab4e5f, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 2a74479184e93da4b8b09e7c8c039499: {fileID: 344533176}
@@ -1260,7 +1262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &2051533659
 Animator:
   serializedVersion: 3
