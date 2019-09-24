@@ -29,6 +29,14 @@ namespace NewGeneration {
             }
         }
 
+        private int __reset_progress_counter = 0;
+        public void reset_progress() {
+            if (++__reset_progress_counter % 2 == 0) {
+                PlayerPrefs.DeleteKey("Current Level Build Index");
+                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            }
+        }
+
         public void complete(int i) {
             Scene current_scene = SceneManager.GetActiveScene();
             if (current_scene.buildIndex + i >= SceneManager.sceneCountInBuildSettings)

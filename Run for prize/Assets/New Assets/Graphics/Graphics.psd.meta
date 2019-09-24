@@ -264,6 +264,7 @@ TextureImporter:
     21300518: Girl Old Sit
     21300520: Broken House
     21300522: Girl awake Right
+    21300524: Reset Button
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -5334,13 +5335,33 @@ TextureImporter:
         width: 31
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: bc7fd656c9a92ba498bc5b43ff3a0476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reset Button
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 194
+        width: 55
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782bd249d7ebee24585288e49aa2483b
       vertices: []
       indices: 
       edges: []
